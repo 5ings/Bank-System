@@ -149,5 +149,15 @@ namespace BankSystem.UI
                 }
             }
         }
+
+        private void btnDeleteUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

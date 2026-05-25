@@ -38,21 +38,22 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Desktop;
-            label1.Location = new Point(676, 226);
+            label1.Location = new Point(592, 170);
             label1.Name = "label1";
-            label1.Size = new Size(557, 81);
+            label1.Size = new Size(470, 65);
             label1.TabIndex = 0;
             label1.Text = "Национална банка";
             // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Left;
-            pictureBox1.Image = Properties.Resources.bank;
+            pictureBox1.Image = Properties.Resources.BankLogo;
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(600, 700);
+            pictureBox1.Size = new Size(525, 525);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -61,9 +62,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(812, 352);
+            label2.Location = new Point(710, 264);
             label2.Name = "label2";
-            label2.Size = new Size(285, 54);
+            label2.Size = new Size(233, 45);
             label2.TabIndex = 2;
             label2.Text = "Добре дошли!";
             // 
@@ -71,9 +72,10 @@
             // 
             button1.BackColor = SystemColors.Window;
             button1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(765, 420);
+            button1.Location = new Point(669, 315);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(365, 103);
+            button1.Size = new Size(319, 77);
             button1.TabIndex = 3;
             button1.Text = "Продължи";
             button1.UseVisualStyleBackColor = false;
@@ -81,15 +83,16 @@
             // 
             // FormWelcome
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
-            ClientSize = new Size(1320, 700);
+            ClientSize = new Size(1155, 525);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FormWelcome";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormWelcome";

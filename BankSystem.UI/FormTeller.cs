@@ -20,6 +20,7 @@ namespace BankSystem.UI
         private readonly ClientController _clientController;
         private readonly UserController _userController;
         private readonly TransactionController _transactionController;
+        private readonly SystemLogController _logController;
         private readonly User _currentTeller;
         public FormTeller()
         {
@@ -32,6 +33,7 @@ namespace BankSystem.UI
             _clientController = new ClientController();
             _userController = new UserController();
             _transactionController = new TransactionController();
+            _logController = new SystemLogController();
             _currentTeller = loggedInTeller;
         }
         private void FormTeller_Load(object sender, EventArgs e)
@@ -114,37 +116,109 @@ namespace BankSystem.UI
             txtPhone.Clear(); txtEmail.Clear(); txtClientUsername.Clear(); txtClientPassword.Clear();
         }
 
-        private void btnDeposit_Click(object sender, EventArgs e)
+        private async void btnDeposit_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(txtAccountId.Text, out int accountId)) //yjrfmhyf
-            {
-                MessageBox.Show("Моля, въведете валидно ID на сметката на клиента!", "Невалидна сметка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            string sourceIban = txtSourceIban.Text.Trim();
 
-            // Б. Проверка дали въведената сума е число и дали е положително
-            if (!decimal.TryParse(txtAmount.Text, out decimal amount) || amount <= 0)
+            if (string.IsNullOrEmpty(sourceIban) || !decimal.TryParse(txtAmount.Text, out decimal amount) || amount <= 0)
             {
-                MessageBox.Show("Моля, въведете валидна положителна сума за внасяне!", "Невалидна сума", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Моля, въведете валиден IBAN и положителна сума!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             try
             {
-                // Извикваме логиката от TransactionController
-                await _transactionController.DepositAsync(accountId, amount);
+                var account = await _transactionController.GetAccountByIban(sourceIban);
 
-                // Записваме транзакцията в системния одит лог
-                await _userController.LogActionAsync(_currentTeller.UserID, $"Касиер {_currentTeller.Username} внесе {amount:F2} лв. по сметка с ID {accountId}.");
+                if (account == null)
+                {
+                    MessageBox.Show("Не съществува сметка с такъв IBAN!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-                MessageBox.Show($"Успешно внесени {amount:F2} лв. по сметка №{accountId}!", "Успешен депозит", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                await _transactionController.DepositMoney(account.AccountID, amount);
+
+                await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} внесе {amount:F2} лв. по IBAN {sourceIban}.");
+                MessageBox.Show($"Успешно внесени {amount:F2} лв.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtAmount.Clear();
             }
             catch (Exception ex)
             {
-                // Тук Entity Framework ще ни върне грешка, ако сметката не съществува
-                MessageBox.Show($"Операцията беше отказана!\nПричина: {ex.Message}", "Грешка при депозит", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Грешка: {ex.Message}", "Системна грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private async void btnWithdraw_Click(object sender, EventArgs e)
+        {
+            string sourceIban = txtSourceIban.Text.Trim();
+
+            if (string.IsNullOrEmpty(sourceIban) || !decimal.TryParse(txtAmount.Text, out decimal amount) || amount <= 0)
+            {
+                MessageBox.Show("Моля, въведете валиден IBAN и положителна сума!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                var account = await _transactionController.GetAccountByIban(sourceIban);
+
+                if (account == null)
+                {
+                    MessageBox.Show("Не съществува сметка с такъв IBAN!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+
+                await _transactionController.WithdrawMoney(account.AccountID, amount);
+
+                await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} изтегли {amount:F2} лв. от IBAN {sourceIban}.");
+                MessageBox.Show($"Успешно изтеглени {amount:F2} лв.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtAmount.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Грешка: {ex.Message}", "Системна грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void btnTransfer_Click(object sender, EventArgs e)
+        {
+            string sourceIban = txtSourceIban.Text.Trim();
+            string targetIban = txtTargetIban.Text.Trim();
+
+            if (string.IsNullOrEmpty(sourceIban) || string.IsNullOrEmpty(targetIban) || !decimal.TryParse(txtAmount.Text, out decimal amount) || amount <= 0)
+            {
+                MessageBox.Show("Моля, попълнете двата IBAN-а и валидна сума!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                var sourceAccount = await _transactionController.GetAccountByIban(sourceIban);
+                var targetAccount = await _transactionController.GetAccountByIban(targetIban);
+
+                if (sourceAccount == null || targetAccount == null)
+                {
+                    MessageBox.Show("Един от въведените IBAN-и не съществува!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                await _transactionController.TransferMoney(sourceAccount.AccountID, txtTargetIban.Text, amount);
+
+                await _logController.LogAction(_currentTeller.UserID, $"Превод на {amount:F2} лв. от IBAN {sourceIban} към IBAN {targetIban}.");
+                MessageBox.Show("Преводът беше изпълнен успешно!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtAmount.Clear();
+                txtTargetIban.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Грешка при превода: {ex.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             groupBox1 = new GroupBox();
             btnLogin = new Button();
             txtPassword = new TextBox();
@@ -35,7 +37,8 @@
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
+            btnLogOut = new Button();
+            imageList1 = new ImageList(components);
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -47,9 +50,11 @@
             groupBox1.Controls.Add(txtUsername);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(732, 131);
+            groupBox1.Location = new Point(640, 98);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(455, 427);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(398, 320);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
@@ -57,9 +62,10 @@
             // btnLogin
             // 
             btnLogin.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLogin.Location = new Point(87, 312);
+            btnLogin.Location = new Point(76, 234);
+            btnLogin.Margin = new Padding(3, 2, 3, 2);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(272, 52);
+            btnLogin.Size = new Size(238, 39);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Влез";
             btnLogin.UseVisualStyleBackColor = true;
@@ -68,28 +74,30 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPassword.Location = new Point(43, 218);
+            txtPassword.Location = new Point(38, 164);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(368, 38);
+            txtPassword.Size = new Size(322, 32);
             txtPassword.TabIndex = 3;
             txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsername
             // 
             txtUsername.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsername.Location = new Point(43, 113);
+            txtUsername.Location = new Point(38, 85);
+            txtUsername.Margin = new Padding(3, 2, 3, 2);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(368, 38);
+            txtUsername.Size = new Size(322, 32);
             txtUsername.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(43, 187);
+            label2.Location = new Point(38, 140);
             label2.Name = "label2";
-            label2.Size = new Size(93, 31);
+            label2.Size = new Size(78, 25);
             label2.TabIndex = 1;
             label2.Text = "Парола";
             // 
@@ -97,44 +105,60 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(43, 82);
+            label1.Location = new Point(38, 62);
             label1.Name = "label1";
-            label1.Size = new Size(219, 31);
+            label1.Size = new Size(184, 25);
             label1.TabIndex = 0;
             label1.Text = "Потребителско име";
             // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Left;
-            pictureBox1.Image = Properties.Resources.bank;
+            pictureBox1.Image = Properties.Resources.BankLogo;
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(600, 700);
+            pictureBox1.Size = new Size(525, 525);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnLogOut
             // 
-            button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(1153, 636);
-            button1.Name = "button1";
-            button1.Size = new Size(155, 52);
-            button1.TabIndex = 5;
-            button1.Text = "Изход";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnLogOut.BackColor = Color.FromArgb(220, 53, 69);
+            btnLogOut.FlatStyle = FlatStyle.Flat;
+            btnLogOut.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogOut.ForeColor = Color.White;
+            btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogOut.ImageKey = "Exit.png";
+            btnLogOut.ImageList = imageList1;
+            btnLogOut.Location = new Point(1013, 481);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(130, 32);
+            btnLogOut.TabIndex = 8;
+            btnLogOut.Text = "Изход";
+            btnLogOut.UseVisualStyleBackColor = false;
+            btnLogOut.Click += btnLogOut_Click;
+            // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "TransferTo.png");
+            imageList1.Images.SetKeyName(1, "Exit.png");
             // 
             // FormLogin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
-            ClientSize = new Size(1320, 700);
-            Controls.Add(button1);
+            ClientSize = new Size(1155, 525);
+            Controls.Add(btnLogOut);
             Controls.Add(pictureBox1);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FormLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormLogin";
@@ -153,6 +177,7 @@
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
-        private Button button1;
+        private Button btnLogOut;
+        private ImageList imageList1;
     }
 }
