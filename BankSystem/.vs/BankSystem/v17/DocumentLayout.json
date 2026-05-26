@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.controller\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formwelcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formteller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formwelcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -24,10 +24,94 @@
       "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.controller\\systemlogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\bankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:bankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Migrations\\20260526002509_TransactionEdit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260526002509_TransactionEdit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formteller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\migrations\\bankdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:migrations\\bankdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\migrations\\20260519065809_addemailandcvv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:migrations\\20260519065809_addemailandcvv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\migrations\\20260518204236_createdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:migrations\\20260518204236_createdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\enums\\loanstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:enums\\loanstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\enums\\cardtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:enums\\cardtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\entities\\bankcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:entities\\bankcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\entities\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:entities\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.controller\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.controller\\bankcardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.controller\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.controller\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.controller\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem.ui\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|d:\\petya\\visual studio p\\bank system1\\bank system\\bank system\\banksystem\\migrations\\20260525224619_activeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:migrations\\20260525224619_activeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,46 +121,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormTeller.cs",
-              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormTeller.cs",
-              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormTeller.cs",
-              "ViewState": "AgIAAMMAAAAAAAAAAADwv9wAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T21:58:57.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormLogin.cs",
-              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormLogin.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormLogin.cs",
-              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormLogin.cs",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormLogin.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAYwG8AAAAMAAAAAAAAAA==",
+              "Title": "FormClient.cs [Design]",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormClient.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormClient.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormClient.cs [Design]",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormClient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T21:58:11.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormAdmin.cs",
-              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormAdmin.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormAdmin.cs",
-              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormAdmin.cs",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormAdmin.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAkwKMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T21:43:59.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T21:03:57.929Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -86,22 +144,361 @@
               "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormClient.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormClient.cs",
               "RelativeToolTip": "..\\BankSystem.UI\\FormClient.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAAwIkAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAowLsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T21:31:31.18Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormTeller.cs [Design]",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormTeller.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs [Design]",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormTeller.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T21:03:55.334Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20260526002509_TransactionEdit.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Migrations\\20260526002509_TransactionEdit.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260526002509_TransactionEdit.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Migrations\\20260526002509_TransactionEdit.cs",
+              "RelativeToolTip": "Migrations\\20260526002509_TransactionEdit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:25:09.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BankDbContext.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\BankDbContext.cs",
+              "RelativeDocumentMoniker": "BankDbContext.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\BankDbContext.cs",
+              "RelativeToolTip": "BankDbContext.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAswGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:24:35.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BankDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Migrations\\BankDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\BankDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Migrations\\BankDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\BankDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:24:33.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20260519065809_AddEmailAndCvv.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Migrations\\20260519065809_AddEmailAndCvv.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260519065809_AddEmailAndCvv.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Migrations\\20260519065809_AddEmailAndCvv.cs",
+              "RelativeToolTip": "Migrations\\20260519065809_AddEmailAndCvv.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:24:31.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20260518204236_CreateDb.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Migrations\\20260518204236_CreateDb.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260518204236_CreateDb.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Migrations\\20260518204236_CreateDb.cs",
+              "RelativeToolTip": "Migrations\\20260518204236_CreateDb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:24:29.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "Enums\\UserRole.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Enums\\UserRole.cs",
+              "RelativeToolTip": "Enums\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:24:28.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoanStatus.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Enums\\LoanStatus.cs",
+              "RelativeDocumentMoniker": "Enums\\LoanStatus.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Enums\\LoanStatus.cs",
+              "RelativeToolTip": "Enums\\LoanStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:24:27.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Loan.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\Loan.cs",
+              "RelativeDocumentMoniker": "Entities\\Loan.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\Loan.cs",
+              "RelativeToolTip": "Entities\\Loan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:24:24.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Client.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\Client.cs",
+              "RelativeDocumentMoniker": "Entities\\Client.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\Client.cs",
+              "RelativeToolTip": "Entities\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:24:23.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BankCard.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\BankCard.cs",
+              "RelativeDocumentMoniker": "Entities\\BankCard.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\BankCard.cs",
+              "RelativeToolTip": "Entities\\BankCard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:24:22.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormClient.cs [Design]",
-              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormClient.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormClient.cs",
-              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormClient.cs [Design]",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormClient.cs [Design]",
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\TransactionController.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\TransactionController.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\TransactionController.cs",
+              "RelativeToolTip": "..\\BankSystem.Controller\\TransactionController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T21:03:57.929Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-26T00:21:15.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SystemLogController.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\SystemLogController.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\SystemLogController.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\SystemLogController.cs",
+              "RelativeToolTip": "..\\BankSystem.Controller\\SystemLogController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:21:13.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\Program.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\Program.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\Program.cs",
+              "RelativeToolTip": "..\\BankSystem.Controller\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:21:11.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoanController.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\LoanController.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\LoanController.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\LoanController.cs",
+              "RelativeToolTip": "..\\BankSystem.Controller\\LoanController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:21:10.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BankCardController.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\BankCardController.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\BankCardController.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\BankCardController.cs",
+              "RelativeToolTip": "..\\BankSystem.Controller\\BankCardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:21:06.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\AccountController.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\AccountController.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\AccountController.cs",
+              "RelativeToolTip": "..\\BankSystem.Controller\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:21:04.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\Account.cs",
+              "RelativeDocumentMoniker": "Entities\\Account.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\Account.cs",
+              "RelativeToolTip": "Entities\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:19:54.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\Transaction.cs",
+              "RelativeDocumentMoniker": "Entities\\Transaction.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\Transaction.cs",
+              "RelativeToolTip": "Entities\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:18:11.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CardType.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Enums\\CardType.cs",
+              "RelativeDocumentMoniker": "Enums\\CardType.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Enums\\CardType.cs",
+              "RelativeToolTip": "Enums\\CardType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T00:09:13.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormTeller.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormTeller.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormTeller.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAgwLoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T21:58:57.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\ClientController.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\ClientController.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\ClientController.cs",
+              "RelativeToolTip": "..\\BankSystem.Controller\\ClientController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:46:47.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20260525224619_ActiveUser.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Migrations\\20260525224619_ActiveUser.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260525224619_ActiveUser.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Migrations\\20260525224619_ActiveUser.cs",
+              "RelativeToolTip": "Migrations\\20260525224619_ActiveUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T22:46:19.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\UserController.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\UserController.cs",
+              "RelativeToolTip": "..\\BankSystem.Controller\\UserController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwFAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T22:41:45.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T22:31:30.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormLogin.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormLogin.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormLogin.cs",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormLogin.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAYwG8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T21:58:11.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FormAdmin.cs",
+              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormAdmin.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormAdmin.cs",
+              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormAdmin.cs",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormAdmin.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAwJoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T21:43:59.67Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -113,18 +510,6 @@
               "RelativeToolTip": "..\\BankSystem.UI\\FormAdmin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T21:03:58.719Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormTeller.cs [Design]",
-              "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormTeller.cs",
-              "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs [Design]",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormTeller.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T21:03:55.334Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -141,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FormWelcome.cs [Design]",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormWelcome.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormWelcome.cs",

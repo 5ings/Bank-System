@@ -385,6 +385,7 @@ D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem\obj\Deb
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem\obj\Debug\net8.0\BankSystem.Data.AssemblyInfoInputs.cache
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem\obj\Debug\net8.0\BankSystem.Data.AssemblyInfo.cs
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem\obj\Debug\net8.0\BankSystem.Data.csproj.CoreCompileInputs.cache
+D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem\obj\Debug\net8.0\BankSystem.Data.sourcelink.json
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem\obj\Debug\net8.0\BankSyst.8961803D.Up2Date
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem\obj\Debug\net8.0\BankSystem.Data.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem\obj\Debug\net8.0\refint\BankSystem.Data.dll

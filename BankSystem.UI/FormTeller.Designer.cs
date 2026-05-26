@@ -57,16 +57,43 @@
             txtAmount = new TextBox();
             label9 = new Label();
             panel1 = new Panel();
-            btnLogOut = new Button();
+            pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             label1 = new Label();
+            btnLogOut = new Button();
             imageList1 = new ImageList(components);
-            pictureBox2 = new PictureBox();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            tabPage2 = new TabPage();
+            tabPage3 = new TabPage();
+            groupBox1 = new GroupBox();
+            CVVTextBox = new TextBox();
+            label19 = new Label();
+            ExpiryDateTextBox = new TextBox();
+            label18 = new Label();
+            CardTypeComboBox = new ComboBox();
+            label17 = new Label();
+            CardNumberTextBox = new TextBox();
+            label16 = new Label();
+            CurrencyComboBox = new ComboBox();
+            EgnTextBox = new TextBox();
+            label15 = new Label();
+            IbanTextBox = new TextBox();
+            label12 = new Label();
+            button1 = new Button();
+            BalanceTextBox = new TextBox();
+            label13 = new Label();
+            label14 = new Label();
             grpClientManagement.SuspendLayout();
             groupBox2.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
+            tabPage3.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // grpClientManagement
@@ -88,11 +115,11 @@
             grpClientManagement.Controls.Add(label3);
             grpClientManagement.Controls.Add(label2);
             grpClientManagement.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grpClientManagement.Location = new Point(69, 65);
+            grpClientManagement.Location = new Point(108, 62);
             grpClientManagement.Margin = new Padding(3, 2, 3, 2);
             grpClientManagement.Name = "grpClientManagement";
             grpClientManagement.Padding = new Padding(3, 2, 3, 2);
-            grpClientManagement.Size = new Size(438, 451);
+            grpClientManagement.Size = new Size(946, 303);
             grpClientManagement.TabIndex = 0;
             grpClientManagement.TabStop = false;
             grpClientManagement.Text = "Управление и Регистрация на клиенти";
@@ -100,7 +127,7 @@
             // btnRegisterClient
             // 
             btnRegisterClient.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRegisterClient.Location = new Point(35, 398);
+            btnRegisterClient.Location = new Point(494, 196);
             btnRegisterClient.Margin = new Padding(3, 2, 3, 2);
             btnRegisterClient.Name = "btnRegisterClient";
             btnRegisterClient.Size = new Size(361, 39);
@@ -112,7 +139,7 @@
             // txtClientPassword
             // 
             txtClientPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtClientPassword.Location = new Point(35, 358);
+            txtClientPassword.Location = new Point(494, 104);
             txtClientPassword.Margin = new Padding(3, 2, 3, 2);
             txtClientPassword.Name = "txtClientPassword";
             txtClientPassword.Size = new Size(364, 29);
@@ -121,7 +148,7 @@
             // txtClientUsername
             // 
             txtClientUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtClientUsername.Location = new Point(35, 308);
+            txtClientUsername.Location = new Point(494, 52);
             txtClientUsername.Margin = new Padding(3, 2, 3, 2);
             txtClientUsername.Name = "txtClientUsername";
             txtClientUsername.Size = new Size(364, 29);
@@ -131,7 +158,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(33, 335);
+            label8.Location = new Point(494, 83);
             label8.Name = "label8";
             label8.Size = new Size(63, 21);
             label8.TabIndex = 13;
@@ -141,7 +168,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(33, 284);
+            label7.Location = new Point(494, 29);
             label7.Name = "label7";
             label7.Size = new Size(151, 21);
             label7.TabIndex = 12;
@@ -255,11 +282,11 @@
             groupBox2.Controls.Add(txtAmount);
             groupBox2.Controls.Add(label9);
             groupBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(632, 65);
+            groupBox2.Location = new Point(149, 71);
             groupBox2.Margin = new Padding(3, 2, 3, 2);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(3, 2, 3, 2);
-            groupBox2.Size = new Size(438, 387);
+            groupBox2.Size = new Size(862, 303);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Финансови операции по сметки";
@@ -286,7 +313,7 @@
             // btnTransfer
             // 
             btnTransfer.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnTransfer.Location = new Point(36, 325);
+            btnTransfer.Location = new Point(462, 176);
             btnTransfer.Margin = new Padding(3, 2, 3, 2);
             btnTransfer.Name = "btnTransfer";
             btnTransfer.Size = new Size(364, 39);
@@ -298,7 +325,7 @@
             // btnWithdraw
             // 
             btnWithdraw.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnWithdraw.Location = new Point(34, 274);
+            btnWithdraw.Location = new Point(34, 236);
             btnWithdraw.Margin = new Padding(3, 2, 3, 2);
             btnWithdraw.Name = "btnWithdraw";
             btnWithdraw.Size = new Size(366, 39);
@@ -310,7 +337,7 @@
             // btnDeposit
             // 
             btnDeposit.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDeposit.Location = new Point(34, 223);
+            btnDeposit.Location = new Point(34, 176);
             btnDeposit.Margin = new Padding(3, 2, 3, 2);
             btnDeposit.Name = "btnDeposit";
             btnDeposit.Size = new Size(366, 39);
@@ -322,7 +349,7 @@
             // txtTargetIban
             // 
             txtTargetIban.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTargetIban.Location = new Point(34, 182);
+            txtTargetIban.Location = new Point(460, 72);
             txtTargetIban.Margin = new Padding(3, 2, 3, 2);
             txtTargetIban.Name = "txtTargetIban";
             txtTargetIban.Size = new Size(366, 29);
@@ -332,7 +359,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(36, 154);
+            label10.Location = new Point(460, 49);
             label10.Name = "label10";
             label10.Size = new Size(144, 21);
             label10.TabIndex = 9;
@@ -370,22 +397,16 @@
             panel1.Size = new Size(1155, 52);
             panel1.TabIndex = 0;
             // 
-            // btnLogOut
+            // pictureBox2
             // 
-            btnLogOut.BackColor = Color.FromArgb(220, 53, 69);
-            btnLogOut.FlatStyle = FlatStyle.Flat;
-            btnLogOut.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLogOut.ForeColor = Color.White;
-            btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogOut.ImageKey = "Exit.png";
-            btnLogOut.ImageList = imageList1;
-            btnLogOut.Location = new Point(1013, 484);
-            btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(130, 32);
-            btnLogOut.TabIndex = 8;
-            btnLogOut.Text = "Изход";
-            btnLogOut.UseVisualStyleBackColor = false;
-            btnLogOut.Click += btnLogOut_Click;
+            pictureBox2.Image = Properties.Resources.Teller;
+            pictureBox2.Location = new Point(1094, 4);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(58, 46);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 9;
+            pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -408,6 +429,23 @@
             label1.TabIndex = 2;
             label1.Text = "Работно място: оператор/касиер";
             // 
+            // btnLogOut
+            // 
+            btnLogOut.BackColor = Color.FromArgb(220, 53, 69);
+            btnLogOut.FlatStyle = FlatStyle.Flat;
+            btnLogOut.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogOut.ForeColor = Color.White;
+            btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogOut.ImageKey = "Exit.png";
+            btnLogOut.ImageList = imageList1;
+            btnLogOut.Location = new Point(1011, 407);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(130, 32);
+            btnLogOut.TabIndex = 8;
+            btnLogOut.Text = "Изход";
+            btnLogOut.UseVisualStyleBackColor = false;
+            btnLogOut.Click += btnLogOut_Click;
+            // 
             // imageList1
             // 
             imageList1.ColorDepth = ColorDepth.Depth32Bit;
@@ -416,26 +454,253 @@
             imageList1.Images.SetKeyName(0, "TransferTo.png");
             imageList1.Images.SetKeyName(1, "Exit.png");
             // 
-            // pictureBox2
+            // tabControl1
             // 
-            pictureBox2.Image = Properties.Resources.Teller;
-            pictureBox2.Location = new Point(1094, 4);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(58, 46);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 9;
-            pictureBox2.TabStop = false;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Dock = DockStyle.Fill;
+            tabControl1.Location = new Point(0, 52);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1155, 473);
+            tabControl1.TabIndex = 9;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Controls.Add(grpClientManagement);
+            tabPage1.Controls.Add(btnLogOut);
+            tabPage1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tabPage1.Location = new Point(4, 24);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1147, 445);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Управления на клиенти";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(groupBox2);
+            tabPage2.Location = new Point(4, 24);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1147, 445);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Финансови операции";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            tabPage3.Controls.Add(groupBox1);
+            tabPage3.Location = new Point(4, 24);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(1147, 445);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Управление на сметки и карти";
+            tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.LightSteelBlue;
+            groupBox1.Controls.Add(CVVTextBox);
+            groupBox1.Controls.Add(label19);
+            groupBox1.Controls.Add(ExpiryDateTextBox);
+            groupBox1.Controls.Add(label18);
+            groupBox1.Controls.Add(CardTypeComboBox);
+            groupBox1.Controls.Add(label17);
+            groupBox1.Controls.Add(CardNumberTextBox);
+            groupBox1.Controls.Add(label16);
+            groupBox1.Controls.Add(CurrencyComboBox);
+            groupBox1.Controls.Add(EgnTextBox);
+            groupBox1.Controls.Add(label15);
+            groupBox1.Controls.Add(IbanTextBox);
+            groupBox1.Controls.Add(label12);
+            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(BalanceTextBox);
+            groupBox1.Controls.Add(label13);
+            groupBox1.Controls.Add(label14);
+            groupBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox1.Location = new Point(143, 73);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(862, 344);
+            groupBox1.TabIndex = 2;
+            groupBox1.TabStop = false;
+            // 
+            // CVVTextBox
+            // 
+            CVVTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CVVTextBox.Location = new Point(436, 232);
+            CVVTextBox.Margin = new Padding(3, 2, 3, 2);
+            CVVTextBox.Name = "CVVTextBox";
+            CVVTextBox.Size = new Size(366, 29);
+            CVVTextBox.TabIndex = 33;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label19.Location = new Point(436, 209);
+            label19.Name = "label19";
+            label19.Size = new Size(40, 21);
+            label19.TabIndex = 32;
+            label19.Text = "CVV";
+            // 
+            // ExpiryDateTextBox
+            // 
+            ExpiryDateTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ExpiryDateTextBox.Location = new Point(438, 178);
+            ExpiryDateTextBox.Margin = new Padding(3, 2, 3, 2);
+            ExpiryDateTextBox.Name = "ExpiryDateTextBox";
+            ExpiryDateTextBox.Size = new Size(366, 29);
+            ExpiryDateTextBox.TabIndex = 31;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label18.Location = new Point(438, 148);
+            label18.Name = "label18";
+            label18.Size = new Size(135, 21);
+            label18.TabIndex = 30;
+            label18.Text = "Дата на изтичане";
+            // 
+            // CardTypeComboBox
+            // 
+            CardTypeComboBox.FormattingEnabled = true;
+            CardTypeComboBox.Items.AddRange(new object[] { "DebitVisa", "CreditVisa", "DebitMasterCard", "CreditMasterCard" });
+            CardTypeComboBox.Location = new Point(438, 117);
+            CardTypeComboBox.Name = "CardTypeComboBox";
+            CardTypeComboBox.Size = new Size(366, 28);
+            CardTypeComboBox.TabIndex = 29;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label17.Location = new Point(436, 91);
+            label17.Name = "label17";
+            label17.Size = new Size(81, 21);
+            label17.TabIndex = 27;
+            label17.Text = "Вид карта";
+            // 
+            // CardNumberTextBox
+            // 
+            CardNumberTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CardNumberTextBox.Location = new Point(436, 60);
+            CardNumberTextBox.Margin = new Padding(3, 2, 3, 2);
+            CardNumberTextBox.Name = "CardNumberTextBox";
+            CardNumberTextBox.Size = new Size(366, 29);
+            CardNumberTextBox.TabIndex = 26;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label16.Location = new Point(436, 37);
+            label16.Name = "label16";
+            label16.Size = new Size(123, 21);
+            label16.TabIndex = 25;
+            label16.Text = "Номер на карта";
+            // 
+            // CurrencyComboBox
+            // 
+            CurrencyComboBox.FormattingEnabled = true;
+            CurrencyComboBox.Items.AddRange(new object[] { "EUR", "USD" });
+            CurrencyComboBox.Location = new Point(34, 233);
+            CurrencyComboBox.Name = "CurrencyComboBox";
+            CurrencyComboBox.Size = new Size(366, 28);
+            CurrencyComboBox.TabIndex = 24;
+            // 
+            // EgnTextBox
+            // 
+            EgnTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            EgnTextBox.Location = new Point(34, 60);
+            EgnTextBox.Margin = new Padding(3, 2, 3, 2);
+            EgnTextBox.Name = "EgnTextBox";
+            EgnTextBox.Size = new Size(366, 29);
+            EgnTextBox.TabIndex = 23;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label15.Location = new Point(34, 37);
+            label15.Name = "label15";
+            label15.Size = new Size(111, 21);
+            label15.TabIndex = 22;
+            label15.Text = "ЕГН на клиент";
+            // 
+            // IbanTextBox
+            // 
+            IbanTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            IbanTextBox.Location = new Point(34, 114);
+            IbanTextBox.Margin = new Padding(3, 2, 3, 2);
+            IbanTextBox.Name = "IbanTextBox";
+            IbanTextBox.Size = new Size(366, 29);
+            IbanTextBox.TabIndex = 21;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.Location = new Point(34, 91);
+            label12.Name = "label12";
+            label12.Size = new Size(45, 21);
+            label12.TabIndex = 20;
+            label12.Text = "IBAN";
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(256, 285);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(364, 39);
+            button1.TabIndex = 19;
+            button1.Text = "Създай сметка и карта";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // BalanceTextBox
+            // 
+            BalanceTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BalanceTextBox.Location = new Point(34, 178);
+            BalanceTextBox.Margin = new Padding(3, 2, 3, 2);
+            BalanceTextBox.Name = "BalanceTextBox";
+            BalanceTextBox.Size = new Size(366, 29);
+            BalanceTextBox.TabIndex = 10;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.Location = new Point(34, 148);
+            label13.Name = "label13";
+            label13.Size = new Size(124, 21);
+            label13.TabIndex = 9;
+            label13.Text = "Начален баланс";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label14.Location = new Point(34, 209);
+            label14.Name = "label14";
+            label14.Size = new Size(58, 21);
+            label14.TabIndex = 3;
+            label14.Text = "Валута";
             // 
             // FormTeller
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1155, 525);
-            Controls.Add(btnLogOut);
+            Controls.Add(tabControl1);
             Controls.Add(panel1);
-            Controls.Add(groupBox2);
-            Controls.Add(grpClientManagement);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "FormTeller";
@@ -448,8 +713,14 @@
             groupBox2.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
+            tabPage3.ResumeLayout(false);
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -487,5 +758,27 @@
         private Button btnLogOut;
         private ImageList imageList1;
         private PictureBox pictureBox2;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
+        private TabPage tabPage3;
+        private GroupBox groupBox1;
+        private TextBox EgnTextBox;
+        private Label label15;
+        private TextBox IbanTextBox;
+        private Label label12;
+        private Button button1;
+        private TextBox BalanceTextBox;
+        private Label label13;
+        private Label label14;
+        private Label label17;
+        private TextBox CardNumberTextBox;
+        private Label label16;
+        private ComboBox CurrencyComboBox;
+        private ComboBox CardTypeComboBox;
+        private TextBox CVVTextBox;
+        private Label label19;
+        private TextBox ExpiryDateTextBox;
+        private Label label18;
     }
 }

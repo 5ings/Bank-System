@@ -136,6 +136,8 @@ D:\PETYA\Visual Stdio\Bank System\Bank System\BankSystem.Controller\obj\Debug\ne
 D:\PETYA\Visual Stdio\Bank System\Bank System\BankSystem.Controller\obj\Debug\net8.0\BankSystem.Controller.pdb
 D:\PETYA\Visual Stdio\Bank System\Bank System\BankSystem.Controller\obj\Debug\net8.0\BankSystem.Controller.genruntimeconfig.cache
 D:\PETYA\Visual Stdio\Bank System\Bank System\BankSystem.Controller\obj\Debug\net8.0\ref\BankSystem.Controller.dll
+D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\BankSystem.Data.deps.json
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\BankSystem.Data.runtimeconfig.json
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\BankSystem.Data.exe
@@ -148,7 +150,6 @@ D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Control
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\Azure.Identity.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -181,7 +182,6 @@ D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Control
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\System.Security.Permissions.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\System.Windows.Extensions.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
@@ -199,6 +199,7 @@ D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Control
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\obj\Debug\net8.0\BankSystem.Controller.AssemblyInfoInputs.cache
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\obj\Debug\net8.0\BankSystem.Controller.AssemblyInfo.cs
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\obj\Debug\net8.0\BankSystem.Controller.csproj.CoreCompileInputs.cache
+D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\obj\Debug\net8.0\BankSystem.Controller.sourcelink.json
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\obj\Debug\net8.0\BankSyst.26967C26.Up2Date
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\obj\Debug\net8.0\BankSystem.Controller.dll
 D:\PETYA\Visual Studio P\Bank System1\Bank System\Bank System\BankSystem.Controller\obj\Debug\net8.0\refint\BankSystem.Controller.dll

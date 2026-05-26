@@ -145,7 +145,25 @@ namespace BankSystem.UI
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Грешка при изтриване: {ex.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (ex.InnerException != null && ex.InnerException.Message.Contains("REFERENCE constraint"))
+                    {
+                        DialogResult deactivateResult = MessageBox.Show(
+                            "Този потребител не може да бъде изтрит физически, тъй като има финансова история, банкови сметки или системни одит логове. Сигурността на банката не позволява изтриването му!\n\nИскате ли да ДЕАКТИВИРАТЕ профила му вместо това?",
+                            "Опция за сигурност", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                        if (deactivateResult == DialogResult.OK)
+                        {
+                            await _userController.DeactivateUser(selectedUser.UserID);
+
+                            MessageBox.Show("Профилът беше успешно деактивиран и достъпът му до системата е спрян!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            await RefreshDataAndLogs();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Грешка при изтриване: {ex.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }
@@ -157,6 +175,8 @@ namespace BankSystem.UI
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
+            FormLogin loginForm = new FormLogin();
+            loginForm.ShowDialog();
             this.Close();
         }
     }

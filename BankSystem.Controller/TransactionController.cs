@@ -14,77 +14,70 @@ namespace BankSystem.Controller
     {
         public async Task TransferMoney(int sourceAccountId, string targetIban, decimal amount)
         {
-            if (amount <= 0)
-                throw new ArgumentException("Сумата на превода трябва да бъде положително число!");
+            if (amount <= 0) throw new ArgumentException("Сумата трябва да е положителна!");
+            if (string.IsNullOrWhiteSpace(targetIban)) throw new ArgumentException("IBAN не може да е празен!");
 
-            if (string.IsNullOrWhiteSpace(targetIban))
-                throw new ArgumentException("IBAN-ът на получателя не може да бъде празен!");
-
-            using (BankDbContext context = new BankDbContext())
+            using (var context = new BankDbContext())
             {
                 using (var dbTransaction = await context.Database.BeginTransactionAsync())
                 {
                     var sourceAcc = await context.Accounts.FirstOrDefaultAsync(a => a.AccountID == sourceAccountId);
-                    if (sourceAcc == null)
-                        throw new Exception("Сметката на изпращача не съществува!");
-                    if (sourceAcc.Balance < amount)
-                        throw new Exception("Нямате достатъчна наличност по сметката!");
-
                     var targetAcc = await context.Accounts.FirstOrDefaultAsync(a => a.IBAN == targetIban.Trim());
-                    if (targetAcc == null)
-                        throw new Exception("Сметката на получателя с този IBAN не е намерена!");
 
-                    if (sourceAcc.AccountID == targetAcc.AccountID)
-                        throw new InvalidOperationException("Не можете да правите превод към същата сметка!");
+                    if (sourceAcc == null) throw new Exception("Подателят не е намерен!");
+                    if (targetAcc == null) throw new Exception("Сметка с такъв IBAN не съществува!");
+                    if (sourceAcc.AccountID == targetAcc.AccountID) throw new InvalidOperationException("Не може превод към същата сметка!");
+                    if (sourceAcc.Balance < amount) throw new Exception("Недостатъчна наличност!");
+
+                    decimal amountToCredit = amount;
+                    if (sourceAcc.Currency != targetAcc.Currency)
+                    {
+                        decimal rate = GetExchangeRate(sourceAcc.Currency, targetAcc.Currency);
+                        amountToCredit = amount * rate;
+                    }
 
                     sourceAcc.Balance -= amount;
-                    targetAcc.Balance += amount;
+                    targetAcc.Balance += amountToCredit;
 
-                    var txSource = new BankSystem.Data.Entities.Transaction
+                    var tx = new BankSystem.Data.Entities.Transaction
                     {
-                        AccountID = sourceAcc.AccountID,
-                        Amount = -amount,
-                        TransactionType = $"Превод към {targetIban}",
-                        TransactionDate = DateTime.Now
-                    };
-
-                    var txTarget = new BankSystem.Data.Entities.Transaction
-                    {
-                        AccountID = targetAcc.AccountID,
+                        FromAccountID = sourceAcc.AccountID,
+                        ToAccountID = targetAcc.AccountID,
                         Amount = amount,
-                        TransactionType = $"Превод от {sourceAcc.IBAN}",
                         TransactionDate = DateTime.Now
                     };
 
-                    await context.Transactions.AddAsync(txSource);
-                    await context.Transactions.AddAsync(txTarget);
-
+                    context.Transactions.Add(tx);
                     await context.SaveChangesAsync();
                     await dbTransaction.CommitAsync();
                 }
             }
         }
+        private decimal GetExchangeRate(string fromCurrency, string toCurrency)
+        {
+            if (fromCurrency == toCurrency) return 1.0m;
+
+            if (fromCurrency == "USD" && toCurrency == "EUR") return 0.92m;
+            if (fromCurrency == "EUR" && toCurrency == "USD") return 1.08m;
+
+            throw new Exception($"Няма дефиниран валутен курс за {fromCurrency} към {toCurrency}");
+        }
 
         public async Task DepositMoney(int accountId, decimal amount)
         {
-            if (amount <= 0) throw new ArgumentException("Внесената сума трябва да е по-голяма от 0 лв.");
-
-            using (BankDbContext context = new BankDbContext())
+            using (var context = new BankDbContext())
             {
                 var account = await context.Accounts.FirstOrDefaultAsync(a => a.AccountID == accountId);
-                if (account == null) throw new Exception("Сметката не е намерена.");
-
                 account.Balance += amount;
 
-                var depositTx = new BankSystem.Data.Entities.Transaction
+                var tx = new BankSystem.Data.Entities.Transaction
                 {
-                    AccountID = accountId,
+                    FromAccountID = 0,
+                    ToAccountID = accountId,
                     Amount = amount,
-                    TransactionType = "Депозит",
                     TransactionDate = DateTime.Now
                 };
-
-                await context.Transactions.AddAsync(depositTx);
+                await context.Transactions.AddAsync(tx);
                 await context.SaveChangesAsync();
             }
         }
@@ -94,7 +87,7 @@ namespace BankSystem.Controller
             using (BankDbContext context = new BankDbContext())
             {
                 return await context.Transactions
-                    .Where(t => t.AccountID == accountId)
+                    .Where(t => t.FromAccountID == accountId || t.ToAccountID == accountId)
                     .OrderByDescending(t => t.TransactionDate)
                     .ToListAsync();
             }
@@ -138,9 +131,9 @@ namespace BankSystem.Controller
 
                 var withdrawTx = new BankSystem.Data.Entities.Transaction
                 {
-                    AccountID = accountId,
-                    Amount = -amount, 
-                    TransactionType = "Теглене в брой",
+                    FromAccountID = accountId, 
+                    ToAccountID = null,         
+                    Amount = amount,        
                     TransactionDate = DateTime.Now
                 };
 

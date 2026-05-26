@@ -40,13 +40,13 @@
             label2 = new Label();
             dgvAccounts = new DataGridView();
             groupBox2 = new GroupBox();
+            MyAccountsComboBox = new ComboBox();
             button1 = new Button();
             imageList1 = new ImageList(components);
-            txtClientAmount = new TextBox();
+            AmountTextBox = new TextBox();
             lblAmount = new Label();
-            txtToIban = new TextBox();
+            RecipientIbanTextBox = new TextBox();
             lblToIban = new Label();
-            txtFromIban = new TextBox();
             lblFromIban = new Label();
             btnLogOut = new Button();
             panel1 = new Panel();
@@ -151,16 +151,17 @@
             dgvAccounts.ReadOnly = true;
             dgvAccounts.Size = new Size(520, 210);
             dgvAccounts.TabIndex = 5;
+            dgvAccounts.CellContentClick += dgvAccounts_CellContentClick;
             // 
             // groupBox2
             // 
             groupBox2.BackColor = Color.LightSteelBlue;
+            groupBox2.Controls.Add(MyAccountsComboBox);
             groupBox2.Controls.Add(button1);
-            groupBox2.Controls.Add(txtClientAmount);
+            groupBox2.Controls.Add(AmountTextBox);
             groupBox2.Controls.Add(lblAmount);
-            groupBox2.Controls.Add(txtToIban);
+            groupBox2.Controls.Add(RecipientIbanTextBox);
             groupBox2.Controls.Add(lblToIban);
-            groupBox2.Controls.Add(txtFromIban);
             groupBox2.Controls.Add(lblFromIban);
             groupBox2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox2.Location = new Point(580, 90);
@@ -169,6 +170,15 @@
             groupBox2.TabIndex = 6;
             groupBox2.TabStop = false;
             groupBox2.Text = "groupBox2";
+            // 
+            // MyAccountsComboBox
+            // 
+            MyAccountsComboBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            MyAccountsComboBox.FormattingEnabled = true;
+            MyAccountsComboBox.Location = new Point(25, 50);
+            MyAccountsComboBox.Name = "MyAccountsComboBox";
+            MyAccountsComboBox.Size = new Size(485, 25);
+            MyAccountsComboBox.TabIndex = 9;
             // 
             // button1
             // 
@@ -185,6 +195,7 @@
             button1.TabIndex = 8;
             button1.Text = "Потвърди и изпрати превода";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // imageList1
             // 
@@ -194,54 +205,47 @@
             imageList1.Images.SetKeyName(0, "TransferTo.png");
             imageList1.Images.SetKeyName(1, "Exit.png");
             // 
-            // txtClientAmount
+            // AmountTextBox
             // 
-            txtClientAmount.Location = new Point(25, 182);
-            txtClientAmount.Name = "txtClientAmount";
-            txtClientAmount.Size = new Size(220, 25);
-            txtClientAmount.TabIndex = 7;
-            txtClientAmount.TextAlign = HorizontalAlignment.Right;
+            AmountTextBox.Location = new Point(25, 182);
+            AmountTextBox.Name = "AmountTextBox";
+            AmountTextBox.Size = new Size(220, 25);
+            AmountTextBox.TabIndex = 7;
+            AmountTextBox.TextAlign = HorizontalAlignment.Right;
             // 
             // lblAmount
             // 
             lblAmount.AutoSize = true;
             lblAmount.Location = new Point(25, 160);
             lblAmount.Name = "lblAmount";
-            lblAmount.Size = new Size(45, 17);
+            lblAmount.Size = new Size(40, 17);
             lblAmount.TabIndex = 6;
-            lblAmount.Text = "label3";
+            lblAmount.Text = "Сума";
             // 
-            // txtToIban
+            // RecipientIbanTextBox
             // 
-            txtToIban.Location = new Point(25, 117);
-            txtToIban.Name = "txtToIban";
-            txtToIban.Size = new Size(485, 25);
-            txtToIban.TabIndex = 5;
+            RecipientIbanTextBox.Location = new Point(25, 117);
+            RecipientIbanTextBox.Name = "RecipientIbanTextBox";
+            RecipientIbanTextBox.Size = new Size(485, 25);
+            RecipientIbanTextBox.TabIndex = 5;
             // 
             // lblToIban
             // 
             lblToIban.AutoSize = true;
             lblToIban.Location = new Point(25, 95);
             lblToIban.Name = "lblToIban";
-            lblToIban.Size = new Size(45, 17);
+            lblToIban.Size = new Size(129, 17);
             lblToIban.TabIndex = 4;
-            lblToIban.Text = "label3";
-            // 
-            // txtFromIban
-            // 
-            txtFromIban.Location = new Point(25, 52);
-            txtFromIban.Name = "txtFromIban";
-            txtFromIban.Size = new Size(485, 25);
-            txtFromIban.TabIndex = 3;
+            lblToIban.Text = "IBAN на получател";
             // 
             // lblFromIban
             // 
             lblFromIban.AutoSize = true;
             lblFromIban.Location = new Point(25, 30);
             lblFromIban.Name = "lblFromIban";
-            lblFromIban.Size = new Size(45, 17);
+            lblFromIban.Size = new Size(39, 17);
             lblFromIban.TabIndex = 2;
-            lblFromIban.Text = "label3";
+            lblFromIban.Text = "IBAN";
             // 
             // btnLogOut
             // 
@@ -313,16 +317,16 @@
         private Label label2;
         private DataGridView dgvAccounts;
         private GroupBox groupBox2;
-        private TextBox txtFromIban;
         private Label lblFromIban;
         private Button button1;
-        private TextBox txtClientAmount;
+        private TextBox AmountTextBox;
         private Label lblAmount;
-        private TextBox txtToIban;
+        private TextBox RecipientIbanTextBox;
         private Label lblToIban;
         private Button btnLogOut;
         private Panel panel1;
         private PictureBox pictureBox2;
         private ImageList imageList1;
+        private ComboBox MyAccountsComboBox;
     }
 }

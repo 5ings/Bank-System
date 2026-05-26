@@ -16,6 +16,7 @@ namespace BankSystem.Data.Entities
 
         public Client Client { get; set; }
         public ICollection<BankCard> BankCards { get; set; } = new List<BankCard>();
-        public ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
+        public ICollection<Transaction> SentTransactions { get; set; } = new List<Transaction>();
+        public ICollection<Transaction> ReceivedTransactions { get; set; } = new List<Transaction>();
     }
 }

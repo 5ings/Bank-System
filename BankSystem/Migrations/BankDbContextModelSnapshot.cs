@@ -211,17 +211,22 @@ namespace BankSystem.Data.Migrations
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int?>("FromAccountID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ToAccountID")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("TransactionDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("TransactionType")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("TransactionID");
 
                     b.HasIndex("AccountID");
+
+                    b.HasIndex("FromAccountID");
+
+                    b.HasIndex("ToAccountID");
 
                     b.ToTable("Transactions");
                 });
@@ -236,6 +241,9 @@ namespace BankSystem.Data.Migrations
 
                     b.Property<int?>("ClientID")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()
@@ -265,6 +273,7 @@ namespace BankSystem.Data.Migrations
                         new
                         {
                             UserID = 1,
+                            IsActive = true,
                             PasswordHash = "Admin123",
                             Role = 1,
                             Username = "admin"
@@ -318,12 +327,26 @@ namespace BankSystem.Data.Migrations
             modelBuilder.Entity("BankSystem.Data.Entities.Transaction", b =>
                 {
                     b.HasOne("BankSystem.Data.Entities.Account", "Account")
-                        .WithMany("Transactions")
+                        .WithMany()
                         .HasForeignKey("AccountID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("BankSystem.Data.Entities.Account", "FromAccount")
+                        .WithMany("SentTransactions")
+                        .HasForeignKey("FromAccountID")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("BankSystem.Data.Entities.Account", "ToAccount")
+                        .WithMany("ReceivedTransactions")
+                        .HasForeignKey("ToAccountID")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.Navigation("Account");
+
+                    b.Navigation("FromAccount");
+
+                    b.Navigation("ToAccount");
                 });
 
             modelBuilder.Entity("BankSystem.Data.Entities.User", b =>
@@ -340,7 +363,9 @@ namespace BankSystem.Data.Migrations
                 {
                     b.Navigation("BankCards");
 
-                    b.Navigation("Transactions");
+                    b.Navigation("ReceivedTransactions");
+
+                    b.Navigation("SentTransactions");
                 });
 
             modelBuilder.Entity("BankSystem.Data.Entities.Client", b =>

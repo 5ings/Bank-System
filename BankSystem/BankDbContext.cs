@@ -11,6 +11,13 @@ namespace BankSystem.Data
 {
     public class BankDbContext : DbContext
     {
+        public BankDbContext(DbContextOptions<BankDbContext> options) : base(options)
+        {
+        }
+
+        public BankDbContext()
+        {
+        }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Account> Accounts { get; set; }
         public DbSet<BankCard> BankCards { get; set; }
@@ -87,13 +94,17 @@ namespace BankSystem.Data
             {
                 entity.HasKey(t => t.TransactionID);
                 entity.Property(t => t.Amount).IsRequired().HasPrecision(18, 2);
-                entity.Property(t => t.TransactionType).IsRequired().HasMaxLength(20);
                 entity.Property(t => t.TransactionDate).IsRequired();
 
-                entity.HasOne(t => t.Account)
-                      .WithMany(a => a.Transactions)
-                      .HasForeignKey(t => t.AccountID)
-                      .OnDelete(DeleteBehavior.Cascade);
+                entity.HasOne(t => t.FromAccount)
+                      .WithMany(a => a.SentTransactions)
+                      .HasForeignKey(t => t.FromAccountID)
+                      .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(t => t.ToAccount)
+                      .WithMany(a => a.ReceivedTransactions)
+                      .HasForeignKey(t => t.ToAccountID)
+                      .OnDelete(DeleteBehavior.Restrict);
             });
 
             modelBuilder.Entity<Loan>(entity =>

@@ -13,6 +13,7 @@ namespace BankSystem.Controller
     {
         public async Task<User> LoginUser(string username, string password)
         {
+
             using (BankDbContext context = new BankDbContext())
             {
                 return await context.Users
@@ -60,6 +61,19 @@ namespace BankSystem.Controller
                 if (user != null)
                 {
                     context.Users.Remove(user);
+                    await context.SaveChangesAsync();
+                }
+            }
+        }
+
+        public async Task DeactivateUser(int userId)
+        {
+            using (BankDbContext context = new BankDbContext())
+            {
+                var user = await context.Users.FindAsync(userId);
+                if (user != null)
+                {
+                    user.IsActive = false;
                     await context.SaveChangesAsync();
                 }
             }

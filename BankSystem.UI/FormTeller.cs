@@ -1,4 +1,5 @@
 ﻿using BankSystem.Controller;
+using BankSystem.Data;
 using BankSystem.Data.Entities;
 using BankSystem.Data.Enums;
 using System;
@@ -218,7 +219,75 @@ namespace BankSystem.UI
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
+            FormLogin loginForm = new FormLogin();
+            loginForm.ShowDialog();
             this.Close();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var context = new BankDbContext())
+                {
+                    string egn = EgnTextBox.Text.Trim();
+                    var client = context.Clients.FirstOrDefault(c => c.EGN == egn);
+
+                    if (client == null)
+                    {
+                        MessageBox.Show("Грешка: Не е намерен клиент с такова ЕГН!");
+                        return;
+                    }
+
+                    var newAccount = new Account
+                    {
+                        ClientID = client.ClientID,
+                        IBAN = IbanTextBox.Text.Trim(),
+                        Balance = decimal.Parse(BalanceTextBox.Text),
+                        Currency = CurrencyComboBox.Text 
+                    };
+                    context.Accounts.Add(newAccount);
+                    await context.SaveChangesAsync();
+
+                    CardType selectedType = (CardType)Enum.Parse(typeof(CardType), CardTypeComboBox.Text);
+
+                    var newCard = new BankCard
+                    {
+                        AccountID = newAccount.AccountID,
+                        CardNumber = CardNumberTextBox.Text.Trim(),
+                        CardType = selectedType,
+                        ExpiryDate = ExpiryDateTextBox.Text.Trim(),
+                        CVV = CVVTextBox.Text.Trim()
+                    };
+                    context.BankCards.Add(newCard);
+                    await context.SaveChangesAsync();
+
+                    MessageBox.Show($"Успешно създадена сметка и карта за {client.FirstName}!");
+                    ClearFields();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Грешка при запис: " + ex.Message);
+            }
+        }
+
+        private void ClearFields()
+        {
+            EgnTextBox.Clear();
+            IbanTextBox.Clear();
+            BalanceTextBox.Clear();
+            CardNumberTextBox.Clear();
+            ExpiryDateTextBox.Clear();
+            CVVTextBox.Clear();
+
+            CurrencyComboBox.SelectedIndex = -1;
+            CardTypeComboBox.SelectedIndex = -1;
         }
     }
 }

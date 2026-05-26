@@ -9,9 +9,12 @@ namespace BankSystem.Data.Entities
     public class Transaction
     {
         public int TransactionID { get; set; }
-        public int AccountID { get; set; }
+        public int? FromAccountID { get; set; }
+        public Account FromAccount { get; set; }
+        public int? ToAccountID { get; set; }
+        public Account ToAccount { get; set; }
+
         public decimal Amount { get; set; }
-        public string TransactionType { get; set; }
         public DateTime TransactionDate { get; set; }
 
         public Account Account { get; set; }
