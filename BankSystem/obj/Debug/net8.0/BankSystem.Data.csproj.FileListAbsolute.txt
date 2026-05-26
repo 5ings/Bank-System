@@ -524,3 +524,12 @@ C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\obj\Debug\net8.0\refint\BankS
 C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\obj\Debug\net8.0\BankSystem.Data.pdb
 C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\obj\Debug\net8.0\BankSystem.Data.genruntimeconfig.cache
 C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\obj\Debug\net8.0\ref\BankSystem.Data.dll
+C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\11B_8\Source\Repos\Bank-System\BankSystem\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
