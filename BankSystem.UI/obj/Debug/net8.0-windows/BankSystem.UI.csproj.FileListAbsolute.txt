@@ -416,4 +416,3 @@ C:\Users\11B_8\Source\Repos\Bank-System\BankSystem.UI\bin\Debug\net8.0-windows\M
 C:\Users\11B_8\Source\Repos\Bank-System\BankSystem.UI\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
 C:\Users\11B_8\Source\Repos\Bank-System\BankSystem.UI\bin\Debug\net8.0-windows\System.Text.Json.dll
 C:\Users\11B_8\Source\Repos\Bank-System\BankSystem.UI\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\11B_8\Source\Repos\Bank-System\BankSystem.UI\bin\Debug\net8.0-windows\appsettings.json

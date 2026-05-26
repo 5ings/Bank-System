@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\bank-system\\banksystem.ui\\formwelcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\11b_8\\source\\repos\\bank-system\\banksystem\\bankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:bankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -14,13 +17,7 @@
       "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\bank-system\\banksystem.ui\\formclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\bank-system\\banksystem.ui\\formwelcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\bank-system\\banksystem.ui\\formteller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\bank-system\\banksystem.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|c:\\users\\11b_8\\source\\repos\\bank-system\\banksystem.controller\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -123,7 +120,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -141,20 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem.UI\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\appsettings.json",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem.UI\\appsettings.json",
-              "RelativeToolTip": "..\\BankSystem.UI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-26T11:35:01.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "FormWelcome.cs [Design]",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem.UI\\FormWelcome.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormWelcome.cs",
@@ -166,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FormClient.cs [Design]",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem.UI\\FormClient.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormClient.cs",
@@ -178,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "TransactionController.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem.Controller\\TransactionController.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Controller\\TransactionController.cs",
@@ -190,20 +174,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BankDbContext.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\BankDbContext.cs",
               "RelativeDocumentMoniker": "BankDbContext.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\BankDbContext.cs*",
-              "RelativeToolTip": "BankDbContext.cs*",
-              "ViewState": "AgIAABkAAAAAAAAAAAA3wB8AAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\BankDbContext.cs",
+              "RelativeToolTip": "BankDbContext.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAA3wCAAAACaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T00:24:35.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "20260526111836_CreateDB.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\Migrations\\20260526111836_CreateDB.cs",
               "RelativeDocumentMoniker": "Migrations\\20260526111836_CreateDB.cs",
@@ -214,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "FormTeller.cs [Design]",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem.UI\\FormTeller.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormTeller.cs",
@@ -225,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "FormLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem.UI\\FormLogin.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormLogin.cs",
@@ -236,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "FormAdmin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem.UI\\FormAdmin.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormAdmin.cs",
@@ -247,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "TransactionController.cs",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\TransactionController.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\TransactionController.cs",
@@ -256,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\Entities\\Transaction.cs",
               "RelativeDocumentMoniker": "Entities\\Transaction.cs",
@@ -268,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "FormTeller.cs [Design]",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs [Design]",
@@ -277,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\Enums\\UserRole.cs",
               "RelativeDocumentMoniker": "Enums\\UserRole.cs",
@@ -289,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "LoanStatus.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\Enums\\LoanStatus.cs",
               "RelativeDocumentMoniker": "Enums\\LoanStatus.cs",
@@ -301,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "Loan.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\Entities\\Loan.cs",
               "RelativeDocumentMoniker": "Entities\\Loan.cs",
@@ -313,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\Entities\\Client.cs",
               "RelativeDocumentMoniker": "Entities\\Client.cs",
@@ -325,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "BankCard.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\Entities\\BankCard.cs",
               "RelativeDocumentMoniker": "Entities\\BankCard.cs",
@@ -337,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "SystemLogController.cs",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\SystemLogController.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\SystemLogController.cs",
@@ -347,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\Program.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\Program.cs",
@@ -357,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "LoanController.cs",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\LoanController.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\LoanController.cs",
@@ -367,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "BankCardController.cs",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\BankCardController.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\BankCardController.cs",
@@ -377,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\AccountController.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\AccountController.cs",
@@ -387,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\Entities\\Account.cs",
               "RelativeDocumentMoniker": "Entities\\Account.cs",
@@ -399,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "CardType.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\Enums\\CardType.cs",
               "RelativeDocumentMoniker": "Enums\\CardType.cs",
@@ -411,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "FormTeller.cs",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormTeller.cs",
@@ -421,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "ClientController.cs",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\ClientController.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\ClientController.cs",
@@ -431,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\UserController.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\UserController.cs",
@@ -441,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Entities\\User.cs",
@@ -453,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "FormLogin.cs",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormLogin.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormLogin.cs",
@@ -462,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "FormAdmin.cs",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormAdmin.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormAdmin.cs",
@@ -471,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "FormAdmin.cs [Design]",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormAdmin.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormAdmin.cs [Design]",
@@ -480,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "FormLogin.cs [Design]",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormLogin.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormLogin.cs [Design]",
@@ -489,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "FormWelcome.cs [Design]",
               "DocumentMoniker": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormWelcome.cs",
               "ToolTip": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.UI\\FormWelcome.cs [Design]",

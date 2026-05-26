@@ -245,7 +245,7 @@ namespace BankSystem.UI
                         ClientID = client.ClientID,
                         IBAN = IbanTextBox.Text.Trim(),
                         Balance = decimal.Parse(BalanceTextBox.Text),
-                        Currency = CurrencyComboBox.Text 
+                        Currency = CurrencyComboBox.Text
                     };
                     context.Accounts.Add(newAccount);
                     await context.SaveChangesAsync();
@@ -284,6 +284,20 @@ namespace BankSystem.UI
 
             CurrencyComboBox.SelectedIndex = -1;
             CardTypeComboBox.SelectedIndex = -1;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormLogin loginForm = new FormLogin();
+            loginForm.ShowDialog();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormLogin loginForm = new FormLogin();
+            loginForm.ShowDialog();
+            this.Close();
         }
     }
 }
