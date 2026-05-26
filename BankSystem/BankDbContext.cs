@@ -28,8 +28,8 @@ namespace BankSystem.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer("Server=STUDENT19\\SQLEXPRESS;Database=BankSystemDB;Trusted_Connection=True;TrustServerCertificate=True");
-            optionsBuilder.UseSqlServer("Server=DESKTOP-S5BRTDA\\SQLEXPRESS;Database=BankSystemDB;Trusted_Connection=True;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server=STUDENT19\\SQLEXPRESS;Database=BankSystemDB;Trusted_Connection=True;TrustServerCertificate=True");
+            //optionsBuilder.UseSqlServer("Server=DESKTOP-S5BRTDA\\SQLEXPRESS;Database=BankSystemDB;Trusted_Connection=True;TrustServerCertificate=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

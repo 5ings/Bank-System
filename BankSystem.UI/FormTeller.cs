@@ -131,11 +131,7 @@ namespace BankSystem.UI
             {
                 var account = await _transactionController.GetAccountByIban(sourceIban);
 
-                if (account == null)
-                {
-                    MessageBox.Show("Не съществува сметка с такъв IBAN!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                if (account == null) return;
 
                 await _transactionController.DepositMoney(account.AccountID, amount);
 
@@ -145,7 +141,10 @@ namespace BankSystem.UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Грешка: {ex.Message}", "Системна грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string msg = ex.Message;
+                if (ex.InnerException != null) msg += "\n\nДетайли: " + ex.InnerException.Message;
+
+                MessageBox.Show($"Грешка: {msg}", "Системна грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -163,22 +162,20 @@ namespace BankSystem.UI
             {
                 var account = await _transactionController.GetAccountByIban(sourceIban);
 
-                if (account == null)
-                {
-                    MessageBox.Show("Не съществува сметка с такъв IBAN!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-
                 await _transactionController.WithdrawMoney(account.AccountID, amount);
 
                 await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} изтегли {amount:F2} лв. от IBAN {sourceIban}.");
                 MessageBox.Show($"Успешно изтеглени {amount:F2} лв.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 txtAmount.Clear();
+                txtSourceIban.Clear();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Грешка: {ex.Message}", "Системна грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string errorMessage = ex.Message;
+                if (ex.InnerException != null) errorMessage += "\n\nДетайли: " + ex.InnerException.Message;
+
+                MessageBox.Show($"Грешка: {errorMessage}", "Системна грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -198,22 +195,21 @@ namespace BankSystem.UI
                 var sourceAccount = await _transactionController.GetAccountByIban(sourceIban);
                 var targetAccount = await _transactionController.GetAccountByIban(targetIban);
 
-                if (sourceAccount == null || targetAccount == null)
-                {
-                    MessageBox.Show("Един от въведените IBAN-и не съществува!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                await _transactionController.TransferMoney(sourceAccount.AccountID, txtTargetIban.Text, amount);
+                await _transactionController.TransferMoney(sourceAccount.AccountID, targetIban, amount);
 
                 await _logController.LogAction(_currentTeller.UserID, $"Превод на {amount:F2} лв. от IBAN {sourceIban} към IBAN {targetIban}.");
+
                 MessageBox.Show("Преводът беше изпълнен успешно!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 txtAmount.Clear();
                 txtTargetIban.Clear();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Грешка при превода: {ex.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string errorMessage = ex.Message;
+                if (ex.InnerException != null) errorMessage += "\n\nДетайли: " + ex.InnerException.Message;
+
+                MessageBox.Show($"Грешка при превода: {errorMessage}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

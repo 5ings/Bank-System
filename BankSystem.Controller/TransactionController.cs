@@ -67,17 +67,20 @@ namespace BankSystem.Controller
         {
             using (var context = new BankDbContext())
             {
-                var account = await context.Accounts.FirstOrDefaultAsync(a => a.AccountID == accountId);
+                var account = await context.Accounts.FindAsync(accountId);
+                if (account == null) throw new Exception("Сметката не е намерена!");
+
                 account.Balance += amount;
 
                 var tx = new BankSystem.Data.Entities.Transaction
                 {
-                    FromAccountID = 0,
+                    FromAccountID = null,
                     ToAccountID = accountId,
                     Amount = amount,
                     TransactionDate = DateTime.Now
                 };
-                await context.Transactions.AddAsync(tx);
+
+                context.Transactions.Add(tx);
                 await context.SaveChangesAsync();
             }
         }
@@ -120,7 +123,7 @@ namespace BankSystem.Controller
 
             using (var context = new BankDbContext())
             {
-                var account = await context.Accounts.FirstOrDefaultAsync(a => a.AccountID == accountId);
+                var account = await context.Accounts.FindAsync(accountId);
                 if (account == null)
                     throw new Exception("Сметката не е намерена!");
 
@@ -132,8 +135,8 @@ namespace BankSystem.Controller
                 var withdrawTx = new BankSystem.Data.Entities.Transaction
                 {
                     FromAccountID = accountId, 
-                    ToAccountID = null,         
-                    Amount = amount,        
+                    ToAccountID = null,       
+                    Amount = amount,
                     TransactionDate = DateTime.Now
                 };
 

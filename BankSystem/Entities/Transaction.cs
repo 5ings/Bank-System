@@ -17,6 +17,5 @@ namespace BankSystem.Data.Entities
         public decimal Amount { get; set; }
         public DateTime TransactionDate { get; set; }
 
-        public Account Account { get; set; }
     }
 }
