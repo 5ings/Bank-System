@@ -328,3 +328,4 @@ C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\bin\Debug\net8.
 C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\obj\Debug\net8.0\BankSyst.4DDC5804.Up2Date
 C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\obj\Debug\net8.0\BankSystem.Tests.genruntimeconfig.cache
 C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\obj\Debug\net8.0\ref\BankSystem.Tests.dll
+C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\bin\Debug\net8.0\appsettings.json

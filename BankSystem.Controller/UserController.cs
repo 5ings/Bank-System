@@ -11,6 +11,16 @@ namespace BankSystem.Controller
 {
     public class UserController
     {
+        //public BankDbContext Context { get; set; }
+        //public UserController()
+        //{
+        //    Context = new BankDbContext();
+        //}
+
+        //public UserController(BankDbContext context)
+        //{
+        //    Context = context;
+        //}
         public async Task<User> LoginUser(string username, string password)
         {
 

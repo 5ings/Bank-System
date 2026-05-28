@@ -562,3 +562,4 @@ C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.UI\obj\Debug\net8.0-w
 C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.UI\obj\Debug\net8.0-windows\BankSystem.UI.pdb
 C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.UI\obj\Debug\net8.0-windows\BankSystem.UI.genruntimeconfig.cache
 C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.UI\obj\Debug\net8.0-windows\ref\BankSystem.UI.dll
+C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.UI\bin\Debug\net8.0-windows\appsettings.json

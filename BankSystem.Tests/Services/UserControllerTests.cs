@@ -4,7 +4,7 @@ using BankSystem.Data.Entities;
 using BankSystem.Data.Enums;
 using Microsoft.EntityFrameworkCore;
 
-namespace BankSystem.Tests
+namespace BankSystem.Tests.Services
 {
     public class UserControllerTests
     {
@@ -18,7 +18,7 @@ namespace BankSystem.Tests
 
         [Test]
         public async Task Test_1_CreateUser_ShouldAddNewUserToDatabase()
-        { 
+        {
             string uniqueUsername = "test_create_" + Guid.NewGuid().ToString().Substring(0, 8);
             var newUser = new User
             {

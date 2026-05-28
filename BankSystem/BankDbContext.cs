@@ -31,8 +31,15 @@ namespace BankSystem.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=STUDENT19\\SQLEXPRESS;Database=BankSystemDB;Trusted_Connection=True;TrustServerCertificate=True");
-                //optionsBuilder.UseSqlServer("Server=DESKTOP-S5BRTDA\\SQLEXPRESS;Database=BankSystemDB;Trusted_Connection=True;TrustServerCertificate=True");
+                var configuration = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json")
+                    .Build();
+
+                var connectionString = configuration
+                    .GetConnectionString("SchoolConnection");
+
+                optionsBuilder.UseSqlServer(connectionString);
             }
         }
 
