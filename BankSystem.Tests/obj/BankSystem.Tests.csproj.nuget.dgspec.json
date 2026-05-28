@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Tests\\BankSystem.Tests.csproj": {}
+    "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\BankSystem.Tests.csproj": {}
   },
   "projects": {
-    "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\BankSystem.Controller.csproj": {
+    "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Controller\\BankSystem.Controller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\BankSystem.Controller.csproj",
+        "projectUniqueName": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Controller\\BankSystem.Controller.csproj",
         "projectName": "BankSystem.Controller",
-        "projectPath": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\BankSystem.Controller.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\obj\\",
+        "projectPath": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Controller\\BankSystem.Controller.csproj",
+        "packagesPath": "C:\\Users\\user.DESKTOP-D2R61EI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Controller\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user.DESKTOP-D2R61EI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\BankSystem.Data.csproj": {
-                "projectPath": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\BankSystem.Data.csproj"
+              "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\BankSystem.Data.csproj": {
+                "projectPath": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\BankSystem.Data.csproj"
               }
             }
           }
@@ -69,24 +69,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Tests\\BankSystem.Tests.csproj": {
+    "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\BankSystem.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Tests\\BankSystem.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\BankSystem.Tests.csproj",
         "projectName": "BankSystem.Tests",
-        "projectPath": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Tests\\BankSystem.Tests.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Tests\\obj\\",
+        "projectPath": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\BankSystem.Tests.csproj",
+        "packagesPath": "C:\\Users\\user.DESKTOP-D2R61EI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user.DESKTOP-D2R61EI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -101,11 +101,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\BankSystem.Controller.csproj": {
-                "projectPath": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem.Controller\\BankSystem.Controller.csproj"
+              "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Controller\\BankSystem.Controller.csproj": {
+                "projectPath": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Controller\\BankSystem.Controller.csproj"
               },
-              "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\BankSystem.Data.csproj": {
-                "projectPath": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\BankSystem.Data.csproj"
+              "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\BankSystem.Data.csproj": {
+                "projectPath": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\BankSystem.Data.csproj"
               }
             }
           }
@@ -169,24 +169,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\BankSystem.Data.csproj": {
+    "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\BankSystem.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\BankSystem.Data.csproj",
+        "projectUniqueName": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\BankSystem.Data.csproj",
         "projectName": "BankSystem.Data",
-        "projectPath": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\BankSystem.Data.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\PETYA\\Visual Studio P\\Bank System1\\Bank System\\Bank System\\BankSystem\\obj\\",
+        "projectPath": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\BankSystem.Data.csproj",
+        "packagesPath": "C:\\Users\\user.DESKTOP-D2R61EI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user.DESKTOP-D2R61EI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -232,6 +232,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.27, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[10.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[10.0.8, )"
             }
           },
           "imports": [
@@ -250,7 +258,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
