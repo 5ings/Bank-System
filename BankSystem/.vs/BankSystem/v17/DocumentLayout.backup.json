@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6BB9410-C646-E913-FA32-B7EF9722C587}|..\\BankSystem.Tests\\BankSystem.Tests.csproj|c:\\users\\user.desktop-d2r61ei\\source\\repos\\bank\\banksystem.tests\\helpers\\testdbbank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\user.desktop-d2r61ei\\source\\repos\\bank\\banksystem\\bankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:bankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6BB9410-C646-E913-FA32-B7EF9722C587}|..\\BankSystem.Tests\\BankSystem.Tests.csproj|c:\\users\\user.desktop-d2r61ei\\source\\repos\\bank\\banksystem.tests\\helpers\\testdbbank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\11B_8\\source\\repos\\Bank-System\\BankSystem\\Migrations\\20260526111836_CreateDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -110,30 +110,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TestDbBank.cs",
               "DocumentMoniker": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\Helpers\\TestDbBank.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Tests\\Helpers\\TestDbBank.cs",
-              "ToolTip": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\Helpers\\TestDbBank.cs*",
-              "RelativeToolTip": "..\\BankSystem.Tests\\Helpers\\TestDbBank.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\Helpers\\TestDbBank.cs",
+              "RelativeToolTip": "..\\BankSystem.Tests\\Helpers\\TestDbBank.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-28T09:11:38.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BankDbContext.cs",
               "DocumentMoniker": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\BankDbContext.cs",
               "RelativeDocumentMoniker": "BankDbContext.cs",
-              "ToolTip": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\BankDbContext.cs",
-              "RelativeToolTip": "BankDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAACaAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\BankDbContext.cs*",
+              "RelativeToolTip": "BankDbContext.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCIAAACeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T00:24:35.641Z",
               "EditorCaption": ""
