@@ -11,7 +11,7 @@ public class SystemLogControllerTests
     private int _testUserId;
 
     [SetUp]
-    public async Task Setup()
+    public async Task Setup() 
     {
         using (var context = new BankDbContext())
         {

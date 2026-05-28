@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|c:\\users\\user.desktop-d2r61ei\\source\\repos\\bank\\banksystem.controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F6BB9410-C646-E913-FA32-B7EF9722C587}|..\\BankSystem.Tests\\BankSystem.Tests.csproj|c:\\users\\user.desktop-d2r61ei\\source\\repos\\bank\\banksystem.tests\\services\\systemlogcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,9 +14,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\user.desktop-d2r61ei\\source\\repos\\bank\\banksystem\\bankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:bankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|c:\\users\\user.desktop-d2r61ei\\source\\repos\\bank\\banksystem.controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6BB9410-C646-E913-FA32-B7EF9722C587}|..\\BankSystem.Tests\\BankSystem.Tests.csproj|c:\\users\\user.desktop-d2r61ei\\source\\repos\\bank\\banksystem.tests\\helpers\\testdbbank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -119,11 +119,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BankDbContext.cs",
               "DocumentMoniker": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem\\BankDbContext.cs",
               "RelativeDocumentMoniker": "BankDbContext.cs",
@@ -136,20 +136,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Controller\\UserController.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Controller\\UserController.cs",
-              "ToolTip": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Controller\\UserController.cs",
-              "RelativeToolTip": "..\\BankSystem.Controller\\UserController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBYAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Controller\\UserController.cs*",
+              "RelativeToolTip": "..\\BankSystem.Controller\\UserController.cs*",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwA4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-28T09:54:02.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\Services\\UserControllerTests.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Tests\\Services\\UserControllerTests.cs",
@@ -162,12 +162,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SystemLogControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\Services\\SystemLogControllerTests.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Tests\\Services\\SystemLogControllerTests.cs",
-              "ToolTip": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\Services\\SystemLogControllerTests.cs*",
-              "RelativeToolTip": "..\\BankSystem.Tests\\Services\\SystemLogControllerTests.cs*",
+              "ToolTip": "C:\\Users\\user.DESKTOP-D2R61EI\\source\\repos\\Bank\\BankSystem.Tests\\Services\\SystemLogControllerTests.cs",
+              "RelativeToolTip": "..\\BankSystem.Tests\\Services\\SystemLogControllerTests.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAgwA0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-28T09:47:49.731Z",
