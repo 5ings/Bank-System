@@ -9,3 +9,9 @@
 /BankSystem/.vs/BankSystem/FileContentIndex/a49f4d67-6e4c-4232-bf86-8825757718de.vsidx
 /BankSystem/.vs/BankSystem/FileContentIndex/f9c696d7-e8aa-4347-98bf-0b8c4f0a07a1.vsidx
 /BankSystem/.vs/BankSystem/FileContentIndex
+
+bin/
+obj/
+
+*.user
+*.suo
