@@ -26,6 +26,7 @@ namespace BankSystem.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Loan> Loans { get; set; }
         public DbSet<SystemLog> SystemLogs { get; set; }
+        public DbSet<Complaint> Complaints { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -37,7 +38,7 @@ namespace BankSystem.Data
                     .Build();
 
                 var connectionString = configuration
-                    .GetConnectionString("SchoolConnection");
+                    .GetConnectionString("HomeConnection");
 
                 optionsBuilder.UseSqlServer(connectionString);
             }
@@ -107,6 +108,9 @@ namespace BankSystem.Data
                 entity.Property(t => t.Amount).IsRequired().HasPrecision(18, 2);
                 entity.Property(t => t.TransactionDate).IsRequired();
 
+                entity.Property(t => t.Status).IsRequired();
+                entity.Property(t => t.ApprovedByUserId).IsRequired(false);
+
                 entity.HasOne(t => t.FromAccount)
                       .WithMany(a => a.SentTransactions)
                       .HasForeignKey(t => t.FromAccountID)
@@ -116,6 +120,11 @@ namespace BankSystem.Data
                       .WithMany(a => a.ReceivedTransactions)
                       .HasForeignKey(t => t.ToAccountID)
                       .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(t => t.ApprovedByUser)
+                      .WithMany()
+                      .HasForeignKey(t => t.ApprovedByUserId)
+                      .OnDelete(DeleteBehavior.SetNull);
             });
 
             modelBuilder.Entity<Loan>(entity =>
@@ -143,6 +152,21 @@ namespace BankSystem.Data
                       .WithMany(u => u.SystemLogs)
                       .HasForeignKey(sl => sl.UserID)
                       .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            modelBuilder.Entity<Complaint>(entity =>
+            {
+                entity.HasKey(c => c.ComplaintID);
+                entity.Property(c => c.Subject).IsRequired().HasMaxLength(100);
+                entity.Property(c => c.Message).IsRequired();
+                entity.Property(c => c.CreatedAt).IsRequired();
+                entity.Property(c => c.Status).IsRequired();
+                entity.Property(c => c.ManagerComment).HasMaxLength(500);
+
+                entity.HasOne(c => c.Client)
+                      .WithMany(cl => cl.Complaints) 
+                      .HasForeignKey(c => c.ClientID)
+                      .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<User>().HasData(new User

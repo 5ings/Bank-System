@@ -52,7 +52,7 @@ namespace BankSystem.UI
                     switch (loggedUser.Role)
                     {
                         case UserRole.Admin:
-                            FormAdmin adminForm = new FormAdmin();
+                            FormAdmin adminForm = new FormAdmin(loggedUser);
                             adminForm.ShowDialog();
                             break;
 
@@ -91,14 +91,10 @@ namespace BankSystem.UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Възникна сериозен проблем при комуникацията с базата данни!\nДетайли: {ex.Message}",
-                                "Критична грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show($"Възникна сериозен проблем при комуникацията с базата данни!\nДетайли: {ex.Message}",
+                //                "Критична грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Достъпът отказан", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
 
         }
 

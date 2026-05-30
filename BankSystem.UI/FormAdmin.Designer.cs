@@ -71,7 +71,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1155, 52);
             panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
             // pictureBox2
             // 
@@ -104,7 +103,6 @@
             label1.Size = new Size(461, 32);
             label1.TabIndex = 1;
             label1.Text = "Панел за администрация и сигурност";
-            label1.Click += label1_Click;
             // 
             // tabControl1
             // 
@@ -132,7 +130,6 @@
             btnDeleteUser.TabIndex = 0;
             btnDeleteUser.Text = "Служители";
             btnDeleteUser.UseVisualStyleBackColor = true;
-            btnDeleteUser.Click += btnDeleteUser_Click;
             // 
             // btnLogOut
             // 
@@ -176,6 +173,7 @@
             // 
             dgvUsers.BackgroundColor = Color.WhiteSmoke;
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUsers.EditMode = DataGridViewEditMode.EditOnEnter;
             dgvUsers.Location = new Point(542, 24);
             dgvUsers.Margin = new Padding(3, 2, 3, 2);
             dgvUsers.Name = "dgvUsers";
@@ -326,5 +324,20 @@
         private Button btnLogOut;
         private ImageList imageList1;
         private PictureBox pictureBox2;
+
+        private void SetupDataGridView()
+        {
+            dgvUsers.AutoGenerateColumns = true;
+
+            if (dgvUsers.Columns["IsActive"] != null)
+            { 
+                DataGridViewCheckBoxColumn chk = new DataGridViewCheckBoxColumn();
+                chk.Name = "IsActiveColumn";
+                chk.HeaderText = "Активен";
+                chk.DataPropertyName = "IsActive"; // Името на свойството от класа User
+
+                dgvUsers.Columns.Add(chk);
+            }
+        }
     }
 }

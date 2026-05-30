@@ -1,51 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<coverage line-rate="0.11492146596858639" branch-rate="0.096354166666666671" complexity="706" version="1.9" timestamp="1779962843" lines-covered="439" lines-valid="3820" branches-covered="37" branches-valid="384">
+<coverage line-rate="0.023821989528795811" branch-rate="0.0026041666666666665" complexity="706" version="1.9" timestamp="1780175219" lines-covered="91" lines-valid="3820" branches-covered="1" branches-valid="384">
   <packages>
-    <package line-rate="0.92050209205020916" branch-rate="0.57692307692307687" complexity="39" name="BankSystem.Tests">
+    <package line-rate="0.24267782426778242" branch-rate="0" complexity="39" name="BankSystem.Tests">
       <classes>
-        <class line-rate="1" branch-rate="1" complexity="3" name="BankSystem.Tests.Services.SystemLogControllerTests" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\SystemLogControllerTests.cs">
+        <class line-rate="0" branch-rate="1" complexity="3" name="BankSystem.Tests.Services.SystemLogControllerTests" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\SystemLogControllerTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="LogAction_WithInvalidUserId_ShouldThrowDbUpdateException" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="LogAction_WithInvalidUserId_ShouldThrowDbUpdateException" signature="()">
               <lines>
-                <line number="105" hits="1" branch="False" />
-                <line number="106" hits="1" branch="False" />
-                <line number="107" hits="1" branch="False" />
-                <line number="108" hits="1" branch="False" />
-                <line number="110" hits="1" branch="False" />
-                <line number="114" hits="1" branch="False" />
+                <line number="105" hits="0" branch="False" />
+                <line number="106" hits="0" branch="False" />
+                <line number="107" hits="0" branch="False" />
+                <line number="108" hits="0" branch="False" />
+                <line number="110" hits="0" branch="False" />
+                <line number="114" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="LogAction_WithTooLongDescription_ShouldThrowDbUpdateException" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="LogAction_WithTooLongDescription_ShouldThrowDbUpdateException" signature="()">
               <lines>
-                <line number="118" hits="1" branch="False" />
-                <line number="119" hits="1" branch="False" />
-                <line number="120" hits="1" branch="False" />
-                <line number="122" hits="1" branch="False" />
-                <line number="126" hits="1" branch="False" />
+                <line number="118" hits="0" branch="False" />
+                <line number="119" hits="0" branch="False" />
+                <line number="120" hits="0" branch="False" />
+                <line number="122" hits="0" branch="False" />
+                <line number="126" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;GetAllLogs_ShouldReturnAllLogsOrderedByDateDescending&gt;b__4_0" signature="(BankSystem.Data.Entities.SystemLog)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="&lt;GetAllLogs_ShouldReturnAllLogsOrderedByDateDescending&gt;b__4_0" signature="(BankSystem.Data.Entities.SystemLog)">
               <lines>
-                <line number="97" hits="1" branch="False" />
+                <line number="97" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="97" hits="1" branch="False" />
-            <line number="105" hits="1" branch="False" />
-            <line number="106" hits="1" branch="False" />
-            <line number="107" hits="1" branch="False" />
-            <line number="108" hits="1" branch="False" />
-            <line number="110" hits="1" branch="False" />
-            <line number="114" hits="1" branch="False" />
-            <line number="118" hits="1" branch="False" />
-            <line number="119" hits="1" branch="False" />
-            <line number="120" hits="1" branch="False" />
-            <line number="122" hits="1" branch="False" />
-            <line number="126" hits="1" branch="False" />
+            <line number="97" hits="0" branch="False" />
+            <line number="105" hits="0" branch="False" />
+            <line number="106" hits="0" branch="False" />
+            <line number="107" hits="0" branch="False" />
+            <line number="108" hits="0" branch="False" />
+            <line number="110" hits="0" branch="False" />
+            <line number="114" hits="0" branch="False" />
+            <line number="118" hits="0" branch="False" />
+            <line number="119" hits="0" branch="False" />
+            <line number="120" hits="0" branch="False" />
+            <line number="122" hits="0" branch="False" />
+            <line number="126" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.UserControllerTests" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\UserControllerTests.cs">
+        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.UserControllerTests" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\UserControllerTests.cs">
           <methods>
             <method line-rate="1" branch-rate="1" complexity="1" name="Setup" signature="()">
               <lines>
@@ -61,7 +61,7 @@
             <line number="17" hits="1" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Tests.Helpers.TestDbBank" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Helpers\TestDbBank.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Tests.Helpers.TestDbBank" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Helpers\TestDbBank.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="CreateContext" signature="()">
               <lines>
@@ -87,112 +87,112 @@
             <line number="24" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;GetAllLogs_ShouldReturnAllLogsOrderedByDateDescending&gt;d__4" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\SystemLogControllerTests.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;GetAllLogs_ShouldReturnAllLogsOrderedByDateDescending&gt;d__4" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\SystemLogControllerTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="82" hits="1" branch="False" />
-                <line number="83" hits="1" branch="False" />
-                <line number="84" hits="1" branch="False" />
-                <line number="85" hits="1" branch="False" />
-                <line number="86" hits="1" branch="False" />
-                <line number="88" hits="1" branch="False" />
-                <line number="89" hits="1" branch="False" />
-                <line number="90" hits="1" branch="False" />
-                <line number="92" hits="1" branch="False" />
-                <line number="94" hits="1" branch="False" />
-                <line number="96" hits="1" branch="False" />
-                <line number="97" hits="1" branch="False" />
-                <line number="99" hits="1" branch="False" />
-                <line number="100" hits="1" branch="False" />
-                <line number="101" hits="1" branch="False" />
+                <line number="82" hits="0" branch="False" />
+                <line number="83" hits="0" branch="False" />
+                <line number="84" hits="0" branch="False" />
+                <line number="85" hits="0" branch="False" />
+                <line number="86" hits="0" branch="False" />
+                <line number="88" hits="0" branch="False" />
+                <line number="89" hits="0" branch="False" />
+                <line number="90" hits="0" branch="False" />
+                <line number="92" hits="0" branch="False" />
+                <line number="94" hits="0" branch="False" />
+                <line number="96" hits="0" branch="False" />
+                <line number="97" hits="0" branch="False" />
+                <line number="99" hits="0" branch="False" />
+                <line number="100" hits="0" branch="False" />
+                <line number="101" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="82" hits="1" branch="False" />
-            <line number="83" hits="1" branch="False" />
-            <line number="84" hits="1" branch="False" />
-            <line number="85" hits="1" branch="False" />
-            <line number="86" hits="1" branch="False" />
-            <line number="88" hits="1" branch="False" />
-            <line number="89" hits="1" branch="False" />
-            <line number="90" hits="1" branch="False" />
-            <line number="92" hits="1" branch="False" />
-            <line number="94" hits="1" branch="False" />
-            <line number="96" hits="1" branch="False" />
-            <line number="97" hits="1" branch="False" />
-            <line number="99" hits="1" branch="False" />
-            <line number="100" hits="1" branch="False" />
-            <line number="101" hits="1" branch="False" />
+            <line number="82" hits="0" branch="False" />
+            <line number="83" hits="0" branch="False" />
+            <line number="84" hits="0" branch="False" />
+            <line number="85" hits="0" branch="False" />
+            <line number="86" hits="0" branch="False" />
+            <line number="88" hits="0" branch="False" />
+            <line number="89" hits="0" branch="False" />
+            <line number="90" hits="0" branch="False" />
+            <line number="92" hits="0" branch="False" />
+            <line number="94" hits="0" branch="False" />
+            <line number="96" hits="0" branch="False" />
+            <line number="97" hits="0" branch="False" />
+            <line number="99" hits="0" branch="False" />
+            <line number="100" hits="0" branch="False" />
+            <line number="101" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;LogAction_ShouldSuccessfullySaveLogToDatabase&gt;d__3" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\SystemLogControllerTests.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;LogAction_ShouldSuccessfullySaveLogToDatabase&gt;d__3" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\SystemLogControllerTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="61" hits="1" branch="False" />
-                <line number="63" hits="1" branch="False" />
-                <line number="64" hits="1" branch="False" />
-                <line number="67" hits="1" branch="False" />
-                <line number="69" hits="1" branch="False" />
-                <line number="70" hits="1" branch="False" />
-                <line number="71" hits="1" branch="False" />
-                <line number="72" hits="1" branch="False" />
-                <line number="74" hits="1" branch="False" />
-                <line number="75" hits="1" branch="False" />
-                <line number="76" hits="1" branch="False" />
-                <line number="77" hits="1" branch="False" />
-                <line number="78" hits="1" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+                <line number="64" hits="0" branch="False" />
+                <line number="67" hits="0" branch="False" />
+                <line number="69" hits="0" branch="False" />
+                <line number="70" hits="0" branch="False" />
+                <line number="71" hits="0" branch="False" />
+                <line number="72" hits="0" branch="False" />
+                <line number="74" hits="0" branch="False" />
+                <line number="75" hits="0" branch="False" />
+                <line number="76" hits="0" branch="False" />
+                <line number="77" hits="0" branch="False" />
+                <line number="78" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="61" hits="1" branch="False" />
-            <line number="63" hits="1" branch="False" />
-            <line number="64" hits="1" branch="False" />
-            <line number="67" hits="1" branch="False" />
-            <line number="69" hits="1" branch="False" />
-            <line number="70" hits="1" branch="False" />
-            <line number="71" hits="1" branch="False" />
-            <line number="72" hits="1" branch="False" />
-            <line number="74" hits="1" branch="False" />
-            <line number="75" hits="1" branch="False" />
-            <line number="76" hits="1" branch="False" />
-            <line number="77" hits="1" branch="False" />
-            <line number="78" hits="1" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
+            <line number="64" hits="0" branch="False" />
+            <line number="67" hits="0" branch="False" />
+            <line number="69" hits="0" branch="False" />
+            <line number="70" hits="0" branch="False" />
+            <line number="71" hits="0" branch="False" />
+            <line number="72" hits="0" branch="False" />
+            <line number="74" hits="0" branch="False" />
+            <line number="75" hits="0" branch="False" />
+            <line number="76" hits="0" branch="False" />
+            <line number="77" hits="0" branch="False" />
+            <line number="78" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="2" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;Setup&gt;d__1" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\SystemLogControllerTests.cs">
+        <class line-rate="0.18181818181818182" branch-rate="0" complexity="2" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;Setup&gt;d__1" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\SystemLogControllerTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="2" name="MoveNext" signature="()">
+            <method line-rate="0.18181818181818182" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
                 <line number="15" hits="1" branch="False" />
                 <line number="16" hits="1" branch="False" />
                 <line number="17" hits="1" branch="False" />
                 <line number="18" hits="1" branch="False" />
-                <line number="19" hits="1" branch="False" />
-                <line number="20" hits="1" branch="False" />
-                <line number="22" hits="1" branch="False" />
-                <line number="23" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="24" hits="1" branch="False" />
-                <line number="25" hits="1" branch="False" />
-                <line number="26" hits="1" branch="False" />
-                <line number="27" hits="1" branch="False" />
-                <line number="28" hits="1" branch="False" />
-                <line number="29" hits="1" branch="False" />
-                <line number="30" hits="1" branch="False" />
-                <line number="31" hits="1" branch="False" />
-                <line number="32" hits="1" branch="False" />
-                <line number="33" hits="1" branch="False" />
-                <line number="34" hits="1" branch="False" />
-                <line number="36" hits="1" branch="False" />
-                <line number="37" hits="1" branch="False" />
-                <line number="38" hits="1" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -201,51 +201,51 @@
             <line number="16" hits="1" branch="False" />
             <line number="17" hits="1" branch="False" />
             <line number="18" hits="1" branch="False" />
-            <line number="19" hits="1" branch="False" />
-            <line number="20" hits="1" branch="False" />
-            <line number="22" hits="1" branch="False" />
-            <line number="23" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="24" hits="1" branch="False" />
-            <line number="25" hits="1" branch="False" />
-            <line number="26" hits="1" branch="False" />
-            <line number="27" hits="1" branch="False" />
-            <line number="28" hits="1" branch="False" />
-            <line number="29" hits="1" branch="False" />
-            <line number="30" hits="1" branch="False" />
-            <line number="31" hits="1" branch="False" />
-            <line number="32" hits="1" branch="False" />
-            <line number="33" hits="1" branch="False" />
-            <line number="34" hits="1" branch="False" />
-            <line number="36" hits="1" branch="False" />
-            <line number="37" hits="1" branch="False" />
-            <line number="38" hits="1" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="2" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;Teardown&gt;d__2" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\SystemLogControllerTests.cs">
+        <class line-rate="0.30769230769230771" branch-rate="0" complexity="2" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;Teardown&gt;d__2" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\SystemLogControllerTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="2" name="MoveNext" signature="()">
+            <method line-rate="0.30769230769230771" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
                 <line number="42" hits="1" branch="False" />
                 <line number="44" hits="1" branch="False" />
                 <line number="45" hits="1" branch="False" />
                 <line number="46" hits="1" branch="False" />
-                <line number="47" hits="1" branch="False" />
-                <line number="49" hits="1" branch="False" />
-                <line number="50" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="47" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="51" hits="1" branch="False" />
-                <line number="52" hits="1" branch="False" />
-                <line number="53" hits="1" branch="False" />
-                <line number="55" hits="1" branch="False" />
-                <line number="56" hits="1" branch="False" />
-                <line number="57" hits="1" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="55" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -254,24 +254,24 @@
             <line number="44" hits="1" branch="False" />
             <line number="45" hits="1" branch="False" />
             <line number="46" hits="1" branch="False" />
-            <line number="47" hits="1" branch="False" />
-            <line number="49" hits="1" branch="False" />
-            <line number="50" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="47" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="51" hits="1" branch="False" />
-            <line number="52" hits="1" branch="False" />
-            <line number="53" hits="1" branch="False" />
-            <line number="55" hits="1" branch="False" />
-            <line number="56" hits="1" branch="False" />
-            <line number="57" hits="1" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="55" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0.8" branch-rate="0.5" complexity="2" name="BankSystem.Tests.Services.UserControllerTests.&lt;CreateUser_WithDuplicateUsername_ShouldThrowDbUpdateException&gt;d__9" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\UserControllerTests.cs">
+        <class line-rate="0.3" branch-rate="0" complexity="2" name="BankSystem.Tests.Services.UserControllerTests.&lt;CreateUser_WithDuplicateUsername_ShouldThrowDbUpdateException&gt;d__9" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\UserControllerTests.cs">
           <methods>
-            <method line-rate="0.8" branch-rate="0.5" complexity="2" name="MoveNext" signature="()">
+            <method line-rate="0.3" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
                 <line number="192" hits="1" branch="False" />
                 <line number="193" hits="1" branch="False" />
@@ -279,24 +279,24 @@
                 <line number="196" hits="1" branch="False" />
                 <line number="197" hits="1" branch="False" />
                 <line number="198" hits="1" branch="False" />
-                <line number="199" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="199" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="50%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
                 <line number="200" hits="0" branch="False" />
                 <line number="201" hits="0" branch="False" />
                 <line number="202" hits="0" branch="False" />
                 <line number="203" hits="0" branch="False" />
-                <line number="204" hits="1" branch="False" />
-                <line number="206" hits="1" branch="False" />
-                <line number="207" hits="1" branch="False" />
-                <line number="208" hits="1" branch="False" />
-                <line number="209" hits="1" branch="False" />
-                <line number="210" hits="1" branch="False" />
-                <line number="211" hits="1" branch="False" />
-                <line number="213" hits="1" branch="False" />
-                <line number="217" hits="1" branch="False" />
+                <line number="204" hits="0" branch="False" />
+                <line number="206" hits="0" branch="False" />
+                <line number="207" hits="0" branch="False" />
+                <line number="208" hits="0" branch="False" />
+                <line number="209" hits="0" branch="False" />
+                <line number="210" hits="0" branch="False" />
+                <line number="211" hits="0" branch="False" />
+                <line number="213" hits="0" branch="False" />
+                <line number="217" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -307,48 +307,48 @@
             <line number="196" hits="1" branch="False" />
             <line number="197" hits="1" branch="False" />
             <line number="198" hits="1" branch="False" />
-            <line number="199" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="199" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="50%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
             <line number="200" hits="0" branch="False" />
             <line number="201" hits="0" branch="False" />
             <line number="202" hits="0" branch="False" />
             <line number="203" hits="0" branch="False" />
-            <line number="204" hits="1" branch="False" />
-            <line number="206" hits="1" branch="False" />
-            <line number="207" hits="1" branch="False" />
-            <line number="208" hits="1" branch="False" />
-            <line number="209" hits="1" branch="False" />
-            <line number="210" hits="1" branch="False" />
-            <line number="211" hits="1" branch="False" />
-            <line number="213" hits="1" branch="False" />
-            <line number="217" hits="1" branch="False" />
+            <line number="204" hits="0" branch="False" />
+            <line number="206" hits="0" branch="False" />
+            <line number="207" hits="0" branch="False" />
+            <line number="208" hits="0" branch="False" />
+            <line number="209" hits="0" branch="False" />
+            <line number="210" hits="0" branch="False" />
+            <line number="211" hits="0" branch="False" />
+            <line number="213" hits="0" branch="False" />
+            <line number="217" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0.7142857142857143" branch-rate="0.5" complexity="2" name="BankSystem.Tests.Services.UserControllerTests.&lt;LoginUser_WithWrongPassword_ShouldReturnNull&gt;d__8" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\UserControllerTests.cs">
+        <class line-rate="0.35714285714285715" branch-rate="0" complexity="2" name="BankSystem.Tests.Services.UserControllerTests.&lt;LoginUser_WithWrongPassword_ShouldReturnNull&gt;d__8" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\UserControllerTests.cs">
           <methods>
-            <method line-rate="0.7142857142857143" branch-rate="0.5" complexity="2" name="MoveNext" signature="()">
+            <method line-rate="0.35714285714285715" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
                 <line number="172" hits="1" branch="False" />
                 <line number="173" hits="1" branch="False" />
                 <line number="175" hits="1" branch="False" />
                 <line number="176" hits="1" branch="False" />
                 <line number="177" hits="1" branch="False" />
-                <line number="178" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="178" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="50%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
                 <line number="179" hits="0" branch="False" />
                 <line number="180" hits="0" branch="False" />
                 <line number="181" hits="0" branch="False" />
                 <line number="182" hits="0" branch="False" />
-                <line number="183" hits="1" branch="False" />
-                <line number="185" hits="1" branch="False" />
-                <line number="187" hits="1" branch="False" />
-                <line number="188" hits="1" branch="False" />
+                <line number="183" hits="0" branch="False" />
+                <line number="185" hits="0" branch="False" />
+                <line number="187" hits="0" branch="False" />
+                <line number="188" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -358,24 +358,24 @@
             <line number="175" hits="1" branch="False" />
             <line number="176" hits="1" branch="False" />
             <line number="177" hits="1" branch="False" />
-            <line number="178" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="178" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="50%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
             <line number="179" hits="0" branch="False" />
             <line number="180" hits="0" branch="False" />
             <line number="181" hits="0" branch="False" />
             <line number="182" hits="0" branch="False" />
-            <line number="183" hits="1" branch="False" />
-            <line number="185" hits="1" branch="False" />
-            <line number="187" hits="1" branch="False" />
-            <line number="188" hits="1" branch="False" />
+            <line number="183" hits="0" branch="False" />
+            <line number="185" hits="0" branch="False" />
+            <line number="187" hits="0" branch="False" />
+            <line number="188" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_1_CreateUser_ShouldAddNewUserToDatabase&gt;d__2" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\UserControllerTests.cs">
+        <class line-rate="0.55555555555555558" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_1_CreateUser_ShouldAddNewUserToDatabase&gt;d__2" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\UserControllerTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0.55555555555555558" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
                 <line number="21" hits="1" branch="False" />
                 <line number="22" hits="1" branch="False" />
@@ -387,14 +387,14 @@
                 <line number="28" hits="1" branch="False" />
                 <line number="29" hits="1" branch="False" />
                 <line number="31" hits="1" branch="False" />
-                <line number="33" hits="1" branch="False" />
-                <line number="34" hits="1" branch="False" />
-                <line number="35" hits="1" branch="False" />
-                <line number="36" hits="1" branch="False" />
-                <line number="38" hits="1" branch="False" />
-                <line number="39" hits="1" branch="False" />
-                <line number="40" hits="1" branch="False" />
-                <line number="41" hits="1" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -409,19 +409,19 @@
             <line number="28" hits="1" branch="False" />
             <line number="29" hits="1" branch="False" />
             <line number="31" hits="1" branch="False" />
-            <line number="33" hits="1" branch="False" />
-            <line number="34" hits="1" branch="False" />
-            <line number="35" hits="1" branch="False" />
-            <line number="36" hits="1" branch="False" />
-            <line number="38" hits="1" branch="False" />
-            <line number="39" hits="1" branch="False" />
-            <line number="40" hits="1" branch="False" />
-            <line number="41" hits="1" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="0.5" complexity="6" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_2_LoginUser_WithCorrectCredentials_ShouldReturnUser&gt;d__3" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\UserControllerTests.cs">
+        <class line-rate="0.2857142857142857" branch-rate="0" complexity="6" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_2_LoginUser_WithCorrectCredentials_ShouldReturnUser&gt;d__3" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\UserControllerTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="0.5" complexity="6" name="MoveNext" signature="()">
+            <method line-rate="0.2857142857142857" branch-rate="0" complexity="6" name="MoveNext" signature="()">
               <lines>
                 <line number="45" hits="1" branch="False" />
                 <line number="46" hits="1" branch="False" />
@@ -429,30 +429,30 @@
                 <line number="49" hits="1" branch="False" />
                 <line number="50" hits="1" branch="False" />
                 <line number="51" hits="1" branch="False" />
-                <line number="52" hits="1" branch="False" />
-                <line number="53" hits="1" branch="False" />
-                <line number="56" hits="1" branch="False" />
-                <line number="57" hits="1" branch="False" />
-                <line number="59" hits="1" branch="False" />
-                <line number="60" hits="1" branch="False" />
-                <line number="61" hits="1" branch="False" />
-                <line number="63" hits="1" branch="False" />
-                <line number="64" hits="1" branch="False" />
-                <line number="65" hits="1" branch="False" />
-                <line number="66" hits="1" branch="False" />
-                <line number="67" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+                <line number="60" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+                <line number="64" hits="0" branch="False" />
+                <line number="65" hits="0" branch="False" />
+                <line number="66" hits="0" branch="False" />
+                <line number="67" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="68" hits="1" branch="False" />
-                <line number="69" hits="1" branch="True" condition-coverage="25% (1/4)">
+                <line number="68" hits="0" branch="False" />
+                <line number="69" hits="0" branch="True" condition-coverage="0% (0/4)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="50%" />
+                    <condition number="0" type="jump" coverage="0%" />
                     <condition number="1" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="70" hits="1" branch="False" />
+                <line number="70" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -463,55 +463,55 @@
             <line number="49" hits="1" branch="False" />
             <line number="50" hits="1" branch="False" />
             <line number="51" hits="1" branch="False" />
-            <line number="52" hits="1" branch="False" />
-            <line number="53" hits="1" branch="False" />
-            <line number="56" hits="1" branch="False" />
-            <line number="57" hits="1" branch="False" />
-            <line number="59" hits="1" branch="False" />
-            <line number="60" hits="1" branch="False" />
-            <line number="61" hits="1" branch="False" />
-            <line number="63" hits="1" branch="False" />
-            <line number="64" hits="1" branch="False" />
-            <line number="65" hits="1" branch="False" />
-            <line number="66" hits="1" branch="False" />
-            <line number="67" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+            <line number="60" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
+            <line number="64" hits="0" branch="False" />
+            <line number="65" hits="0" branch="False" />
+            <line number="66" hits="0" branch="False" />
+            <line number="67" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="68" hits="1" branch="False" />
-            <line number="69" hits="1" branch="True" condition-coverage="25% (1/4)">
+            <line number="68" hits="0" branch="False" />
+            <line number="69" hits="0" branch="True" condition-coverage="0% (0/4)">
               <conditions>
-                <condition number="0" type="jump" coverage="50%" />
+                <condition number="0" type="jump" coverage="0%" />
                 <condition number="1" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="70" hits="1" branch="False" />
+            <line number="70" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_3_GetAllUsers_ShouldReturnListOfUsers&gt;d__4" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\UserControllerTests.cs">
+        <class line-rate="0.4" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_3_GetAllUsers_ShouldReturnListOfUsers&gt;d__4" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\UserControllerTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0.4" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
                 <line number="74" hits="1" branch="False" />
                 <line number="75" hits="1" branch="False" />
-                <line number="77" hits="1" branch="False" />
-                <line number="78" hits="1" branch="False" />
-                <line number="79" hits="1" branch="False" />
+                <line number="77" hits="0" branch="False" />
+                <line number="78" hits="0" branch="False" />
+                <line number="79" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
             <line number="74" hits="1" branch="False" />
             <line number="75" hits="1" branch="False" />
-            <line number="77" hits="1" branch="False" />
-            <line number="78" hits="1" branch="False" />
-            <line number="79" hits="1" branch="False" />
+            <line number="77" hits="0" branch="False" />
+            <line number="78" hits="0" branch="False" />
+            <line number="79" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="0.5" complexity="6" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_4_UpdateUser_ShouldChangePasswordAndRole&gt;d__5" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\UserControllerTests.cs">
+        <class line-rate="0.22222222222222221" branch-rate="0" complexity="6" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_4_UpdateUser_ShouldChangePasswordAndRole&gt;d__5" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\UserControllerTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="0.5" complexity="6" name="MoveNext" signature="()">
+            <method line-rate="0.22222222222222221" branch-rate="0" complexity="6" name="MoveNext" signature="()">
               <lines>
                 <line number="83" hits="1" branch="False" />
                 <line number="84" hits="1" branch="False" />
@@ -519,36 +519,36 @@
                 <line number="87" hits="1" branch="False" />
                 <line number="88" hits="1" branch="False" />
                 <line number="89" hits="1" branch="False" />
-                <line number="90" hits="1" branch="False" />
-                <line number="91" hits="1" branch="False" />
-                <line number="94" hits="1" branch="False" />
-                <line number="95" hits="1" branch="False" />
-                <line number="96" hits="1" branch="False" />
-                <line number="98" hits="1" branch="False" />
-                <line number="100" hits="1" branch="False" />
-                <line number="101" hits="1" branch="False" />
-                <line number="102" hits="1" branch="False" />
-                <line number="103" hits="1" branch="False" />
-                <line number="104" hits="1" branch="False" />
-                <line number="105" hits="1" branch="False" />
-                <line number="106" hits="1" branch="False" />
-                <line number="108" hits="1" branch="False" />
-                <line number="109" hits="1" branch="False" />
-                <line number="110" hits="1" branch="False" />
-                <line number="111" hits="1" branch="False" />
-                <line number="112" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="90" hits="0" branch="False" />
+                <line number="91" hits="0" branch="False" />
+                <line number="94" hits="0" branch="False" />
+                <line number="95" hits="0" branch="False" />
+                <line number="96" hits="0" branch="False" />
+                <line number="98" hits="0" branch="False" />
+                <line number="100" hits="0" branch="False" />
+                <line number="101" hits="0" branch="False" />
+                <line number="102" hits="0" branch="False" />
+                <line number="103" hits="0" branch="False" />
+                <line number="104" hits="0" branch="False" />
+                <line number="105" hits="0" branch="False" />
+                <line number="106" hits="0" branch="False" />
+                <line number="108" hits="0" branch="False" />
+                <line number="109" hits="0" branch="False" />
+                <line number="110" hits="0" branch="False" />
+                <line number="111" hits="0" branch="False" />
+                <line number="112" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="113" hits="1" branch="False" />
-                <line number="114" hits="1" branch="True" condition-coverage="25% (1/4)">
+                <line number="113" hits="0" branch="False" />
+                <line number="114" hits="0" branch="True" condition-coverage="0% (0/4)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="50%" />
+                    <condition number="0" type="jump" coverage="0%" />
                     <condition number="1" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="115" hits="1" branch="False" />
+                <line number="115" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -559,41 +559,41 @@
             <line number="87" hits="1" branch="False" />
             <line number="88" hits="1" branch="False" />
             <line number="89" hits="1" branch="False" />
-            <line number="90" hits="1" branch="False" />
-            <line number="91" hits="1" branch="False" />
-            <line number="94" hits="1" branch="False" />
-            <line number="95" hits="1" branch="False" />
-            <line number="96" hits="1" branch="False" />
-            <line number="98" hits="1" branch="False" />
-            <line number="100" hits="1" branch="False" />
-            <line number="101" hits="1" branch="False" />
-            <line number="102" hits="1" branch="False" />
-            <line number="103" hits="1" branch="False" />
-            <line number="104" hits="1" branch="False" />
-            <line number="105" hits="1" branch="False" />
-            <line number="106" hits="1" branch="False" />
-            <line number="108" hits="1" branch="False" />
-            <line number="109" hits="1" branch="False" />
-            <line number="110" hits="1" branch="False" />
-            <line number="111" hits="1" branch="False" />
-            <line number="112" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="90" hits="0" branch="False" />
+            <line number="91" hits="0" branch="False" />
+            <line number="94" hits="0" branch="False" />
+            <line number="95" hits="0" branch="False" />
+            <line number="96" hits="0" branch="False" />
+            <line number="98" hits="0" branch="False" />
+            <line number="100" hits="0" branch="False" />
+            <line number="101" hits="0" branch="False" />
+            <line number="102" hits="0" branch="False" />
+            <line number="103" hits="0" branch="False" />
+            <line number="104" hits="0" branch="False" />
+            <line number="105" hits="0" branch="False" />
+            <line number="106" hits="0" branch="False" />
+            <line number="108" hits="0" branch="False" />
+            <line number="109" hits="0" branch="False" />
+            <line number="110" hits="0" branch="False" />
+            <line number="111" hits="0" branch="False" />
+            <line number="112" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="113" hits="1" branch="False" />
-            <line number="114" hits="1" branch="True" condition-coverage="25% (1/4)">
+            <line number="113" hits="0" branch="False" />
+            <line number="114" hits="0" branch="True" condition-coverage="0% (0/4)">
               <conditions>
-                <condition number="0" type="jump" coverage="50%" />
+                <condition number="0" type="jump" coverage="0%" />
                 <condition number="1" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="115" hits="1" branch="False" />
+            <line number="115" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="0.5" complexity="6" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_5_DeactivateUser_ShouldSetIsActiveToFalse&gt;d__6" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\UserControllerTests.cs">
+        <class line-rate="0.25" branch-rate="0" complexity="6" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_5_DeactivateUser_ShouldSetIsActiveToFalse&gt;d__6" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\UserControllerTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="0.5" complexity="6" name="MoveNext" signature="()">
+            <method line-rate="0.25" branch-rate="0" complexity="6" name="MoveNext" signature="()">
               <lines>
                 <line number="119" hits="1" branch="False" />
                 <line number="120" hits="1" branch="False" />
@@ -601,33 +601,33 @@
                 <line number="123" hits="1" branch="False" />
                 <line number="124" hits="1" branch="False" />
                 <line number="125" hits="1" branch="False" />
-                <line number="126" hits="1" branch="False" />
-                <line number="127" hits="1" branch="False" />
-                <line number="130" hits="1" branch="False" />
-                <line number="131" hits="1" branch="False" />
-                <line number="133" hits="1" branch="False" />
-                <line number="134" hits="1" branch="False" />
-                <line number="135" hits="1" branch="False" />
-                <line number="136" hits="1" branch="False" />
-                <line number="137" hits="1" branch="False" />
-                <line number="138" hits="1" branch="False" />
-                <line number="140" hits="1" branch="False" />
-                <line number="141" hits="1" branch="False" />
-                <line number="142" hits="1" branch="False" />
-                <line number="143" hits="1" branch="False" />
-                <line number="144" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="126" hits="0" branch="False" />
+                <line number="127" hits="0" branch="False" />
+                <line number="130" hits="0" branch="False" />
+                <line number="131" hits="0" branch="False" />
+                <line number="133" hits="0" branch="False" />
+                <line number="134" hits="0" branch="False" />
+                <line number="135" hits="0" branch="False" />
+                <line number="136" hits="0" branch="False" />
+                <line number="137" hits="0" branch="False" />
+                <line number="138" hits="0" branch="False" />
+                <line number="140" hits="0" branch="False" />
+                <line number="141" hits="0" branch="False" />
+                <line number="142" hits="0" branch="False" />
+                <line number="143" hits="0" branch="False" />
+                <line number="144" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="145" hits="1" branch="False" />
-                <line number="146" hits="1" branch="True" condition-coverage="25% (1/4)">
+                <line number="145" hits="0" branch="False" />
+                <line number="146" hits="0" branch="True" condition-coverage="0% (0/4)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="50%" />
+                    <condition number="0" type="jump" coverage="0%" />
                     <condition number="1" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="147" hits="1" branch="False" />
+                <line number="147" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -638,38 +638,38 @@
             <line number="123" hits="1" branch="False" />
             <line number="124" hits="1" branch="False" />
             <line number="125" hits="1" branch="False" />
-            <line number="126" hits="1" branch="False" />
-            <line number="127" hits="1" branch="False" />
-            <line number="130" hits="1" branch="False" />
-            <line number="131" hits="1" branch="False" />
-            <line number="133" hits="1" branch="False" />
-            <line number="134" hits="1" branch="False" />
-            <line number="135" hits="1" branch="False" />
-            <line number="136" hits="1" branch="False" />
-            <line number="137" hits="1" branch="False" />
-            <line number="138" hits="1" branch="False" />
-            <line number="140" hits="1" branch="False" />
-            <line number="141" hits="1" branch="False" />
-            <line number="142" hits="1" branch="False" />
-            <line number="143" hits="1" branch="False" />
-            <line number="144" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="126" hits="0" branch="False" />
+            <line number="127" hits="0" branch="False" />
+            <line number="130" hits="0" branch="False" />
+            <line number="131" hits="0" branch="False" />
+            <line number="133" hits="0" branch="False" />
+            <line number="134" hits="0" branch="False" />
+            <line number="135" hits="0" branch="False" />
+            <line number="136" hits="0" branch="False" />
+            <line number="137" hits="0" branch="False" />
+            <line number="138" hits="0" branch="False" />
+            <line number="140" hits="0" branch="False" />
+            <line number="141" hits="0" branch="False" />
+            <line number="142" hits="0" branch="False" />
+            <line number="143" hits="0" branch="False" />
+            <line number="144" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="145" hits="1" branch="False" />
-            <line number="146" hits="1" branch="True" condition-coverage="25% (1/4)">
+            <line number="145" hits="0" branch="False" />
+            <line number="146" hits="0" branch="True" condition-coverage="0% (0/4)">
               <conditions>
-                <condition number="0" type="jump" coverage="50%" />
+                <condition number="0" type="jump" coverage="0%" />
                 <condition number="1" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="147" hits="1" branch="False" />
+            <line number="147" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_6_DeleteUser_ShouldRemoveUserFromDatabase&gt;d__7" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\UserControllerTests.cs">
+        <class line-rate="0.4" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.UserControllerTests.&lt;Test_6_DeleteUser_ShouldRemoveUserFromDatabase&gt;d__7" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\UserControllerTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0.4" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
                 <line number="151" hits="1" branch="False" />
                 <line number="152" hits="1" branch="False" />
@@ -677,15 +677,15 @@
                 <line number="155" hits="1" branch="False" />
                 <line number="156" hits="1" branch="False" />
                 <line number="157" hits="1" branch="False" />
-                <line number="158" hits="1" branch="False" />
-                <line number="159" hits="1" branch="False" />
-                <line number="161" hits="1" branch="False" />
-                <line number="163" hits="1" branch="False" />
-                <line number="164" hits="1" branch="False" />
-                <line number="165" hits="1" branch="False" />
-                <line number="166" hits="1" branch="False" />
-                <line number="167" hits="1" branch="False" />
-                <line number="168" hits="1" branch="False" />
+                <line number="158" hits="0" branch="False" />
+                <line number="159" hits="0" branch="False" />
+                <line number="161" hits="0" branch="False" />
+                <line number="163" hits="0" branch="False" />
+                <line number="164" hits="0" branch="False" />
+                <line number="165" hits="0" branch="False" />
+                <line number="166" hits="0" branch="False" />
+                <line number="167" hits="0" branch="False" />
+                <line number="168" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -696,70 +696,70 @@
             <line number="155" hits="1" branch="False" />
             <line number="156" hits="1" branch="False" />
             <line number="157" hits="1" branch="False" />
-            <line number="158" hits="1" branch="False" />
-            <line number="159" hits="1" branch="False" />
-            <line number="161" hits="1" branch="False" />
-            <line number="163" hits="1" branch="False" />
-            <line number="164" hits="1" branch="False" />
-            <line number="165" hits="1" branch="False" />
-            <line number="166" hits="1" branch="False" />
-            <line number="167" hits="1" branch="False" />
-            <line number="168" hits="1" branch="False" />
+            <line number="158" hits="0" branch="False" />
+            <line number="159" hits="0" branch="False" />
+            <line number="161" hits="0" branch="False" />
+            <line number="163" hits="0" branch="False" />
+            <line number="164" hits="0" branch="False" />
+            <line number="165" hits="0" branch="False" />
+            <line number="166" hits="0" branch="False" />
+            <line number="167" hits="0" branch="False" />
+            <line number="168" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0.66666666666666663" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;&gt;c__DisplayClass5_0.&lt;&lt;LogAction_WithInvalidUserId_ShouldThrowDbUpdateException&gt;b__0&gt;d" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\SystemLogControllerTests.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;&gt;c__DisplayClass5_0.&lt;&lt;LogAction_WithInvalidUserId_ShouldThrowDbUpdateException&gt;b__0&gt;d" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\SystemLogControllerTests.cs">
           <methods>
-            <method line-rate="0.66666666666666663" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="111" hits="1" branch="False" />
-                <line number="112" hits="1" branch="False" />
+                <line number="111" hits="0" branch="False" />
+                <line number="112" hits="0" branch="False" />
                 <line number="113" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="111" hits="1" branch="False" />
-            <line number="112" hits="1" branch="False" />
+            <line number="111" hits="0" branch="False" />
+            <line number="112" hits="0" branch="False" />
             <line number="113" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0.66666666666666663" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;&gt;c__DisplayClass6_0.&lt;&lt;LogAction_WithTooLongDescription_ShouldThrowDbUpdateException&gt;b__0&gt;d" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\SystemLogControllerTests.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.SystemLogControllerTests.&lt;&gt;c__DisplayClass6_0.&lt;&lt;LogAction_WithTooLongDescription_ShouldThrowDbUpdateException&gt;b__0&gt;d" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\SystemLogControllerTests.cs">
           <methods>
-            <method line-rate="0.66666666666666663" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="123" hits="1" branch="False" />
-                <line number="124" hits="1" branch="False" />
+                <line number="123" hits="0" branch="False" />
+                <line number="124" hits="0" branch="False" />
                 <line number="125" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="123" hits="1" branch="False" />
-            <line number="124" hits="1" branch="False" />
+            <line number="123" hits="0" branch="False" />
+            <line number="124" hits="0" branch="False" />
             <line number="125" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0.66666666666666663" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.UserControllerTests.&lt;&gt;c__DisplayClass9_0.&lt;&lt;CreateUser_WithDuplicateUsername_ShouldThrowDbUpdateException&gt;b__0&gt;d" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Tests\Services\UserControllerTests.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Tests.Services.UserControllerTests.&lt;&gt;c__DisplayClass9_0.&lt;&lt;CreateUser_WithDuplicateUsername_ShouldThrowDbUpdateException&gt;b__0&gt;d" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Tests\Services\UserControllerTests.cs">
           <methods>
-            <method line-rate="0.66666666666666663" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="214" hits="1" branch="False" />
-                <line number="215" hits="1" branch="False" />
+                <line number="214" hits="0" branch="False" />
+                <line number="215" hits="0" branch="False" />
                 <line number="216" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="214" hits="1" branch="False" />
-            <line number="215" hits="1" branch="False" />
+            <line number="214" hits="0" branch="False" />
+            <line number="215" hits="0" branch="False" />
             <line number="216" hits="0" branch="False" />
           </lines>
         </class>
       </classes>
     </package>
-    <package line-rate="0.0445468509984639" branch-rate="0.053333333333333337" complexity="589" name="BankSystem.Data">
+    <package line-rate="0.0076804915514592934" branch-rate="0.0033333333333333335" complexity="589" name="BankSystem.Data">
       <classes>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Program" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Program.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Program" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Program.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="Main" signature="(string[])">
               <lines>
@@ -775,7 +775,7 @@
             <line number="8" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0.8571428571428571" branch-rate="1" complexity="32" name="BankSystem.Data.BankDbContext" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\BankDbContext.cs">
+        <class line-rate="0.3392857142857143" branch-rate="0.0625" complexity="32" name="BankSystem.Data.BankDbContext" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\BankDbContext.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions&lt;BankSystem.Data.BankDbContext&gt;)">
               <lines>
@@ -861,12 +861,12 @@
                 <line number="28" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="2" name="OnConfiguring" signature="(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <method line-rate="0.58333333333333337" branch-rate="0.5" complexity="2" name="OnConfiguring" signature="(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
               <lines>
                 <line number="31" hits="1" branch="False" />
-                <line number="32" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="32" hits="1" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="50%" />
                   </conditions>
                 </line>
                 <line number="33" hits="1" branch="False" />
@@ -874,67 +874,67 @@
                 <line number="35" hits="1" branch="False" />
                 <line number="36" hits="1" branch="False" />
                 <line number="37" hits="1" branch="False" />
-                <line number="39" hits="1" branch="False" />
-                <line number="40" hits="1" branch="False" />
-                <line number="42" hits="1" branch="False" />
-                <line number="43" hits="1" branch="False" />
-                <line number="44" hits="1" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="14" name="OnModelCreating" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <method line-rate="0" branch-rate="0" complexity="14" name="OnModelCreating" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)">
               <lines>
-                <line number="47" hits="1" branch="False" />
-                <line number="48" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="47" hits="0" branch="False" />
+                <line number="48" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="60" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="60" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="68" hits="1" branch="False" />
-                <line number="75" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="68" hits="0" branch="False" />
+                <line number="75" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="82" hits="1" branch="False" />
-                <line number="89" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="82" hits="0" branch="False" />
+                <line number="89" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="97" hits="1" branch="False" />
-                <line number="104" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="97" hits="0" branch="False" />
+                <line number="104" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="109" hits="1" branch="False" />
-                <line number="114" hits="1" branch="False" />
-                <line number="121" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="109" hits="0" branch="False" />
+                <line number="114" hits="0" branch="False" />
+                <line number="121" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="129" hits="1" branch="False" />
-                <line number="136" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="129" hits="0" branch="False" />
+                <line number="136" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="141" hits="1" branch="False" />
-                <line number="148" hits="1" branch="False" />
-                <line number="149" hits="1" branch="False" />
-                <line number="150" hits="1" branch="False" />
-                <line number="151" hits="1" branch="False" />
-                <line number="152" hits="1" branch="False" />
-                <line number="153" hits="1" branch="False" />
-                <line number="154" hits="1" branch="False" />
-                <line number="155" hits="1" branch="False" />
-                <line number="156" hits="1" branch="False" />
+                <line number="141" hits="0" branch="False" />
+                <line number="148" hits="0" branch="False" />
+                <line number="149" hits="0" branch="False" />
+                <line number="150" hits="0" branch="False" />
+                <line number="151" hits="0" branch="False" />
+                <line number="152" hits="0" branch="False" />
+                <line number="153" hits="0" branch="False" />
+                <line number="154" hits="0" branch="False" />
+                <line number="155" hits="0" branch="False" />
+                <line number="156" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -953,9 +953,9 @@
             <line number="27" hits="1" branch="False" />
             <line number="28" hits="1" branch="False" />
             <line number="31" hits="1" branch="False" />
-            <line number="32" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="32" hits="1" branch="True" condition-coverage="50% (1/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="50%" />
               </conditions>
             </line>
             <line number="33" hits="1" branch="False" />
@@ -963,66 +963,66 @@
             <line number="35" hits="1" branch="False" />
             <line number="36" hits="1" branch="False" />
             <line number="37" hits="1" branch="False" />
-            <line number="39" hits="1" branch="False" />
-            <line number="40" hits="1" branch="False" />
-            <line number="42" hits="1" branch="False" />
-            <line number="43" hits="1" branch="False" />
-            <line number="44" hits="1" branch="False" />
-            <line number="47" hits="1" branch="False" />
-            <line number="48" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="48" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="60" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="60" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="68" hits="1" branch="False" />
-            <line number="75" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="68" hits="0" branch="False" />
+            <line number="75" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="82" hits="1" branch="False" />
-            <line number="89" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="82" hits="0" branch="False" />
+            <line number="89" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="97" hits="1" branch="False" />
-            <line number="104" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="97" hits="0" branch="False" />
+            <line number="104" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="109" hits="1" branch="False" />
-            <line number="114" hits="1" branch="False" />
-            <line number="121" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="109" hits="0" branch="False" />
+            <line number="114" hits="0" branch="False" />
+            <line number="121" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="129" hits="1" branch="False" />
-            <line number="136" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="129" hits="0" branch="False" />
+            <line number="136" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="141" hits="1" branch="False" />
-            <line number="148" hits="1" branch="False" />
-            <line number="149" hits="1" branch="False" />
-            <line number="150" hits="1" branch="False" />
-            <line number="151" hits="1" branch="False" />
-            <line number="152" hits="1" branch="False" />
-            <line number="153" hits="1" branch="False" />
-            <line number="154" hits="1" branch="False" />
-            <line number="155" hits="1" branch="False" />
-            <line number="156" hits="1" branch="False" />
+            <line number="141" hits="0" branch="False" />
+            <line number="148" hits="0" branch="False" />
+            <line number="149" hits="0" branch="False" />
+            <line number="150" hits="0" branch="False" />
+            <line number="151" hits="0" branch="False" />
+            <line number="152" hits="0" branch="False" />
+            <line number="153" hits="0" branch="False" />
+            <line number="154" hits="0" branch="False" />
+            <line number="155" hits="0" branch="False" />
+            <line number="156" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="29" name="BankSystem.Data.Migrations.CreateDb" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260518204236_CreateDb.cs">
+        <class line-rate="0" branch-rate="0" complexity="29" name="BankSystem.Data.Migrations.CreateDb" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260518204236_CreateDb.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="28" name="Up" signature="(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
               <lines>
@@ -1276,7 +1276,7 @@
             <line number="243" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.CreateDb" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260518204236_CreateDb.Designer.cs">
+        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.CreateDb" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260518204236_CreateDb.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="32" name="BuildTargetModel" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)">
               <lines>
@@ -1596,7 +1596,7 @@
             <line number="343" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.AddEmailAndCvv" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260519065809_AddEmailAndCvv.cs">
+        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.AddEmailAndCvv" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260519065809_AddEmailAndCvv.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="Up" signature="(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
               <lines>
@@ -1672,7 +1672,7 @@
             <line number="49" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.AddEmailAndCvv" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260519065809_AddEmailAndCvv.Designer.cs">
+        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.AddEmailAndCvv" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260519065809_AddEmailAndCvv.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="32" name="BuildTargetModel" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)">
               <lines>
@@ -1998,7 +1998,7 @@
             <line number="355" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.CreateAdmin" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260519084807_CreateAdmin.cs">
+        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.CreateAdmin" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260519084807_CreateAdmin.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="Up" signature="(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
               <lines>
@@ -2036,7 +2036,7 @@
             <line number="26" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.CreateAdmin" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260519084807_CreateAdmin.Designer.cs">
+        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.CreateAdmin" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260519084807_CreateAdmin.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="32" name="BuildTargetModel" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)">
               <lines>
@@ -2364,7 +2364,7 @@
             <line number="364" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.ActiveUser" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260525224619_ActiveUser.cs">
+        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.ActiveUser" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260525224619_ActiveUser.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="Up" signature="(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
               <lines>
@@ -2416,7 +2416,7 @@
             <line number="34" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.ActiveUser" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260525224619_ActiveUser.Designer.cs">
+        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.ActiveUser" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260525224619_ActiveUser.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="32" name="BuildTargetModel" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)">
               <lines>
@@ -2746,7 +2746,7 @@
             <line number="368" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.ContextConstructors" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260525231942_ContextConstructors.cs">
+        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.ContextConstructors" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260525231942_ContextConstructors.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="Up" signature="(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
               <lines>
@@ -2768,7 +2768,7 @@
             <line number="20" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.ContextConstructors" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260525231942_ContextConstructors.Designer.cs">
+        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.ContextConstructors" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260525231942_ContextConstructors.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="32" name="BuildTargetModel" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)">
               <lines>
@@ -3098,7 +3098,7 @@
             <line number="368" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.TransactionEdit" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260526002509_TransactionEdit.cs">
+        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.TransactionEdit" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260526002509_TransactionEdit.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="Up" signature="(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
               <lines>
@@ -3240,7 +3240,7 @@
             <line number="90" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.TransactionEdit" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260526002509_TransactionEdit.Designer.cs">
+        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.TransactionEdit" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260526002509_TransactionEdit.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="32" name="BuildTargetModel" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)">
               <lines>
@@ -3586,7 +3586,7 @@
             <line number="389" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.upd" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260526063255_upd.cs">
+        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Data.Migrations.upd" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260526063255_upd.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="Up" signature="(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
               <lines>
@@ -3660,7 +3660,7 @@
             <line number="48" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.upd" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260526063255_upd.Designer.cs">
+        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.upd" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260526063255_upd.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="32" name="BuildTargetModel" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)">
               <lines>
@@ -3998,7 +3998,7 @@
             <line number="376" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.BankDbContextModelSnapshot" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\BankDbContextModelSnapshot.cs">
+        <class line-rate="0" branch-rate="0" complexity="32" name="BankSystem.Data.Migrations.BankDbContextModelSnapshot" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\BankDbContextModelSnapshot.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="32" name="BuildModel" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)">
               <lines>
@@ -4336,7 +4336,7 @@
             <line number="373" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="19" name="BankSystem.Data.Entities.Account" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Entities\Account.cs">
+        <class line-rate="0" branch-rate="1" complexity="19" name="BankSystem.Data.Entities.Account" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Entities\Account.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_AccountID" signature="()">
               <lines>
@@ -4448,7 +4448,7 @@
             <line number="20" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="14" name="BankSystem.Data.Entities.BankCard" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Entities\BankCard.cs">
+        <class line-rate="0" branch-rate="1" complexity="14" name="BankSystem.Data.Entities.BankCard" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Entities\BankCard.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_CardID" signature="()">
               <lines>
@@ -4531,7 +4531,7 @@
             <line number="19" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="19" name="BankSystem.Data.Entities.Client" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Entities\Client.cs">
+        <class line-rate="0" branch-rate="1" complexity="19" name="BankSystem.Data.Entities.Client" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Entities\Client.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_ClientID" signature="()">
               <lines>
@@ -4642,7 +4642,7 @@
             <line number="20" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Entities.Loan" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Entities\Loan.cs">
+        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Entities.Loan" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Entities\Loan.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_LoanID" signature="()">
               <lines>
@@ -4736,7 +4736,7 @@
             <line number="20" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0.5" branch-rate="1" complexity="10" name="BankSystem.Data.Entities.SystemLog" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Entities\SystemLog.cs">
+        <class line-rate="0" branch-rate="1" complexity="10" name="BankSystem.Data.Entities.SystemLog" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Entities\SystemLog.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_LogID" signature="()">
               <lines>
@@ -4748,14 +4748,14 @@
                 <line number="11" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="get_UserID" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="get_UserID" signature="()">
               <lines>
-                <line number="13" hits="1" branch="False" />
+                <line number="13" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="set_UserID" signature="(int)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="set_UserID" signature="(int)">
               <lines>
-                <line number="13" hits="1" branch="False" />
+                <line number="13" hits="0" branch="False" />
               </lines>
             </method>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_User" signature="()">
@@ -4768,14 +4768,14 @@
                 <line number="14" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="get_Action" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="get_Action" signature="()">
               <lines>
-                <line number="16" hits="1" branch="False" />
+                <line number="16" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="set_Action" signature="(string)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="set_Action" signature="(string)">
               <lines>
-                <line number="16" hits="1" branch="False" />
+                <line number="16" hits="0" branch="False" />
               </lines>
             </method>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_LogDate" signature="()">
@@ -4783,21 +4783,21 @@
                 <line number="17" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="set_LogDate" signature="(System.DateTime)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="set_LogDate" signature="(System.DateTime)">
               <lines>
-                <line number="17" hits="1" branch="False" />
+                <line number="17" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
             <line number="11" hits="0" branch="False" />
-            <line number="13" hits="1" branch="False" />
+            <line number="13" hits="0" branch="False" />
             <line number="14" hits="0" branch="False" />
-            <line number="16" hits="1" branch="False" />
-            <line number="17" hits="1" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="14" name="BankSystem.Data.Entities.Transaction" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Entities\Transaction.cs">
+        <class line-rate="0" branch-rate="1" complexity="14" name="BankSystem.Data.Entities.Transaction" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Entities\Transaction.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_TransactionID" signature="()">
               <lines>
@@ -4880,21 +4880,21 @@
             <line number="18" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0.61904761904761907" branch-rate="1" complexity="18" name="BankSystem.Data.Entities.User" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Entities\User.cs">
+        <class line-rate="0.2857142857142857" branch-rate="1" complexity="18" name="BankSystem.Data.Entities.User" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Entities\User.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="get_UserID" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="get_UserID" signature="()">
               <lines>
-                <line number="12" hits="1" branch="False" />
+                <line number="12" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="set_UserID" signature="(int)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="set_UserID" signature="(int)">
               <lines>
-                <line number="12" hits="1" branch="False" />
+                <line number="12" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="get_Username" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="get_Username" signature="()">
               <lines>
-                <line number="13" hits="1" branch="False" />
+                <line number="13" hits="0" branch="False" />
               </lines>
             </method>
             <method line-rate="1" branch-rate="1" complexity="1" name="set_Username" signature="(string)">
@@ -4902,9 +4902,9 @@
                 <line number="13" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="get_PasswordHash" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="get_PasswordHash" signature="()">
               <lines>
-                <line number="14" hits="1" branch="False" />
+                <line number="14" hits="0" branch="False" />
               </lines>
             </method>
             <method line-rate="1" branch-rate="1" complexity="1" name="set_PasswordHash" signature="(string)">
@@ -4912,9 +4912,9 @@
                 <line number="14" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="get_Role" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="get_Role" signature="()">
               <lines>
-                <line number="15" hits="1" branch="False" />
+                <line number="15" hits="0" branch="False" />
               </lines>
             </method>
             <method line-rate="1" branch-rate="1" complexity="1" name="set_Role" signature="(BankSystem.Data.Enums.UserRole)">
@@ -4927,14 +4927,14 @@
                 <line number="16" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="set_ClientID" signature="(System.Nullable&lt;int&gt;)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="set_ClientID" signature="(System.Nullable&lt;int&gt;)">
               <lines>
-                <line number="16" hits="1" branch="False" />
+                <line number="16" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="get_IsActive" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="get_IsActive" signature="()">
               <lines>
-                <line number="17" hits="1" branch="False" />
+                <line number="17" hits="0" branch="False" />
               </lines>
             </method>
             <method line-rate="1" branch-rate="1" complexity="1" name="set_IsActive" signature="(bool)">
@@ -4977,11 +4977,11 @@
             </method>
           </methods>
           <lines>
-            <line number="12" hits="1" branch="False" />
+            <line number="12" hits="0" branch="False" />
             <line number="13" hits="1" branch="False" />
             <line number="14" hits="1" branch="False" />
             <line number="15" hits="1" branch="False" />
-            <line number="16" hits="1" branch="False" />
+            <line number="16" hits="0" branch="False" />
             <line number="17" hits="1" branch="False" />
             <line number="19" hits="0" branch="False" />
             <line number="20" hits="1" branch="False" />
@@ -4990,199 +4990,199 @@
             <line number="25" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="7" name="BankSystem.Data.BankDbContext.&lt;&gt;c" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\BankDbContext.cs">
+        <class line-rate="0" branch-rate="1" complexity="7" name="BankSystem.Data.BankDbContext.&lt;&gt;c" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\BankDbContext.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_0" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.Client&gt;)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_0" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.Client&gt;)">
               <lines>
-                <line number="49" hits="1" branch="False" />
-                <line number="50" hits="1" branch="False" />
-                <line number="51" hits="1" branch="False" />
-                <line number="52" hits="1" branch="False" />
-                <line number="53" hits="1" branch="False" />
-                <line number="54" hits="1" branch="False" />
-                <line number="55" hits="1" branch="False" />
-                <line number="56" hits="1" branch="False" />
-                <line number="57" hits="1" branch="False" />
-                <line number="58" hits="1" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="55" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_1" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.User&gt;)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_1" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.User&gt;)">
               <lines>
-                <line number="61" hits="1" branch="False" />
-                <line number="62" hits="1" branch="False" />
-                <line number="63" hits="1" branch="False" />
-                <line number="64" hits="1" branch="False" />
-                <line number="65" hits="1" branch="False" />
-                <line number="66" hits="1" branch="False" />
-                <line number="67" hits="1" branch="False" />
-                <line number="69" hits="1" branch="False" />
-                <line number="70" hits="1" branch="False" />
-                <line number="71" hits="1" branch="False" />
-                <line number="72" hits="1" branch="False" />
-                <line number="73" hits="1" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+                <line number="64" hits="0" branch="False" />
+                <line number="65" hits="0" branch="False" />
+                <line number="66" hits="0" branch="False" />
+                <line number="67" hits="0" branch="False" />
+                <line number="69" hits="0" branch="False" />
+                <line number="70" hits="0" branch="False" />
+                <line number="71" hits="0" branch="False" />
+                <line number="72" hits="0" branch="False" />
+                <line number="73" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_2" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.Account&gt;)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_2" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.Account&gt;)">
               <lines>
-                <line number="76" hits="1" branch="False" />
-                <line number="77" hits="1" branch="False" />
-                <line number="78" hits="1" branch="False" />
-                <line number="79" hits="1" branch="False" />
-                <line number="80" hits="1" branch="False" />
-                <line number="81" hits="1" branch="False" />
-                <line number="83" hits="1" branch="False" />
-                <line number="84" hits="1" branch="False" />
-                <line number="85" hits="1" branch="False" />
-                <line number="86" hits="1" branch="False" />
-                <line number="87" hits="1" branch="False" />
+                <line number="76" hits="0" branch="False" />
+                <line number="77" hits="0" branch="False" />
+                <line number="78" hits="0" branch="False" />
+                <line number="79" hits="0" branch="False" />
+                <line number="80" hits="0" branch="False" />
+                <line number="81" hits="0" branch="False" />
+                <line number="83" hits="0" branch="False" />
+                <line number="84" hits="0" branch="False" />
+                <line number="85" hits="0" branch="False" />
+                <line number="86" hits="0" branch="False" />
+                <line number="87" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_3" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.BankCard&gt;)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_3" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.BankCard&gt;)">
               <lines>
-                <line number="90" hits="1" branch="False" />
-                <line number="91" hits="1" branch="False" />
-                <line number="92" hits="1" branch="False" />
-                <line number="93" hits="1" branch="False" />
-                <line number="94" hits="1" branch="False" />
-                <line number="95" hits="1" branch="False" />
-                <line number="96" hits="1" branch="False" />
-                <line number="98" hits="1" branch="False" />
-                <line number="99" hits="1" branch="False" />
-                <line number="100" hits="1" branch="False" />
-                <line number="101" hits="1" branch="False" />
-                <line number="102" hits="1" branch="False" />
+                <line number="90" hits="0" branch="False" />
+                <line number="91" hits="0" branch="False" />
+                <line number="92" hits="0" branch="False" />
+                <line number="93" hits="0" branch="False" />
+                <line number="94" hits="0" branch="False" />
+                <line number="95" hits="0" branch="False" />
+                <line number="96" hits="0" branch="False" />
+                <line number="98" hits="0" branch="False" />
+                <line number="99" hits="0" branch="False" />
+                <line number="100" hits="0" branch="False" />
+                <line number="101" hits="0" branch="False" />
+                <line number="102" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_4" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.Transaction&gt;)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_4" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.Transaction&gt;)">
               <lines>
-                <line number="105" hits="1" branch="False" />
-                <line number="106" hits="1" branch="False" />
-                <line number="107" hits="1" branch="False" />
-                <line number="108" hits="1" branch="False" />
-                <line number="110" hits="1" branch="False" />
-                <line number="111" hits="1" branch="False" />
-                <line number="112" hits="1" branch="False" />
-                <line number="113" hits="1" branch="False" />
-                <line number="115" hits="1" branch="False" />
-                <line number="116" hits="1" branch="False" />
-                <line number="117" hits="1" branch="False" />
-                <line number="118" hits="1" branch="False" />
-                <line number="119" hits="1" branch="False" />
+                <line number="105" hits="0" branch="False" />
+                <line number="106" hits="0" branch="False" />
+                <line number="107" hits="0" branch="False" />
+                <line number="108" hits="0" branch="False" />
+                <line number="110" hits="0" branch="False" />
+                <line number="111" hits="0" branch="False" />
+                <line number="112" hits="0" branch="False" />
+                <line number="113" hits="0" branch="False" />
+                <line number="115" hits="0" branch="False" />
+                <line number="116" hits="0" branch="False" />
+                <line number="117" hits="0" branch="False" />
+                <line number="118" hits="0" branch="False" />
+                <line number="119" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_5" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.Loan&gt;)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_5" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.Loan&gt;)">
               <lines>
-                <line number="122" hits="1" branch="False" />
-                <line number="123" hits="1" branch="False" />
-                <line number="124" hits="1" branch="False" />
-                <line number="125" hits="1" branch="False" />
-                <line number="126" hits="1" branch="False" />
-                <line number="127" hits="1" branch="False" />
-                <line number="128" hits="1" branch="False" />
-                <line number="130" hits="1" branch="False" />
-                <line number="131" hits="1" branch="False" />
-                <line number="132" hits="1" branch="False" />
-                <line number="133" hits="1" branch="False" />
-                <line number="134" hits="1" branch="False" />
+                <line number="122" hits="0" branch="False" />
+                <line number="123" hits="0" branch="False" />
+                <line number="124" hits="0" branch="False" />
+                <line number="125" hits="0" branch="False" />
+                <line number="126" hits="0" branch="False" />
+                <line number="127" hits="0" branch="False" />
+                <line number="128" hits="0" branch="False" />
+                <line number="130" hits="0" branch="False" />
+                <line number="131" hits="0" branch="False" />
+                <line number="132" hits="0" branch="False" />
+                <line number="133" hits="0" branch="False" />
+                <line number="134" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_6" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.SystemLog&gt;)">
+            <method line-rate="0" branch-rate="1" complexity="1" name="&lt;OnModelCreating&gt;b__31_6" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;BankSystem.Data.Entities.SystemLog&gt;)">
               <lines>
-                <line number="137" hits="1" branch="False" />
-                <line number="138" hits="1" branch="False" />
-                <line number="139" hits="1" branch="False" />
-                <line number="140" hits="1" branch="False" />
-                <line number="142" hits="1" branch="False" />
-                <line number="143" hits="1" branch="False" />
-                <line number="144" hits="1" branch="False" />
-                <line number="145" hits="1" branch="False" />
-                <line number="146" hits="1" branch="False" />
+                <line number="137" hits="0" branch="False" />
+                <line number="138" hits="0" branch="False" />
+                <line number="139" hits="0" branch="False" />
+                <line number="140" hits="0" branch="False" />
+                <line number="142" hits="0" branch="False" />
+                <line number="143" hits="0" branch="False" />
+                <line number="144" hits="0" branch="False" />
+                <line number="145" hits="0" branch="False" />
+                <line number="146" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="49" hits="1" branch="False" />
-            <line number="50" hits="1" branch="False" />
-            <line number="51" hits="1" branch="False" />
-            <line number="52" hits="1" branch="False" />
-            <line number="53" hits="1" branch="False" />
-            <line number="54" hits="1" branch="False" />
-            <line number="55" hits="1" branch="False" />
-            <line number="56" hits="1" branch="False" />
-            <line number="57" hits="1" branch="False" />
-            <line number="58" hits="1" branch="False" />
-            <line number="61" hits="1" branch="False" />
-            <line number="62" hits="1" branch="False" />
-            <line number="63" hits="1" branch="False" />
-            <line number="64" hits="1" branch="False" />
-            <line number="65" hits="1" branch="False" />
-            <line number="66" hits="1" branch="False" />
-            <line number="67" hits="1" branch="False" />
-            <line number="69" hits="1" branch="False" />
-            <line number="70" hits="1" branch="False" />
-            <line number="71" hits="1" branch="False" />
-            <line number="72" hits="1" branch="False" />
-            <line number="73" hits="1" branch="False" />
-            <line number="76" hits="1" branch="False" />
-            <line number="77" hits="1" branch="False" />
-            <line number="78" hits="1" branch="False" />
-            <line number="79" hits="1" branch="False" />
-            <line number="80" hits="1" branch="False" />
-            <line number="81" hits="1" branch="False" />
-            <line number="83" hits="1" branch="False" />
-            <line number="84" hits="1" branch="False" />
-            <line number="85" hits="1" branch="False" />
-            <line number="86" hits="1" branch="False" />
-            <line number="87" hits="1" branch="False" />
-            <line number="90" hits="1" branch="False" />
-            <line number="91" hits="1" branch="False" />
-            <line number="92" hits="1" branch="False" />
-            <line number="93" hits="1" branch="False" />
-            <line number="94" hits="1" branch="False" />
-            <line number="95" hits="1" branch="False" />
-            <line number="96" hits="1" branch="False" />
-            <line number="98" hits="1" branch="False" />
-            <line number="99" hits="1" branch="False" />
-            <line number="100" hits="1" branch="False" />
-            <line number="101" hits="1" branch="False" />
-            <line number="102" hits="1" branch="False" />
-            <line number="105" hits="1" branch="False" />
-            <line number="106" hits="1" branch="False" />
-            <line number="107" hits="1" branch="False" />
-            <line number="108" hits="1" branch="False" />
-            <line number="110" hits="1" branch="False" />
-            <line number="111" hits="1" branch="False" />
-            <line number="112" hits="1" branch="False" />
-            <line number="113" hits="1" branch="False" />
-            <line number="115" hits="1" branch="False" />
-            <line number="116" hits="1" branch="False" />
-            <line number="117" hits="1" branch="False" />
-            <line number="118" hits="1" branch="False" />
-            <line number="119" hits="1" branch="False" />
-            <line number="122" hits="1" branch="False" />
-            <line number="123" hits="1" branch="False" />
-            <line number="124" hits="1" branch="False" />
-            <line number="125" hits="1" branch="False" />
-            <line number="126" hits="1" branch="False" />
-            <line number="127" hits="1" branch="False" />
-            <line number="128" hits="1" branch="False" />
-            <line number="130" hits="1" branch="False" />
-            <line number="131" hits="1" branch="False" />
-            <line number="132" hits="1" branch="False" />
-            <line number="133" hits="1" branch="False" />
-            <line number="134" hits="1" branch="False" />
-            <line number="137" hits="1" branch="False" />
-            <line number="138" hits="1" branch="False" />
-            <line number="139" hits="1" branch="False" />
-            <line number="140" hits="1" branch="False" />
-            <line number="142" hits="1" branch="False" />
-            <line number="143" hits="1" branch="False" />
-            <line number="144" hits="1" branch="False" />
-            <line number="145" hits="1" branch="False" />
-            <line number="146" hits="1" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="55" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
+            <line number="64" hits="0" branch="False" />
+            <line number="65" hits="0" branch="False" />
+            <line number="66" hits="0" branch="False" />
+            <line number="67" hits="0" branch="False" />
+            <line number="69" hits="0" branch="False" />
+            <line number="70" hits="0" branch="False" />
+            <line number="71" hits="0" branch="False" />
+            <line number="72" hits="0" branch="False" />
+            <line number="73" hits="0" branch="False" />
+            <line number="76" hits="0" branch="False" />
+            <line number="77" hits="0" branch="False" />
+            <line number="78" hits="0" branch="False" />
+            <line number="79" hits="0" branch="False" />
+            <line number="80" hits="0" branch="False" />
+            <line number="81" hits="0" branch="False" />
+            <line number="83" hits="0" branch="False" />
+            <line number="84" hits="0" branch="False" />
+            <line number="85" hits="0" branch="False" />
+            <line number="86" hits="0" branch="False" />
+            <line number="87" hits="0" branch="False" />
+            <line number="90" hits="0" branch="False" />
+            <line number="91" hits="0" branch="False" />
+            <line number="92" hits="0" branch="False" />
+            <line number="93" hits="0" branch="False" />
+            <line number="94" hits="0" branch="False" />
+            <line number="95" hits="0" branch="False" />
+            <line number="96" hits="0" branch="False" />
+            <line number="98" hits="0" branch="False" />
+            <line number="99" hits="0" branch="False" />
+            <line number="100" hits="0" branch="False" />
+            <line number="101" hits="0" branch="False" />
+            <line number="102" hits="0" branch="False" />
+            <line number="105" hits="0" branch="False" />
+            <line number="106" hits="0" branch="False" />
+            <line number="107" hits="0" branch="False" />
+            <line number="108" hits="0" branch="False" />
+            <line number="110" hits="0" branch="False" />
+            <line number="111" hits="0" branch="False" />
+            <line number="112" hits="0" branch="False" />
+            <line number="113" hits="0" branch="False" />
+            <line number="115" hits="0" branch="False" />
+            <line number="116" hits="0" branch="False" />
+            <line number="117" hits="0" branch="False" />
+            <line number="118" hits="0" branch="False" />
+            <line number="119" hits="0" branch="False" />
+            <line number="122" hits="0" branch="False" />
+            <line number="123" hits="0" branch="False" />
+            <line number="124" hits="0" branch="False" />
+            <line number="125" hits="0" branch="False" />
+            <line number="126" hits="0" branch="False" />
+            <line number="127" hits="0" branch="False" />
+            <line number="128" hits="0" branch="False" />
+            <line number="130" hits="0" branch="False" />
+            <line number="131" hits="0" branch="False" />
+            <line number="132" hits="0" branch="False" />
+            <line number="133" hits="0" branch="False" />
+            <line number="134" hits="0" branch="False" />
+            <line number="137" hits="0" branch="False" />
+            <line number="138" hits="0" branch="False" />
+            <line number="139" hits="0" branch="False" />
+            <line number="140" hits="0" branch="False" />
+            <line number="142" hits="0" branch="False" />
+            <line number="143" hits="0" branch="False" />
+            <line number="144" hits="0" branch="False" />
+            <line number="145" hits="0" branch="False" />
+            <line number="146" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="14" name="BankSystem.Data.Migrations.CreateDb.&lt;&gt;c" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260518204236_CreateDb.cs">
+        <class line-rate="0" branch-rate="1" complexity="14" name="BankSystem.Data.Migrations.CreateDb.&lt;&gt;c" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260518204236_CreateDb.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="&lt;Up&gt;b__0_0" signature="(Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder)">
               <lines>
@@ -5486,7 +5486,7 @@
             <line number="161" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.CreateDb.&lt;&gt;c" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260518204236_CreateDb.Designer.cs">
+        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.CreateDb.&lt;&gt;c" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260518204236_CreateDb.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="&lt;BuildTargetModel&gt;b__2_0" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder)">
               <lines>
@@ -5984,7 +5984,7 @@
             <line number="341" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.AddEmailAndCvv.&lt;&gt;c" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260519065809_AddEmailAndCvv.Designer.cs">
+        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.AddEmailAndCvv.&lt;&gt;c" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260519065809_AddEmailAndCvv.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="&lt;BuildTargetModel&gt;b__2_0" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder)">
               <lines>
@@ -6500,7 +6500,7 @@
             <line number="353" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.CreateAdmin.&lt;&gt;c" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260519084807_CreateAdmin.Designer.cs">
+        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.CreateAdmin.&lt;&gt;c" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260519084807_CreateAdmin.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="&lt;BuildTargetModel&gt;b__2_0" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder)">
               <lines>
@@ -7032,7 +7032,7 @@
             <line number="362" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.ActiveUser.&lt;&gt;c" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260525224619_ActiveUser.Designer.cs">
+        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.ActiveUser.&lt;&gt;c" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260525224619_ActiveUser.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="&lt;BuildTargetModel&gt;b__2_0" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder)">
               <lines>
@@ -7570,7 +7570,7 @@
             <line number="366" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.ContextConstructors.&lt;&gt;c" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260525231942_ContextConstructors.Designer.cs">
+        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.ContextConstructors.&lt;&gt;c" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260525231942_ContextConstructors.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="&lt;BuildTargetModel&gt;b__2_0" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder)">
               <lines>
@@ -8108,7 +8108,7 @@
             <line number="366" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.TransactionEdit.&lt;&gt;c" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260526002509_TransactionEdit.Designer.cs">
+        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.TransactionEdit.&lt;&gt;c" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260526002509_TransactionEdit.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="&lt;BuildTargetModel&gt;b__2_0" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder)">
               <lines>
@@ -8672,7 +8672,7 @@
             <line number="387" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.upd.&lt;&gt;c" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\20260526063255_upd.Designer.cs">
+        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.upd.&lt;&gt;c" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\20260526063255_upd.Designer.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="&lt;BuildTargetModel&gt;b__2_0" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder)">
               <lines>
@@ -9218,7 +9218,7 @@
             <line number="374" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.BankDbContextModelSnapshot.&lt;&gt;c" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem\Migrations\BankDbContextModelSnapshot.cs">
+        <class line-rate="0" branch-rate="1" complexity="16" name="BankSystem.Data.Migrations.BankDbContextModelSnapshot.&lt;&gt;c" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem\Migrations\BankDbContextModelSnapshot.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="&lt;BuildModel&gt;b__0_0" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder)">
               <lines>
@@ -9766,9 +9766,9 @@
         </class>
       </classes>
     </package>
-    <package line-rate="0.22699386503067484" branch-rate="0.10344827586206896" complexity="78" name="BankSystem.Controller">
+    <package line-rate="0.024539877300613498" branch-rate="0" complexity="78" name="BankSystem.Controller">
       <classes>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.Program" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\Program.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.Program" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\Program.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="Main" signature="(string[])">
               <lines>
@@ -9784,7 +9784,7 @@
             <line number="8" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="10" name="BankSystem.Controller.TransactionController" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\TransactionController.cs">
+        <class line-rate="0" branch-rate="0" complexity="10" name="BankSystem.Controller.TransactionController" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\TransactionController.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="10" name="GetExchangeRate" signature="(string, string)">
               <lines>
@@ -9834,7 +9834,7 @@
             <line number="64" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.AccountController.&lt;CreateAccount&gt;d__0" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\AccountController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.AccountController.&lt;CreateAccount&gt;d__0" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\AccountController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -9858,7 +9858,7 @@
             <line number="21" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.AccountController.&lt;DeleteAccount&gt;d__3" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\AccountController.cs">
+        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.AccountController.&lt;DeleteAccount&gt;d__3" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\AccountController.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
@@ -9898,7 +9898,7 @@
             <line number="52" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.AccountController.&lt;GetAccountsByClient&gt;d__2" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\AccountController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.AccountController.&lt;GetAccountsByClient&gt;d__2" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\AccountController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -9922,7 +9922,7 @@
             <line number="39" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.AccountController.&lt;GetAllAccounts&gt;d__1" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\AccountController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.AccountController.&lt;GetAllAccounts&gt;d__1" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\AccountController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -9942,7 +9942,7 @@
             <line number="29" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.BankCardController.&lt;CreateBankCard&gt;d__0" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\BankCardController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.BankCardController.&lt;CreateBankCard&gt;d__0" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\BankCardController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -9966,7 +9966,7 @@
             <line number="21" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.BankCardController.&lt;DeleteBankCard&gt;d__2" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\BankCardController.cs">
+        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.BankCardController.&lt;DeleteBankCard&gt;d__2" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\BankCardController.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
@@ -10006,7 +10006,7 @@
             <line number="44" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.BankCardController.&lt;GetCardsByAccount&gt;d__1" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\BankCardController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.BankCardController.&lt;GetCardsByAccount&gt;d__1" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\BankCardController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -10030,7 +10030,7 @@
             <line number="31" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.ClientController.&lt;CreateClient&gt;d__0" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\ClientController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.ClientController.&lt;CreateClient&gt;d__0" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\ClientController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -10054,7 +10054,7 @@
             <line number="21" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.ClientController.&lt;DeleteClient&gt;d__5" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\ClientController.cs">
+        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.ClientController.&lt;DeleteClient&gt;d__5" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\ClientController.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
@@ -10094,7 +10094,7 @@
             <line number="76" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.ClientController.&lt;GetAllClients&gt;d__1" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\ClientController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.ClientController.&lt;GetAllClients&gt;d__1" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\ClientController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -10114,7 +10114,7 @@
             <line number="29" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.ClientController.&lt;GetClientByEgn&gt;d__2" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\ClientController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.ClientController.&lt;GetClientByEgn&gt;d__2" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\ClientController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -10138,7 +10138,7 @@
             <line number="39" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.ClientController.&lt;SearchClientByName&gt;d__3" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\ClientController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.ClientController.&lt;SearchClientByName&gt;d__3" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\ClientController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -10162,7 +10162,7 @@
             <line number="49" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.ClientController.&lt;UpdateClient&gt;d__4" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\ClientController.cs">
+        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.ClientController.&lt;UpdateClient&gt;d__4" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\ClientController.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
@@ -10206,7 +10206,7 @@
             <line number="63" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Controller.LoanController.&lt;&gt;c" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\LoanController.cs">
+        <class line-rate="0" branch-rate="1" complexity="2" name="BankSystem.Controller.LoanController.&lt;&gt;c" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\LoanController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="&lt;GetLoanReport&gt;b__3_0" signature="(BankSystem.Data.Entities.Loan)">
               <lines>
@@ -10224,7 +10224,7 @@
             <line number="62" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.LoanController.&lt;CreateLoan&gt;d__0" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\LoanController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.LoanController.&lt;CreateLoan&gt;d__0" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\LoanController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -10250,7 +10250,7 @@
             <line number="23" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="4" name="BankSystem.Controller.LoanController.&lt;GetLoanReport&gt;d__3" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\LoanController.cs">
+        <class line-rate="0" branch-rate="0" complexity="4" name="BankSystem.Controller.LoanController.&lt;GetLoanReport&gt;d__3" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\LoanController.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="4" name="MoveNext" signature="()">
               <lines>
@@ -10298,7 +10298,7 @@
             <line number="67" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.LoanController.&lt;GetPendingLoans&gt;d__1" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\LoanController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.LoanController.&lt;GetPendingLoans&gt;d__1" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\LoanController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -10324,7 +10324,7 @@
             <line number="34" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="4" name="BankSystem.Controller.LoanController.&lt;UpdateLoanStatus&gt;d__2" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\LoanController.cs">
+        <class line-rate="0" branch-rate="0" complexity="4" name="BankSystem.Controller.LoanController.&lt;UpdateLoanStatus&gt;d__2" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\LoanController.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="4" name="MoveNext" signature="()">
               <lines>
@@ -10380,69 +10380,69 @@
             <line number="51" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Controller.SystemLogController.&lt;GetAllLogs&gt;d__1" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\SystemLogController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.SystemLogController.&lt;GetAllLogs&gt;d__1" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\SystemLogController.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="30" hits="1" branch="False" />
-                <line number="31" hits="1" branch="False" />
-                <line number="32" hits="1" branch="False" />
-                <line number="33" hits="1" branch="False" />
-                <line number="34" hits="1" branch="False" />
-                <line number="35" hits="1" branch="False" />
-                <line number="36" hits="1" branch="False" />
-                <line number="38" hits="1" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="30" hits="1" branch="False" />
-            <line number="31" hits="1" branch="False" />
-            <line number="32" hits="1" branch="False" />
-            <line number="33" hits="1" branch="False" />
-            <line number="34" hits="1" branch="False" />
-            <line number="35" hits="1" branch="False" />
-            <line number="36" hits="1" branch="False" />
-            <line number="38" hits="1" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Controller.SystemLogController.&lt;LogAction&gt;d__0" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\SystemLogController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.SystemLogController.&lt;LogAction&gt;d__0" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\SystemLogController.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="15" hits="1" branch="False" />
-                <line number="16" hits="1" branch="False" />
-                <line number="17" hits="1" branch="False" />
-                <line number="18" hits="1" branch="False" />
-                <line number="19" hits="1" branch="False" />
-                <line number="20" hits="1" branch="False" />
-                <line number="21" hits="1" branch="False" />
-                <line number="22" hits="1" branch="False" />
-                <line number="23" hits="1" branch="False" />
-                <line number="24" hits="1" branch="False" />
-                <line number="25" hits="1" branch="False" />
-                <line number="26" hits="1" branch="False" />
-                <line number="27" hits="1" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="15" hits="1" branch="False" />
-            <line number="16" hits="1" branch="False" />
-            <line number="17" hits="1" branch="False" />
-            <line number="18" hits="1" branch="False" />
-            <line number="19" hits="1" branch="False" />
-            <line number="20" hits="1" branch="False" />
-            <line number="21" hits="1" branch="False" />
-            <line number="22" hits="1" branch="False" />
-            <line number="23" hits="1" branch="False" />
-            <line number="24" hits="1" branch="False" />
-            <line number="25" hits="1" branch="False" />
-            <line number="26" hits="1" branch="False" />
-            <line number="27" hits="1" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.TransactionController.&lt;DepositMoney&gt;d__2" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\TransactionController.cs">
+        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.TransactionController.&lt;DepositMoney&gt;d__2" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\TransactionController.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
@@ -10494,7 +10494,7 @@
             <line number="86" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="4" name="BankSystem.Controller.TransactionController.&lt;GetAccountByIban&gt;d__4" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\TransactionController.cs">
+        <class line-rate="0" branch-rate="0" complexity="4" name="BankSystem.Controller.TransactionController.&lt;GetAccountByIban&gt;d__4" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\TransactionController.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="4" name="MoveNext" signature="()">
               <lines>
@@ -10546,7 +10546,7 @@
             <line number="118" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.TransactionController.&lt;GetHistoryByAccount&gt;d__3" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\TransactionController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.TransactionController.&lt;GetHistoryByAccount&gt;d__3" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\TransactionController.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
@@ -10572,7 +10572,7 @@
             <line number="97" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="14" name="BankSystem.Controller.TransactionController.&lt;TransferMoney&gt;d__0" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\TransactionController.cs">
+        <class line-rate="0" branch-rate="0" complexity="14" name="BankSystem.Controller.TransactionController.&lt;TransferMoney&gt;d__0" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\TransactionController.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="14" name="MoveNext" signature="()">
               <lines>
@@ -10706,7 +10706,7 @@
             <line number="55" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="6" name="BankSystem.Controller.TransactionController.&lt;WithdrawMoney&gt;d__5" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\TransactionController.cs">
+        <class line-rate="0" branch-rate="0" complexity="6" name="BankSystem.Controller.TransactionController.&lt;WithdrawMoney&gt;d__5" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\TransactionController.cs">
           <methods>
             <method line-rate="0" branch-rate="0" complexity="6" name="MoveNext" signature="()">
               <lines>
@@ -10784,17 +10784,17 @@
             <line number="146" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Controller.UserController.&lt;CreateUser&gt;d__1" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\UserController.cs">
+        <class line-rate="0.5714285714285714" branch-rate="1" complexity="1" name="BankSystem.Controller.UserController.&lt;CreateUser&gt;d__1" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\UserController.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0.5714285714285714" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
                 <line number="36" hits="1" branch="False" />
                 <line number="37" hits="1" branch="False" />
                 <line number="38" hits="1" branch="False" />
                 <line number="39" hits="1" branch="False" />
-                <line number="40" hits="1" branch="False" />
-                <line number="41" hits="1" branch="False" />
-                <line number="42" hits="1" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -10803,100 +10803,100 @@
             <line number="37" hits="1" branch="False" />
             <line number="38" hits="1" branch="False" />
             <line number="39" hits="1" branch="False" />
-            <line number="40" hits="1" branch="False" />
-            <line number="41" hits="1" branch="False" />
-            <line number="42" hits="1" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="2" name="BankSystem.Controller.UserController.&lt;DeactivateUser&gt;d__5" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\UserController.cs">
+        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.UserController.&lt;DeactivateUser&gt;d__5" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\UserController.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="2" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
-                <line number="80" hits="1" branch="False" />
-                <line number="81" hits="1" branch="False" />
-                <line number="82" hits="1" branch="False" />
-                <line number="83" hits="1" branch="False" />
-                <line number="84" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="80" hits="0" branch="False" />
+                <line number="81" hits="0" branch="False" />
+                <line number="82" hits="0" branch="False" />
+                <line number="83" hits="0" branch="False" />
+                <line number="84" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="85" hits="1" branch="False" />
-                <line number="86" hits="1" branch="False" />
-                <line number="87" hits="1" branch="False" />
-                <line number="88" hits="1" branch="False" />
-                <line number="89" hits="1" branch="False" />
-                <line number="90" hits="1" branch="False" />
+                <line number="85" hits="0" branch="False" />
+                <line number="86" hits="0" branch="False" />
+                <line number="87" hits="0" branch="False" />
+                <line number="88" hits="0" branch="False" />
+                <line number="89" hits="0" branch="False" />
+                <line number="90" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="80" hits="1" branch="False" />
-            <line number="81" hits="1" branch="False" />
-            <line number="82" hits="1" branch="False" />
-            <line number="83" hits="1" branch="False" />
-            <line number="84" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="80" hits="0" branch="False" />
+            <line number="81" hits="0" branch="False" />
+            <line number="82" hits="0" branch="False" />
+            <line number="83" hits="0" branch="False" />
+            <line number="84" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="85" hits="1" branch="False" />
-            <line number="86" hits="1" branch="False" />
-            <line number="87" hits="1" branch="False" />
-            <line number="88" hits="1" branch="False" />
-            <line number="89" hits="1" branch="False" />
-            <line number="90" hits="1" branch="False" />
+            <line number="85" hits="0" branch="False" />
+            <line number="86" hits="0" branch="False" />
+            <line number="87" hits="0" branch="False" />
+            <line number="88" hits="0" branch="False" />
+            <line number="89" hits="0" branch="False" />
+            <line number="90" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="2" name="BankSystem.Controller.UserController.&lt;DeleteUser&gt;d__4" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\UserController.cs">
+        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.UserController.&lt;DeleteUser&gt;d__4" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\UserController.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="2" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
-                <line number="67" hits="1" branch="False" />
-                <line number="68" hits="1" branch="False" />
-                <line number="69" hits="1" branch="False" />
-                <line number="70" hits="1" branch="False" />
-                <line number="71" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="67" hits="0" branch="False" />
+                <line number="68" hits="0" branch="False" />
+                <line number="69" hits="0" branch="False" />
+                <line number="70" hits="0" branch="False" />
+                <line number="71" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="72" hits="1" branch="False" />
-                <line number="73" hits="1" branch="False" />
-                <line number="74" hits="1" branch="False" />
-                <line number="75" hits="1" branch="False" />
-                <line number="76" hits="1" branch="False" />
-                <line number="77" hits="1" branch="False" />
+                <line number="72" hits="0" branch="False" />
+                <line number="73" hits="0" branch="False" />
+                <line number="74" hits="0" branch="False" />
+                <line number="75" hits="0" branch="False" />
+                <line number="76" hits="0" branch="False" />
+                <line number="77" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="67" hits="1" branch="False" />
-            <line number="68" hits="1" branch="False" />
-            <line number="69" hits="1" branch="False" />
-            <line number="70" hits="1" branch="False" />
-            <line number="71" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="67" hits="0" branch="False" />
+            <line number="68" hits="0" branch="False" />
+            <line number="69" hits="0" branch="False" />
+            <line number="70" hits="0" branch="False" />
+            <line number="71" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="72" hits="1" branch="False" />
-            <line number="73" hits="1" branch="False" />
-            <line number="74" hits="1" branch="False" />
-            <line number="75" hits="1" branch="False" />
-            <line number="76" hits="1" branch="False" />
-            <line number="77" hits="1" branch="False" />
+            <line number="72" hits="0" branch="False" />
+            <line number="73" hits="0" branch="False" />
+            <line number="74" hits="0" branch="False" />
+            <line number="75" hits="0" branch="False" />
+            <line number="76" hits="0" branch="False" />
+            <line number="77" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Controller.UserController.&lt;GetAllUsers&gt;d__2" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\UserController.cs">
+        <class line-rate="0.8" branch-rate="1" complexity="1" name="BankSystem.Controller.UserController.&lt;GetAllUsers&gt;d__2" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\UserController.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0.8" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
                 <line number="45" hits="1" branch="False" />
                 <line number="46" hits="1" branch="False" />
                 <line number="47" hits="1" branch="False" />
                 <line number="48" hits="1" branch="False" />
-                <line number="50" hits="1" branch="False" />
+                <line number="50" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -10905,73 +10905,73 @@
             <line number="46" hits="1" branch="False" />
             <line number="47" hits="1" branch="False" />
             <line number="48" hits="1" branch="False" />
-            <line number="50" hits="1" branch="False" />
+            <line number="50" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankSystem.Controller.UserController.&lt;LoginUser&gt;d__0" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\UserController.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankSystem.Controller.UserController.&lt;LoginUser&gt;d__0" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\UserController.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="25" hits="1" branch="False" />
-                <line number="27" hits="1" branch="False" />
-                <line number="28" hits="1" branch="False" />
-                <line number="29" hits="1" branch="False" />
-                <line number="30" hits="1" branch="False" />
-                <line number="31" hits="1" branch="False" />
-                <line number="33" hits="1" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="25" hits="1" branch="False" />
-            <line number="27" hits="1" branch="False" />
-            <line number="28" hits="1" branch="False" />
-            <line number="29" hits="1" branch="False" />
-            <line number="30" hits="1" branch="False" />
-            <line number="31" hits="1" branch="False" />
-            <line number="33" hits="1" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="2" name="BankSystem.Controller.UserController.&lt;UpdateUser&gt;d__3" filename="C:\Users\user.DESKTOP-D2R61EI\source\repos\Bank\BankSystem.Controller\UserController.cs">
+        <class line-rate="0" branch-rate="0" complexity="2" name="BankSystem.Controller.UserController.&lt;UpdateUser&gt;d__3" filename="C:\Users\User\Source\Repos\Bank-System\BankSystem.Controller\UserController.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="2" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="0" complexity="2" name="MoveNext" signature="()">
               <lines>
-                <line number="53" hits="1" branch="False" />
-                <line number="54" hits="1" branch="False" />
-                <line number="55" hits="1" branch="False" />
-                <line number="56" hits="1" branch="False" />
-                <line number="57" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="55" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
+                    <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="58" hits="1" branch="False" />
-                <line number="59" hits="1" branch="False" />
-                <line number="60" hits="1" branch="False" />
-                <line number="61" hits="1" branch="False" />
-                <line number="62" hits="1" branch="False" />
-                <line number="63" hits="1" branch="False" />
-                <line number="64" hits="1" branch="False" />
+                <line number="58" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+                <line number="60" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+                <line number="64" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="53" hits="1" branch="False" />
-            <line number="54" hits="1" branch="False" />
-            <line number="55" hits="1" branch="False" />
-            <line number="56" hits="1" branch="False" />
-            <line number="57" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="55" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="100%" />
+                <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="58" hits="1" branch="False" />
-            <line number="59" hits="1" branch="False" />
-            <line number="60" hits="1" branch="False" />
-            <line number="61" hits="1" branch="False" />
-            <line number="62" hits="1" branch="False" />
-            <line number="63" hits="1" branch="False" />
-            <line number="64" hits="1" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+            <line number="60" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
+            <line number="64" hits="0" branch="False" />
           </lines>
         </class>
       </classes>

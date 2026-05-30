@@ -219,12 +219,6 @@ namespace BankSystem.UI
             loginForm.ShowDialog();
             this.Close();
         }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private async void button1_Click(object sender, EventArgs e)
         {
             try

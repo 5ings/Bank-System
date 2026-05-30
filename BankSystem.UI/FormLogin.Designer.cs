@@ -57,7 +57,6 @@
             groupBox1.Size = new Size(398, 320);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // btnLogin
             // 

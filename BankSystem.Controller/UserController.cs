@@ -1,6 +1,7 @@
 ﻿using BankSystem.Data;
 using BankSystem.Data.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace BankSystem.Controller
 {
     public class UserController
     {
+        private readonly SystemLogController _logController;
         //public BankDbContext Context { get; set; }
         //public UserController()
         //{
@@ -23,12 +25,25 @@ namespace BankSystem.Controller
         //}
         public async Task<User> LoginUser(string username, string password)
         {
-
             using (BankDbContext context = new BankDbContext())
             {
-                return await context.Users
+                var user = await context.Users
                     .Include(u => u.Client)
-                    .FirstOrDefaultAsync(u => u.Username == username && u.PasswordHash == password);
+                    .FirstOrDefaultAsync(u => u.Username == username);
+
+                if (user == null) return null;
+
+                if (user.IsActive == false)
+                {
+                    throw new Exception("Вашият профил е деактивиран и нямате достъп до системата.");
+                }
+
+                if (user.PasswordHash == password)
+                {
+                    return user;
+                }
+
+                return null; 
             }
         }
 
@@ -76,7 +91,22 @@ namespace BankSystem.Controller
             }
         }
 
-        public async Task DeactivateUser(int userId)
+        public async Task ActivateUser(int userId, int adminId)
+        {
+            using (BankDbContext context = new BankDbContext())
+            {
+                var user = await context.Users.FindAsync(userId);
+                if (user != null)
+                {
+                    user.IsActive = true;
+                    await context.SaveChangesAsync();
+
+                    await _logController.LogAction(adminId, $"Администратор активира профила на потребител: {user.Username}.");
+                }
+            }
+        }
+
+        public async Task DeactivateUser(int userId, int adminId)
         {
             using (BankDbContext context = new BankDbContext())
             {
@@ -85,6 +115,8 @@ namespace BankSystem.Controller
                 {
                     user.IsActive = false;
                     await context.SaveChangesAsync();
+
+                    await _logController.LogAction(adminId, $"Администратор деактивира профила на потребител: {user.Username}.");
                 }
             }
         }

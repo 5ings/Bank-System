@@ -129,7 +129,6 @@
             label1.Size = new Size(551, 32);
             label1.TabIndex = 3;
             label1.Text = "Добре дошли във вашето онлайн банкиране";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -151,7 +150,6 @@
             dgvAccounts.ReadOnly = true;
             dgvAccounts.Size = new Size(520, 210);
             dgvAccounts.TabIndex = 5;
-            dgvAccounts.CellContentClick += dgvAccounts_CellContentClick;
             // 
             // groupBox2
             // 

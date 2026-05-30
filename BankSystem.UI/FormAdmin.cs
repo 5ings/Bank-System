@@ -1,6 +1,8 @@
 ﻿using BankSystem.Controller;
+using BankSystem.Data;
 using BankSystem.Data.Entities;
 using BankSystem.Data.Enums;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,25 +18,35 @@ namespace BankSystem.UI
     public partial class FormAdmin : Form
     {
         private User _adminUser;
+        private UserController _userController;
+        private UserController UserController => _userController ??= new UserController();
 
-        private readonly UserController _userController;
-        private readonly SystemLogController _logController;
+        private SystemLogController _logController;
+        private SystemLogController LogController => _logController ??= new SystemLogController();
         public FormAdmin(User loggedUser)
         {
             InitializeComponent();
             _adminUser = loggedUser;
         }
-
         public FormAdmin()
         {
             InitializeComponent();
             _userController = new UserController();
             _logController = new SystemLogController();
+
         }
 
 
         private async void FormAdmin_Load(object sender, EventArgs e)
         {
+            await RefreshDataAndLogs();
+            dgvUsers.ReadOnly = false;
+
+            if (dgvUsers.Columns["IsActive"] != null)
+            {
+                dgvUsers.Columns["IsActive"].ReadOnly = false;
+            }
+
             await RefreshDataAndLogs();
         }
 
@@ -42,15 +54,16 @@ namespace BankSystem.UI
         {
             try
             {
+                List<User> users = await this.UserController.GetAllUsers();
 
-                List<User> users = await _userController.GetAllUsers();
                 dgvUsers.DataSource = null;
                 dgvUsers.DataSource = users;
 
                 if (dgvUsers.Columns["PasswordHash"] != null)
                     dgvUsers.Columns["PasswordHash"].Visible = false;
 
-                List<SystemLog> logs = await _logController.GetAllLogs();
+                List<SystemLog> logs = await this.LogController.GetAllLogs();
+
                 dgvLogs.DataSource = null;
                 dgvLogs.DataSource = logs;
 
@@ -61,16 +74,6 @@ namespace BankSystem.UI
             {
                 MessageBox.Show($"Грешка при опресняване на данните: {ex.Message}", "Системна грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private async void btnCreateUser_Click(object sender, EventArgs e)
@@ -153,7 +156,7 @@ namespace BankSystem.UI
 
                         if (deactivateResult == DialogResult.OK)
                         {
-                            await _userController.DeactivateUser(selectedUser.UserID);
+                            await _userController.DeactivateUser(selectedUser.UserID, _adminUser.UserID);
 
                             MessageBox.Show("Профилът беше успешно деактивиран и достъпът му до системата е спрян!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -168,16 +171,12 @@ namespace BankSystem.UI
             }
         }
 
-        private void btnDeleteUser_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             FormLogin loginForm = new FormLogin();
             loginForm.ShowDialog();
             this.Close();
         }
+       
     }
 }

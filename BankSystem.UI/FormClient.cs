@@ -122,15 +122,6 @@ namespace BankSystem.UI
         {
             this.Close();
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnLogOut_Click_1(object sender, EventArgs e)
         {
@@ -185,16 +176,9 @@ namespace BankSystem.UI
                     errorMessage += "\n\nДетайли: " + ex.InnerException.Message;
                 }
                 MessageBox.Show($"Грешка в базата/логиката: {errorMessage}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //MessageBox.Show($"Грешка в базата/логиката:\n{ex.Message}");
             }
 
         }
-
-        private void dgvAccounts_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         
     }
 }
