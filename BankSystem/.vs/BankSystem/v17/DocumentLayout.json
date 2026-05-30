@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\User\\Source\\Repos\\Bank-System\\BankSystem\\.gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\User\\Source\\Repos\\Bank-System\\BankSystem\\.gitattributes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.gitattributes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem.ui\\formmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\User\\Source\\Repos\\Bank-System\\BankSystem\\.gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,6 +26,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": ".gitattributes.txt",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\.gitattributes.txt",
+              "RelativeDocumentMoniker": ".gitattributes.txt",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\.gitattributes.txt",
+              "RelativeToolTip": ".gitattributes.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-30T22:57:36.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": ".gitignore.txt",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\.gitignore.txt",
               "RelativeDocumentMoniker": ".gitignore.txt",
@@ -29,8 +46,7 @@
               "RelativeToolTip": ".gitignore.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-05-30T22:49:38.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T22:49:38.003Z"
             },
             {
               "$type": "Document",
