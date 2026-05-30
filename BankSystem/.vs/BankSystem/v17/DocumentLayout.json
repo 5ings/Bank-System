@@ -3,46 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem\\migrations\\20260530223936_complaintstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:migrations\\20260530223936_complaintstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\User\\Source\\Repos\\Bank-System\\BankSystem\\.gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem\\bankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:bankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem\\entities\\complaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:entities\\complaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem\\enums\\complaintstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:enums\\complaintstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem\\enums\\transactionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:enums\\transactionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Migrations\\20260530222029_TransactionStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260530222029_TransactionStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem.ui\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem.ui\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\user\\source\\repos\\bank-system\\banksystem.ui\\formmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,143 +22,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20260530223936_ComplaintsTable.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Migrations\\20260530223936_ComplaintsTable.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260530223936_ComplaintsTable.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Migrations\\20260530223936_ComplaintsTable.cs",
-              "RelativeToolTip": "Migrations\\20260530223936_ComplaintsTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:39:36.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Entities\\Client.cs",
-              "RelativeDocumentMoniker": "Entities\\Client.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Entities\\Client.cs",
-              "RelativeToolTip": "Entities\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:29:58.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Complaint.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Entities\\Complaint.cs",
-              "RelativeDocumentMoniker": "Entities\\Complaint.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Entities\\Complaint.cs",
-              "RelativeToolTip": "Entities\\Complaint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:25:38.637Z",
+              "Title": ".gitignore.txt",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\.gitignore.txt",
+              "RelativeDocumentMoniker": ".gitignore.txt",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\.gitignore.txt",
+              "RelativeToolTip": ".gitignore.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-30T22:49:38.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BankDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\BankDbContext.cs",
-              "RelativeDocumentMoniker": "BankDbContext.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\BankDbContext.cs",
-              "RelativeToolTip": "BankDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAA4AAAAAAAAAA==",
+              "Title": "FormManager.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem.UI\\FormManager.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormManager.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem.UI\\FormManager.cs [Design]",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormManager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:29:05.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ComplaintStatus.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Enums\\ComplaintStatus.cs",
-              "RelativeDocumentMoniker": "Enums\\ComplaintStatus.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Enums\\ComplaintStatus.cs",
-              "RelativeToolTip": "Enums\\ComplaintStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:26:50.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20260530222029_TransactionStatus.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Migrations\\20260530222029_TransactionStatus.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260530222029_TransactionStatus.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Migrations\\20260530222029_TransactionStatus.cs",
-              "RelativeToolTip": "Migrations\\20260530222029_TransactionStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:20:29.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TransactionStatus.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Enums\\TransactionStatus.cs",
-              "RelativeDocumentMoniker": "Enums\\TransactionStatus.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Enums\\TransactionStatus.cs",
-              "RelativeToolTip": "Enums\\TransactionStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:18:45.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Entities\\Transaction.cs",
-              "RelativeDocumentMoniker": "Entities\\Transaction.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Entities\\Transaction.cs",
-              "RelativeToolTip": "Entities\\Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:18:25.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserRole.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Enums\\UserRole.cs",
-              "RelativeDocumentMoniker": "Enums\\UserRole.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem\\Enums\\UserRole.cs",
-              "RelativeToolTip": "Enums\\UserRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:13:44.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem.UI\\FormAdmin.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormAdmin.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem.UI\\FormAdmin.cs",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormAdmin.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAhwHoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:09:29.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem.UI\\FormAdmin.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormAdmin.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Bank-System\\BankSystem.UI\\FormAdmin.cs [Design]",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:09:27.198Z",
+              "WhenOpened": "2026-05-30T22:42:58.892Z",
               "EditorCaption": " [Design]"
             }
           ]
