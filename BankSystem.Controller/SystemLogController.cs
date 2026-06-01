@@ -11,30 +11,34 @@ namespace BankSystem.Controller
 {
     public class SystemLogController
     {
+        public BankDbContext Context { get; set; }
+        public SystemLogController()
+        {
+            Context = new BankDbContext();
+        }
+
+        public SystemLogController(BankDbContext context)
+        {
+            Context = context;
+        }
         public async Task LogAction(int userId, string actionDescription)
         {
-            using (BankDbContext context = new BankDbContext())
+            SystemLog log = new SystemLog
             {
-                SystemLog log = new SystemLog
-                {
-                    UserID = userId,
-                    Action = actionDescription,
-                    LogDate = DateTime.Now
-                };
-                await context.SystemLogs.AddAsync(log);
-                await context.SaveChangesAsync();
-            }
+                UserID = userId,
+                Action = actionDescription,
+                LogDate = DateTime.Now
+            };
+            await Context.SystemLogs.AddAsync(log);
+            await Context.SaveChangesAsync();
         }
 
         public async Task<List<SystemLog>> GetAllLogs()
         {
-            using (BankDbContext context = new BankDbContext())
-            {
-                return await context.SystemLogs
+            return await Context.SystemLogs
                     .Include(sl => sl.User)
                     .OrderByDescending(sl => sl.LogDate)
                     .ToListAsync();
-            }
         }
     }
 }

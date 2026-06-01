@@ -2,36 +2,6 @@
 <Hotspots>
   <Hotspot>
     <Assembly>BankSystem.Data</Assembly>
-    <Class>BankSystem.Data.Migrations.ActiveUser</Class>
-    <MethodName>BuildTargetModel(...)</MethodName>
-    <ShortName />
-    <Line>20</Line>
-    <FileIndex>1</FileIndex>
-    <Metrics>
-      <Metric>
-        <Name>Cyclomatic complexity</Name>
-        <Exceeded>true</Exceeded>
-        <Value>32</Value>
-      </Metric>
-    </Metrics>
-  </Hotspot>
-  <Hotspot>
-    <Assembly>BankSystem.Data</Assembly>
-    <Class>BankSystem.Data.Migrations.AddEmailAndCvv</Class>
-    <MethodName>BuildTargetModel(...)</MethodName>
-    <ShortName />
-    <Line>20</Line>
-    <FileIndex>1</FileIndex>
-    <Metrics>
-      <Metric>
-        <Name>Cyclomatic complexity</Name>
-        <Exceeded>true</Exceeded>
-        <Value>32</Value>
-      </Metric>
-    </Metrics>
-  </Hotspot>
-  <Hotspot>
-    <Assembly>BankSystem.Data</Assembly>
     <Class>BankSystem.Data.Migrations.BankDbContextModelSnapshot</Class>
     <MethodName>BuildModel(...)</MethodName>
     <ShortName />
@@ -47,67 +17,7 @@
   </Hotspot>
   <Hotspot>
     <Assembly>BankSystem.Data</Assembly>
-    <Class>BankSystem.Data.Migrations.ContextConstructors</Class>
-    <MethodName>BuildTargetModel(...)</MethodName>
-    <ShortName />
-    <Line>20</Line>
-    <FileIndex>1</FileIndex>
-    <Metrics>
-      <Metric>
-        <Name>Cyclomatic complexity</Name>
-        <Exceeded>true</Exceeded>
-        <Value>32</Value>
-      </Metric>
-    </Metrics>
-  </Hotspot>
-  <Hotspot>
-    <Assembly>BankSystem.Data</Assembly>
-    <Class>BankSystem.Data.Migrations.CreateAdmin</Class>
-    <MethodName>BuildTargetModel(...)</MethodName>
-    <ShortName />
-    <Line>20</Line>
-    <FileIndex>1</FileIndex>
-    <Metrics>
-      <Metric>
-        <Name>Cyclomatic complexity</Name>
-        <Exceeded>true</Exceeded>
-        <Value>32</Value>
-      </Metric>
-    </Metrics>
-  </Hotspot>
-  <Hotspot>
-    <Assembly>BankSystem.Data</Assembly>
-    <Class>BankSystem.Data.Migrations.CreateDb</Class>
-    <MethodName>BuildTargetModel(...)</MethodName>
-    <ShortName />
-    <Line>20</Line>
-    <FileIndex>1</FileIndex>
-    <Metrics>
-      <Metric>
-        <Name>Cyclomatic complexity</Name>
-        <Exceeded>true</Exceeded>
-        <Value>32</Value>
-      </Metric>
-    </Metrics>
-  </Hotspot>
-  <Hotspot>
-    <Assembly>BankSystem.Data</Assembly>
-    <Class>BankSystem.Data.Migrations.TransactionEdit</Class>
-    <MethodName>BuildTargetModel(...)</MethodName>
-    <ShortName />
-    <Line>20</Line>
-    <FileIndex>1</FileIndex>
-    <Metrics>
-      <Metric>
-        <Name>Cyclomatic complexity</Name>
-        <Exceeded>true</Exceeded>
-        <Value>32</Value>
-      </Metric>
-    </Metrics>
-  </Hotspot>
-  <Hotspot>
-    <Assembly>BankSystem.Data</Assembly>
-    <Class>BankSystem.Data.Migrations.upd</Class>
+    <Class>BankSystem.Data.Migrations.CreateDB</Class>
     <MethodName>BuildTargetModel(...)</MethodName>
     <ShortName />
     <Line>20</Line>

@@ -11,43 +11,43 @@ namespace BankSystem.Controller
 {
     public class AccountController
     {
+        public BankDbContext Context { get; set; }
+
+        public AccountController()
+        {
+            Context = new BankDbContext();
+        }
+
+        public AccountController(BankDbContext context)
+        {
+            Context = context;
+        }
+
         public async Task CreateAccount(Account account)
         {
-            using (BankDbContext context = new BankDbContext())
-            {
-                await context.Accounts.AddAsync(account);
-                await context.SaveChangesAsync();
-            }
+            await Context.Accounts.AddAsync(account);
+            await Context.SaveChangesAsync();
         }
 
         public async Task<List<Account>> GetAllAccounts()
         {
-            using (BankDbContext context = new BankDbContext())
-            {
-                return await context.Accounts.Include(a => a.Client).ToListAsync();
-            }
+            return await Context.Accounts.Include(a => a.Client).ToListAsync();
         }
 
         public async Task<List<Account>> GetAccountsByClient(int clientId)
         {
-            using (BankDbContext context = new BankDbContext())
-            {
-                return await context.Accounts
-                    .Where(a => a.ClientID == clientId)
-                    .ToListAsync();
-            }
+            return await Context.Accounts
+                .Where(a => a.ClientID == clientId)
+                .ToListAsync();
         }
 
         public async Task DeleteAccount(int accountId)
         {
-            using (BankDbContext context = new BankDbContext())
+            var account = await Context.Accounts.FirstOrDefaultAsync(a => a.AccountID == accountId);
+            if (account != null)
             {
-                var account = await context.Accounts.FirstOrDefaultAsync(a => a.AccountID == accountId);
-                if (account != null)
-                {
-                    context.Accounts.Remove(account);
-                    await context.SaveChangesAsync();
-                }
+                Context.Accounts.Remove(account);
+                await Context.SaveChangesAsync();
             }
         }
     }

@@ -16,7 +16,7 @@ namespace BankSystem.Tests.Helpers
                 .UseInMemoryDatabase(Guid.NewGuid().ToString())
                 .Options;
 
-            BankDbContext context = new BankDbContext();
+            BankDbContext context = new BankDbContext(options);
 
             context.Database.EnsureCreated();
 

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace BankSystem.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateDb : Migration
+    public partial class CreateDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,7 +20,8 @@ namespace BankSystem.Data.Migrations
                     FirstName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     EGN = table.Column<string>(type: "char(10)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false)
+                    Phone = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -82,7 +83,8 @@ namespace BankSystem.Data.Migrations
                     Username = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     PasswordHash = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     Role = table.Column<int>(type: "int", nullable: false),
-                    ClientID = table.Column<int>(type: "int", nullable: true)
+                    ClientID = table.Column<int>(type: "int", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -104,7 +106,8 @@ namespace BankSystem.Data.Migrations
                     AccountID = table.Column<int>(type: "int", nullable: false),
                     CardNumber = table.Column<string>(type: "char(16)", nullable: false),
                     CardType = table.Column<int>(type: "int", nullable: false),
-                    ExpiryDate = table.Column<string>(type: "char(5)", nullable: false)
+                    ExpiryDate = table.Column<string>(type: "char(5)", nullable: false),
+                    CVV = table.Column<string>(type: "char(3)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -123,20 +126,26 @@ namespace BankSystem.Data.Migrations
                 {
                     TransactionID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AccountID = table.Column<int>(type: "int", nullable: false),
+                    FromAccountID = table.Column<int>(type: "int", nullable: true),
+                    ToAccountID = table.Column<int>(type: "int", nullable: true),
                     Amount = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
-                    TransactionType = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     TransactionDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Transactions", x => x.TransactionID);
                     table.ForeignKey(
-                        name: "FK_Transactions_Accounts_AccountID",
-                        column: x => x.AccountID,
+                        name: "FK_Transactions_Accounts_FromAccountID",
+                        column: x => x.FromAccountID,
                         principalTable: "Accounts",
                         principalColumn: "AccountID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Transactions_Accounts_ToAccountID",
+                        column: x => x.ToAccountID,
+                        principalTable: "Accounts",
+                        principalColumn: "AccountID",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -159,6 +168,11 @@ namespace BankSystem.Data.Migrations
                         principalColumn: "UserID",
                         onDelete: ReferentialAction.Restrict);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "UserID", "ClientID", "IsActive", "PasswordHash", "Role", "Username" },
+                values: new object[] { 1, null, true, "Admin123", 1, "admin" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Accounts_ClientID",
@@ -189,6 +203,12 @@ namespace BankSystem.Data.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_Clients_Email",
+                table: "Clients",
+                column: "Email",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Loans_ClientID",
                 table: "Loans",
                 column: "ClientID");
@@ -199,9 +219,14 @@ namespace BankSystem.Data.Migrations
                 column: "UserID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Transactions_AccountID",
+                name: "IX_Transactions_FromAccountID",
                 table: "Transactions",
-                column: "AccountID");
+                column: "FromAccountID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Transactions_ToAccountID",
+                table: "Transactions",
+                column: "ToAccountID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_ClientID",

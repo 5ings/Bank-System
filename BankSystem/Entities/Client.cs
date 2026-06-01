@@ -16,8 +16,6 @@ namespace BankSystem.Data.Entities
         public string Email { get; set; }
 
         public ICollection<Account> Accounts { get; set; } = new List<Account>();
-        public ICollection<Loan> Loans { get; set; } = new List<Loan>();
-        public ICollection<Complaint> Complaints { get; set; } = new List<Complaint>();
         public User User { get; set; }
     }
 }

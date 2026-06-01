@@ -2,218 +2,208 @@
 using BankSystem.Data;
 using BankSystem.Data.Entities;
 using BankSystem.Data.Enums;
+using BankSystem.Tests.Helpers;
 using Microsoft.EntityFrameworkCore;
 
 namespace BankSystem.Tests.Services
 {
     public class UserControllerTests
     {
-        private UserController _userController;
 
         [SetUp]
         public void Setup()
         {
-            _userController = new UserController();
+            
         }
 
         [Test]
-        public async Task Test_1_CreateUser_ShouldAddNewUserToDatabase()
+        public async Task LoginUser_ValidCredentials_ReturnsUser()
         {
-            string uniqueUsername = "test_create_" + Guid.NewGuid().ToString().Substring(0, 8);
+            var context = TestDbBank.CreateContext();
+
+            context.Users.Add(new User
+            {
+                Username = "TestLogUser",
+                PasswordHash = "hashed_password_123",
+                Role = UserRole.Admin,
+                IsActive = true
+            });
+            await context.SaveChangesAsync();
+
+            UserController userController = new UserController(context);
+
+            User? user = await userController.LoginUser("TestLogUser", "hashed_password_123");
+
+            Assert.IsNotNull(user);
+            Assert.AreEqual("TestLogUser", user.Username);
+        }
+
+        [Test]
+        public async Task LoginUser_InactiveUser_ThrowsException()
+        {
+            var context = TestDbBank.CreateContext();
+
+            context.Users.Add(new User
+            {
+                Username = "InactiveUser",
+                PasswordHash = "password123",
+                Role = UserRole.Client,
+                IsActive = false 
+            });
+            await context.SaveChangesAsync();
+
+            UserController userController = new UserController(context);
+
+            var exception = Assert.ThrowsAsync<Exception>(async () =>
+            {
+                await userController.LoginUser("InactiveUser", "password123");
+            });
+
+            Assert.AreEqual("Вашият профил е деактивиран и нямате достъп до системата.", exception.Message);
+        }
+
+        [Test]
+        public async Task CreateUser_SuccessfullyAddsUserToDb()
+        {
+            var context = TestDbBank.CreateContext();
+            UserController userController = new UserController(context);
+
             var newUser = new User
             {
-                Username = uniqueUsername,
-                PasswordHash = "CreatePass123",
-                Role = UserRole.Client,
+                Username = "NewCreatedUser",
+                PasswordHash = "secretPassword",
+                Role = UserRole.Teller,
                 IsActive = true
             };
 
-            await _userController.CreateUser(newUser);
+            await userController.CreateUser(newUser);
 
-            using (var context = new BankDbContext())
-            {
-                var savedUser = await context.Users.FirstOrDefaultAsync(u => u.Username == uniqueUsername);
-                Assert.IsNotNull(savedUser, "Методът CreateUser не записа потребителя в базата данни!");
-
-                context.Users.Remove(savedUser);
-                await context.SaveChangesAsync();
-            }
+            var dbUser = await context.Users.FirstOrDefaultAsync(u => u.Username == "NewCreatedUser");
+            Assert.IsNotNull(dbUser);
+            Assert.AreEqual("secretPassword", dbUser.PasswordHash);
+            Assert.AreEqual(UserRole.Teller, dbUser.Role);
         }
 
+
         [Test]
-        public async Task Test_2_LoginUser_WithCorrectCredentials_ShouldReturnUser()
+        public async Task GetAllUsers_ReturnsAllUsersFromDatabase()
         {
-            string uniqueUsername = "test_login_" + Guid.NewGuid().ToString().Substring(0, 8);
-            var tempUser = new User { Username = uniqueUsername, PasswordHash = "LoginPass123", Role = UserRole.Client, IsActive = true };
+            var context = TestDbBank.CreateContext();
 
-            using (var context = new BankDbContext())
-            {
-                context.Users.Add(tempUser);
-                await context.SaveChangesAsync();
-            }
+            context.Users.Add(new User { Username = "User1", PasswordHash = "p1", Role = UserRole.Client, IsActive = true });
+            context.Users.Add(new User { Username = "User2", PasswordHash = "p2", Role = UserRole.Teller, IsActive = true });
+            await context.SaveChangesAsync();
 
-            try
-            {
-                User result = await _userController.LoginUser(uniqueUsername, "LoginPass123");
+            UserController userController = new UserController(context);
 
-                Assert.IsNotNull(result, "Методът LoginUser върна null при правилни потребителско име и парола!");
-                Assert.AreEqual(uniqueUsername, result.Username);
-            }
-            finally
-            {
-                using (var context = new BankDbContext())
-                {
-                    var userToRemove = await context.Users.FirstOrDefaultAsync(u => u.Username == uniqueUsername);
-                    if (userToRemove != null) { context.Users.Remove(userToRemove); await context.SaveChangesAsync(); }
-                }
-            }
+            List<User> users = await userController.GetAllUsers();
+
+            Assert.IsNotNull(users);
+            Assert.IsTrue(users.Count >= 2);
         }
 
-        [Test]
-        public async Task Test_3_GetAllUsers_ShouldReturnListOfUsers()
-        {
-            List<User> usersList = await _userController.GetAllUsers();
-
-            Assert.IsNotNull(usersList, "Методът GetAllUsers връща null вместо списък!");
-            Assert.IsTrue(usersList.Count > 0, "Списъкът с потребители е празен, а трябва да съдържа поне администратора!");
-        }
 
         [Test]
-        public async Task Test_4_UpdateUser_ShouldChangePasswordAndRole()
+        public async Task UpdateUser_UpdatesPasswordAndRoleCorrectly()
         {
-            string uniqueUsername = "test_update_" + Guid.NewGuid().ToString().Substring(0, 8);
-            var user = new User { Username = uniqueUsername, PasswordHash = "OldPassword", Role = UserRole.Client, IsActive = true };
+            var context = TestDbBank.CreateContext();
 
-            using (var context = new BankDbContext())
+            var existingUser = new User
             {
-                context.Users.Add(user);
-                await context.SaveChangesAsync();
-            }
-
-            try
-            {
-                user.PasswordHash = "NewPassword123";
-                user.Role = UserRole.Teller;
-
-                await _userController.UpdateUser(user);
-
-                using (var context = new BankDbContext())
-                {
-                    var updatedUser = await context.Users.FirstOrDefaultAsync(u => u.UserID == user.UserID);
-                    Assert.AreEqual("NewPassword123", updatedUser.PasswordHash, "Паролата не беше актуализирана в базата данни!");
-                    Assert.AreEqual(UserRole.Teller, updatedUser.Role, "Ролята не беше актуализирана в базата данни!");
-                }
-            }
-            finally
-            {
-                using (var context = new BankDbContext())
-                {
-                    var userToRemove = await context.Users.FirstOrDefaultAsync(u => u.Username == uniqueUsername);
-                    if (userToRemove != null) { context.Users.Remove(userToRemove); await context.SaveChangesAsync(); }
-                }
-            }
-        }
-
-        [Test]
-        public async Task Test_5_DeactivateUser_ShouldSetIsActiveToFalse()
-        {
-            string uniqueUsername = "test_deactivate_" + Guid.NewGuid().ToString().Substring(0, 8);
-            var user = new User { Username = uniqueUsername, PasswordHash = "Pass123", Role = UserRole.Client, IsActive = true };
-
-            using (var context = new BankDbContext())
-            {
-                context.Users.Add(user);
-                await context.SaveChangesAsync();
-            }
-
-            try
-            {
-                //await _userController.DeactivateUser(user.UserID, );
-
-                using (var context = new BankDbContext())
-                {
-                    var deactivatedUser = await context.Users.FirstOrDefaultAsync(u => u.UserID == user.UserID);
-                    Assert.IsFalse(deactivatedUser.IsActive, "Методът DeactivateUser не промени флага IsActive на false!");
-                }
-            }
-            finally
-            {
-                using (var context = new BankDbContext())
-                {
-                    var userToRemove = await context.Users.FirstOrDefaultAsync(u => u.Username == uniqueUsername);
-                    if (userToRemove != null) { context.Users.Remove(userToRemove); await context.SaveChangesAsync(); }
-                }
-            }
-        }
-
-        [Test]
-        public async Task Test_6_DeleteUser_ShouldRemoveUserFromDatabase()
-        {
-            string uniqueUsername = "test_delete_" + Guid.NewGuid().ToString().Substring(0, 8);
-            var user = new User { Username = uniqueUsername, PasswordHash = "Pass123", Role = UserRole.Client, IsActive = true };
-
-            using (var context = new BankDbContext())
-            {
-                context.Users.Add(user);
-                await context.SaveChangesAsync();
-            }
-
-            await _userController.DeleteUser(user.UserID);
-
-            using (var context = new BankDbContext())
-            {
-                var deletedUser = await context.Users.FirstOrDefaultAsync(u => u.UserID == user.UserID);
-                Assert.IsNull(deletedUser, "Методът DeleteUser не премахна физически потребителя от базата данни!");
-            }
-        }
-
-        [Test]
-        public async Task LoginUser_WithWrongPassword_ShouldReturnNull()
-        {
-            var controller = new UserController();
-
-            using (var context = new BankDbContext())
-            {
-                var existing = await context.Users.FirstOrDefaultAsync(u => u.Username == "LoginTestUser");
-                if (existing == null)
-                {
-                    context.Users.Add(new User { Username = "LoginTestUser", PasswordHash = "correct_pass", Role = 0 });
-                    await context.SaveChangesAsync();
-                }
-            }
-
-            var result = await controller.LoginUser("LoginTestUser", "greshna_parola_123");
-
-            Assert.IsNull(result, "Методът трябваше да върне null за грешна парола!");
-        }
-
-        [Test]
-        public async Task CreateUser_WithDuplicateUsername_ShouldThrowDbUpdateException()
-        {
-            var controller = new UserController();
-            string duplicateName = "DuplicateUserToTest";
-
-            using (var context = new BankDbContext())
-            {
-                var existing = await context.Users.FirstOrDefaultAsync(u => u.Username == duplicateName);
-                if (existing == null)
-                {
-                    context.Users.Add(new User { Username = duplicateName, PasswordHash = "pass1", Role = 0 });
-                    await context.SaveChangesAsync();
-                }
-            }
-
-            var duplicateUser = new User
-            {
-                Username = duplicateName,
-                PasswordHash = "pass2",
-                Role = 0
+                Username = "PromotionUser",
+                PasswordHash = "oldPass",
+                Role = UserRole.Client,
+                IsActive = true
             };
+            context.Users.Add(existingUser);
+            await context.SaveChangesAsync();
 
-            Assert.ThrowsAsync<DbUpdateException>(async () =>
+            UserController userController = new UserController(context);
+
+            existingUser.PasswordHash = "newTellerPass";
+            existingUser.Role = UserRole.Teller; 
+
+            await userController.UpdateUser(existingUser);
+
+            var updatedDbUser = await context.Users.FindAsync(existingUser.UserID);
+            Assert.IsNotNull(updatedDbUser);
+            Assert.AreEqual("newTellerPass", updatedDbUser.PasswordHash);
+            Assert.AreEqual(UserRole.Teller, updatedDbUser.Role);
+        }
+
+
+        [Test]
+        public async Task DeleteUser_RemovesUserCorrectly()
+        {
+            var context = TestDbBank.CreateContext();
+
+            var userToDelete = new User
             {
-                await controller.CreateUser(duplicateUser);
-            }, "Базата трябваше да блокира дублиращия се Username!");
+                Username = "UserForDeletion",
+                PasswordHash = "123456",
+                Role = UserRole.Client,
+                IsActive = true
+            };
+            context.Users.Add(userToDelete);
+            await context.SaveChangesAsync();
+
+            int targetId = userToDelete.UserID;
+
+            UserController userController = new UserController(context);
+
+            await userController.DeleteUser(targetId);
+
+            var dbUser = await context.Users.FindAsync(targetId);
+            Assert.IsNull(dbUser);
+        }
+
+
+        [Test]
+        public async Task DeactivateUser_SetsIsActiveToFalse()
+        {
+            var context = TestDbBank.CreateContext();
+
+            var userToDeactivate = new User
+            {
+                Username = "UserToDeactivate",
+                PasswordHash = "pass123",
+                Role = UserRole.Client,
+                IsActive = true
+            };
+            context.Users.Add(userToDeactivate);
+            await context.SaveChangesAsync();
+
+            int targetUserId = userToDeactivate.UserID;
+
+            SystemLogController logController = new SystemLogController(context);
+            UserController userController = new UserController(context, logController);
+
+            await userController.DeactivateUser(targetUserId, adminId: 1);
+
+            var updatedUser = await context.Users.FindAsync(targetUserId);
+            Assert.IsNotNull(updatedUser);
+            Assert.IsFalse(updatedUser.IsActive); 
+        }
+
+        [Test]
+        public async Task LoginUser_WrongPassword_ReturnsNull()
+        {
+            var context = TestDbBank.CreateContext();
+
+            context.Users.Add(new User
+            {
+                Username = "ExistingUser",
+                PasswordHash = "correct_password_123",
+                Role = UserRole.Client,
+                IsActive = true
+            });
+            await context.SaveChangesAsync();
+
+            UserController userController = new UserController(context);
+
+            User? user = await userController.LoginUser("ExistingUser", "wrong_password_999");
+
+            Assert.IsNull(user, "Методът трябва да върне null, когато паролата е грешна.");
         }
     }
 }

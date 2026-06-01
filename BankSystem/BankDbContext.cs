@@ -1,6 +1,7 @@
 ﻿using BankSystem.Data.Entities;
 using BankSystem.Data.Enums;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -24,9 +25,7 @@ namespace BankSystem.Data
         public DbSet<BankCard> BankCards { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<Loan> Loans { get; set; }
         public DbSet<SystemLog> SystemLogs { get; set; }
-        public DbSet<Complaint> Complaints { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -38,10 +37,14 @@ namespace BankSystem.Data
                     .Build();
 
                 var connectionString = configuration
-                    .GetConnectionString("HomeConnection");
+                    .GetConnectionString("ArsenalConnection");
 
                 optionsBuilder.UseSqlServer(connectionString);
             }
+
+            optionsBuilder.ConfigureWarnings(w => w.Ignore(InMemoryEventId.TransactionIgnoredWarning));
+
+            base.OnConfiguring(optionsBuilder);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -108,9 +111,6 @@ namespace BankSystem.Data
                 entity.Property(t => t.Amount).IsRequired().HasPrecision(18, 2);
                 entity.Property(t => t.TransactionDate).IsRequired();
 
-                entity.Property(t => t.Status).IsRequired();
-                entity.Property(t => t.ApprovedByUserId).IsRequired(false);
-
                 entity.HasOne(t => t.FromAccount)
                       .WithMany(a => a.SentTransactions)
                       .HasForeignKey(t => t.FromAccountID)
@@ -120,27 +120,8 @@ namespace BankSystem.Data
                       .WithMany(a => a.ReceivedTransactions)
                       .HasForeignKey(t => t.ToAccountID)
                       .OnDelete(DeleteBehavior.Restrict);
-
-                entity.HasOne(t => t.ApprovedByUser)
-                      .WithMany()
-                      .HasForeignKey(t => t.ApprovedByUserId)
-                      .OnDelete(DeleteBehavior.SetNull);
             });
 
-            modelBuilder.Entity<Loan>(entity =>
-            {
-                entity.HasKey(l => l.LoanID);
-                entity.Property(l => l.Amount).IsRequired().HasPrecision(18, 2);
-                entity.Property(l => l.RemainingAmount).IsRequired().HasPrecision(18, 2);
-                entity.Property(l => l.InterestRate).IsRequired().HasPrecision(5, 2);
-                entity.Property(l => l.TermMonths).IsRequired();
-                entity.Property(l => l.Status).IsRequired();
-
-                entity.HasOne(l => l.Client)
-                      .WithMany(c => c.Loans)
-                      .HasForeignKey(l => l.ClientID)
-                      .OnDelete(DeleteBehavior.Cascade);
-            });
 
             modelBuilder.Entity<SystemLog>(entity =>
             {
@@ -152,21 +133,6 @@ namespace BankSystem.Data
                       .WithMany(u => u.SystemLogs)
                       .HasForeignKey(sl => sl.UserID)
                       .OnDelete(DeleteBehavior.Restrict);
-            });
-
-            modelBuilder.Entity<Complaint>(entity =>
-            {
-                entity.HasKey(c => c.ComplaintID);
-                entity.Property(c => c.Subject).IsRequired().HasMaxLength(100);
-                entity.Property(c => c.Message).IsRequired();
-                entity.Property(c => c.CreatedAt).IsRequired();
-                entity.Property(c => c.Status).IsRequired();
-                entity.Property(c => c.ManagerComment).HasMaxLength(500);
-
-                entity.HasOne(c => c.Client)
-                      .WithMany(cl => cl.Complaints) 
-                      .HasForeignKey(c => c.ClientID)
-                      .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<User>().HasData(new User

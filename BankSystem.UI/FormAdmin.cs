@@ -128,6 +128,12 @@ namespace BankSystem.UI
 
             User selectedUser = (User)dgvUsers.CurrentRow.DataBoundItem;
 
+            if (selectedUser.IsActive == false)
+            {
+                MessageBox.Show($"Потребителят {selectedUser.Username} не може да бъде изтрит поради финансова история, но неговият профил ВЕЧЕ Е ДЕАКТИВИРАН!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             if (selectedUser.Username.ToLower() == "admin")
             {
                 MessageBox.Show("Критична системна защита: Не можете да изтриете главния администраторски профил!", "Отказ за изтриване", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -177,6 +183,10 @@ namespace BankSystem.UI
             loginForm.ShowDialog();
             this.Close();
         }
-       
+
+        private void dgvUsers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

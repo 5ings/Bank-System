@@ -67,18 +67,16 @@
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1155, 52);
+            panel1.Size = new Size(1320, 69);
             panel1.TabIndex = 0;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.Admin;
-            pictureBox2.Location = new Point(1090, 3);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(1246, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(58, 46);
+            pictureBox2.Size = new Size(66, 61);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 10;
             pictureBox2.TabStop = false;
@@ -86,10 +84,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.BankLogo;
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(58, 46);
+            pictureBox1.Size = new Size(66, 61);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -98,9 +95,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(340, 11);
+            label1.Location = new Point(389, 15);
             label1.Name = "label1";
-            label1.Size = new Size(461, 32);
+            label1.Size = new Size(567, 41);
             label1.TabIndex = 1;
             label1.Text = "Панел за администрация и сигурност";
             // 
@@ -109,11 +106,10 @@
             tabControl1.Controls.Add(btnDeleteUser);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Dock = DockStyle.Fill;
-            tabControl1.Location = new Point(0, 52);
-            tabControl1.Margin = new Padding(3, 2, 3, 2);
+            tabControl1.Location = new Point(0, 69);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1155, 473);
+            tabControl1.Size = new Size(1320, 631);
             tabControl1.TabIndex = 1;
             // 
             // btnDeleteUser
@@ -122,11 +118,10 @@
             btnDeleteUser.Controls.Add(button1);
             btnDeleteUser.Controls.Add(dgvUsers);
             btnDeleteUser.Controls.Add(groupBox1);
-            btnDeleteUser.Location = new Point(4, 24);
-            btnDeleteUser.Margin = new Padding(3, 2, 3, 2);
+            btnDeleteUser.Location = new Point(4, 29);
             btnDeleteUser.Name = "btnDeleteUser";
-            btnDeleteUser.Padding = new Padding(3, 2, 3, 2);
-            btnDeleteUser.Size = new Size(1147, 445);
+            btnDeleteUser.Padding = new Padding(3, 3, 3, 3);
+            btnDeleteUser.Size = new Size(1312, 598);
             btnDeleteUser.TabIndex = 0;
             btnDeleteUser.Text = "Служители";
             btnDeleteUser.UseVisualStyleBackColor = true;
@@ -140,9 +135,10 @@
             btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
             btnLogOut.ImageKey = "Exit.png";
             btnLogOut.ImageList = imageList1;
-            btnLogOut.Location = new Point(1014, 405);
+            btnLogOut.Location = new Point(1159, 540);
+            btnLogOut.Margin = new Padding(3, 4, 3, 4);
             btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(130, 32);
+            btnLogOut.Size = new Size(149, 43);
             btnLogOut.TabIndex = 9;
             btnLogOut.Text = "Изход";
             btnLogOut.UseVisualStyleBackColor = false;
@@ -160,10 +156,9 @@
             // 
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(661, 382);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Location = new Point(755, 509);
             button1.Name = "button1";
-            button1.Size = new Size(335, 39);
+            button1.Size = new Size(383, 52);
             button1.TabIndex = 6;
             button1.Text = "Изтрий маркирания профил";
             button1.UseVisualStyleBackColor = true;
@@ -174,13 +169,13 @@
             dgvUsers.BackgroundColor = Color.WhiteSmoke;
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUsers.EditMode = DataGridViewEditMode.EditOnEnter;
-            dgvUsers.Location = new Point(542, 24);
-            dgvUsers.Margin = new Padding(3, 2, 3, 2);
+            dgvUsers.Location = new Point(619, 32);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.RowHeadersWidth = 51;
             dgvUsers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUsers.Size = new Size(572, 338);
+            dgvUsers.Size = new Size(654, 451);
             dgvUsers.TabIndex = 1;
+            dgvUsers.CellContentClick += dgvUsers_CellContentClick;
             // 
             // groupBox1
             // 
@@ -191,11 +186,9 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(61, 24);
-            groupBox1.Margin = new Padding(3, 2, 3, 2);
+            groupBox1.Location = new Point(70, 32);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(3, 2, 3, 2);
-            groupBox1.Size = new Size(424, 398);
+            groupBox1.Size = new Size(485, 531);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Добавяне на нов служител (касиер)";
@@ -203,10 +196,9 @@
             // btnCreateUser
             // 
             btnCreateUser.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCreateUser.Location = new Point(93, 320);
-            btnCreateUser.Margin = new Padding(3, 2, 3, 2);
+            btnCreateUser.Location = new Point(106, 427);
             btnCreateUser.Name = "btnCreateUser";
-            btnCreateUser.Size = new Size(238, 39);
+            btnCreateUser.Size = new Size(272, 52);
             btnCreateUser.TabIndex = 5;
             btnCreateUser.Text = "Създай профил";
             btnCreateUser.UseVisualStyleBackColor = true;
@@ -215,28 +207,26 @@
             // txtNewPassword
             // 
             txtNewPassword.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNewPassword.Location = new Point(31, 224);
-            txtNewPassword.Margin = new Padding(3, 2, 3, 2);
+            txtNewPassword.Location = new Point(35, 299);
             txtNewPassword.Name = "txtNewPassword";
-            txtNewPassword.Size = new Size(364, 32);
+            txtNewPassword.Size = new Size(415, 38);
             txtNewPassword.TabIndex = 4;
             // 
             // txtNewUsername
             // 
             txtNewUsername.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNewUsername.Location = new Point(31, 142);
-            txtNewUsername.Margin = new Padding(3, 2, 3, 2);
+            txtNewUsername.Location = new Point(35, 189);
             txtNewUsername.Name = "txtNewUsername";
-            txtNewUsername.Size = new Size(364, 32);
+            txtNewUsername.Size = new Size(415, 38);
             txtNewUsername.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(31, 188);
+            label3.Location = new Point(35, 251);
             label3.Name = "label3";
-            label3.Size = new Size(78, 25);
+            label3.Size = new Size(93, 31);
             label3.TabIndex = 2;
             label3.Text = "Парола";
             // 
@@ -244,20 +234,19 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(31, 106);
+            label2.Location = new Point(35, 141);
             label2.Name = "label2";
-            label2.Size = new Size(184, 25);
+            label2.Size = new Size(219, 31);
             label2.TabIndex = 1;
             label2.Text = "Потребителско име";
             // 
             // tabPage2
             // 
             tabPage2.Controls.Add(dgvLogs);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Margin = new Padding(3, 2, 3, 2);
+            tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 2, 3, 2);
-            tabPage2.Size = new Size(1147, 445);
+            tabPage2.Padding = new Padding(3, 3, 3, 3);
+            tabPage2.Size = new Size(1312, 598);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Одит логове (сигурност)";
             tabPage2.UseVisualStyleBackColor = true;
@@ -268,24 +257,22 @@
             dgvLogs.BorderStyle = BorderStyle.None;
             dgvLogs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvLogs.Dock = DockStyle.Fill;
-            dgvLogs.Location = new Point(3, 2);
-            dgvLogs.Margin = new Padding(3, 2, 3, 2);
+            dgvLogs.Location = new Point(3, 3);
             dgvLogs.Name = "dgvLogs";
             dgvLogs.ReadOnly = true;
             dgvLogs.RowHeadersWidth = 51;
             dgvLogs.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvLogs.Size = new Size(1141, 441);
+            dgvLogs.Size = new Size(1306, 592);
             dgvLogs.TabIndex = 0;
             // 
             // FormAdmin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1155, 525);
+            ClientSize = new Size(1320, 700);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FormAdmin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAdmin";

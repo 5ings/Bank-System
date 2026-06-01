@@ -134,44 +134,6 @@ namespace BankSystem.Data.Migrations
                     b.ToTable("Clients");
                 });
 
-            modelBuilder.Entity("BankSystem.Data.Entities.Complaint", b =>
-                {
-                    b.Property<int>("ComplaintID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ComplaintID"));
-
-                    b.Property<int>("ClientID")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ManagerComment")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("Message")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Subject")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("ComplaintID");
-
-                    b.HasIndex("ClientID");
-
-                    b.ToTable("Complaints");
-                });
-
             modelBuilder.Entity("BankSystem.Data.Entities.Loan", b =>
                 {
                     b.Property<int>("LoanID")
@@ -246,13 +208,7 @@ namespace BankSystem.Data.Migrations
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int?>("ApprovedByUserId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("FromAccountID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Status")
                         .HasColumnType("int");
 
                     b.Property<int?>("ToAccountID")
@@ -262,8 +218,6 @@ namespace BankSystem.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("TransactionID");
-
-                    b.HasIndex("ApprovedByUserId");
 
                     b.HasIndex("FromAccountID");
 
@@ -343,17 +297,6 @@ namespace BankSystem.Data.Migrations
                     b.Navigation("Account");
                 });
 
-            modelBuilder.Entity("BankSystem.Data.Entities.Complaint", b =>
-                {
-                    b.HasOne("BankSystem.Data.Entities.Client", "Client")
-                        .WithMany("Complaints")
-                        .HasForeignKey("ClientID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Client");
-                });
-
             modelBuilder.Entity("BankSystem.Data.Entities.Loan", b =>
                 {
                     b.HasOne("BankSystem.Data.Entities.Client", "Client")
@@ -378,11 +321,6 @@ namespace BankSystem.Data.Migrations
 
             modelBuilder.Entity("BankSystem.Data.Entities.Transaction", b =>
                 {
-                    b.HasOne("BankSystem.Data.Entities.User", "ApprovedByUser")
-                        .WithMany()
-                        .HasForeignKey("ApprovedByUserId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
                     b.HasOne("BankSystem.Data.Entities.Account", "FromAccount")
                         .WithMany("SentTransactions")
                         .HasForeignKey("FromAccountID")
@@ -392,8 +330,6 @@ namespace BankSystem.Data.Migrations
                         .WithMany("ReceivedTransactions")
                         .HasForeignKey("ToAccountID")
                         .OnDelete(DeleteBehavior.Restrict);
-
-                    b.Navigation("ApprovedByUser");
 
                     b.Navigation("FromAccount");
 
@@ -422,8 +358,6 @@ namespace BankSystem.Data.Migrations
             modelBuilder.Entity("BankSystem.Data.Entities.Client", b =>
                 {
                     b.Navigation("Accounts");
-
-                    b.Navigation("Complaints");
 
                     b.Navigation("Loans");
 
