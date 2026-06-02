@@ -59,17 +59,31 @@ namespace BankSystem.UI
                     lblClientEgn.Text = $"ЕГН: {_clientProfile.EGN}";
                     lblClientPhone.Text = $"Телефон: {_clientProfile.Phone}";
                     LoadAccountsToComboBox();
+                    string currency = _clientProfile.Accounts.FirstOrDefault()?.Currency;
 
                     if (_clientProfile.Accounts != null)
                     {
-                        var accountsList = _clientProfile.Accounts.Select(a => new
+                        if (currency == "EUR")
                         {
-                            Номер = a.AccountID,
-                            IBAN = a.IBAN,
-                            Баланс = $"{a.Balance:F2} лв."
-                        }).ToList();
+                            var accountsList = _clientProfile.Accounts.Select(a => new
+                            {
+                                Номер = a.AccountID,
+                                IBAN = a.IBAN,
+                                Баланс = $"{a.Balance:F2} EUR."
+                            }).ToList();
+                            dgvAccounts.DataSource = accountsList;
+                        }
+                        else if (currency == "USD")
+                        {
+                            var accountsList = _clientProfile.Accounts.Select(a => new
+                            {
+                                Номер = a.AccountID,
+                                IBAN = a.IBAN,
+                                Баланс = $"{a.Balance:F2} USD."
+                            }).ToList();
+                            dgvAccounts.DataSource = accountsList;
+                        }
 
-                        dgvAccounts.DataSource = accountsList;
                     }
                 }
                 else

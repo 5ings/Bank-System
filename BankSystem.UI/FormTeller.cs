@@ -130,14 +130,23 @@ namespace BankSystem.UI
             try
             {
                 var account = await _transactionController.GetAccountByIban(sourceIban);
-
+                
                 if (account == null) return;
 
                 await _transactionController.DepositMoney(account.AccountID, amount);
 
-                await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} внесе {amount:F2} лв. по IBAN {sourceIban}.");
-                MessageBox.Show($"Успешно внесени {amount:F2} лв.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtAmount.Clear();
+                if (account.Currency == "EUR")
+                {
+                    await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} внесе {amount:F2} EUR. по IBAN {sourceIban}.");
+                    MessageBox.Show($"Успешно внесени {amount:F2} EUR.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (account.Currency == "USD")
+                {
+                    await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} внесе {amount:F2} USD. по IBAN {sourceIban}.");
+                    MessageBox.Show($"Успешно внесени {amount:F2} USD.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                    txtAmount.Clear();
             }
             catch (Exception ex)
             {
@@ -164,8 +173,16 @@ namespace BankSystem.UI
 
                 await _transactionController.WithdrawMoney(account.AccountID, amount);
 
-                await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} изтегли {amount:F2} лв. от IBAN {sourceIban}.");
-                MessageBox.Show($"Успешно изтеглени {amount:F2} лв.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (account.Currency == "EUR")
+                {
+                    await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} изтегли {amount:F2} EUR. от IBAN {sourceIban}.");
+                    MessageBox.Show($"Успешно изтеглени {amount:F2} EUR.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (account.Currency == "USD")
+                {
+                    await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} изтегли {amount:F2} USD. от IBAN {sourceIban}.");
+                    MessageBox.Show($"Успешно изтеглени {amount:F2} USD.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
 
                 txtAmount.Clear();
                 txtSourceIban.Clear();
@@ -197,9 +214,17 @@ namespace BankSystem.UI
 
                 await _transactionController.TransferMoney(sourceAccount.AccountID, targetIban, amount);
 
-                await _logController.LogAction(_currentTeller.UserID, $"Превод на {amount:F2} лв. от IBAN {sourceIban} към IBAN {targetIban}.");
+                if (sourceAccount.Currency == "EUR")
+                {
+                    await _logController.LogAction(_currentTeller.UserID, $"Превод на {amount:F2} EUR. от IBAN {sourceIban} към IBAN {targetIban}.");
+                }
+                else if (sourceAccount.Currency == "USD")
+                {
+                    await _logController.LogAction(_currentTeller.UserID, $"Превод на {amount:F2} USD. от IBAN {sourceIban} към IBAN {targetIban}.");
+                }
 
-                MessageBox.Show("Преводът беше изпълнен успешно!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    MessageBox.Show("Преводът беше изпълнен успешно!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 txtAmount.Clear();
                 txtTargetIban.Clear();
