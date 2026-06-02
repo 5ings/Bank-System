@@ -55,36 +55,22 @@ namespace BankSystem.UI
 
                 if (_clientProfile != null)
                 {
+                    dgvAccounts.DataSource = null;
+                    MyAccountsComboBox.DataSource = null;
+
                     lblClientName.Text = $"Име: {_clientProfile.FirstName} {_clientProfile.LastName}";
                     lblClientEgn.Text = $"ЕГН: {_clientProfile.EGN}";
                     lblClientPhone.Text = $"Телефон: {_clientProfile.Phone}";
                     LoadAccountsToComboBox();
-                    string currency = _clientProfile.Accounts.FirstOrDefault()?.Currency;
 
-                    if (_clientProfile.Accounts != null)
+                    var accountsList = _clientProfile.Accounts.Select(a => new
                     {
-                        if (currency == "EUR")
-                        {
-                            var accountsList = _clientProfile.Accounts.Select(a => new
-                            {
-                                Номер = a.AccountID,
-                                IBAN = a.IBAN,
-                                Баланс = $"{a.Balance:F2} EUR."
-                            }).ToList();
-                            dgvAccounts.DataSource = accountsList;
-                        }
-                        else if (currency == "USD")
-                        {
-                            var accountsList = _clientProfile.Accounts.Select(a => new
-                            {
-                                Номер = a.AccountID,
-                                IBAN = a.IBAN,
-                                Баланс = $"{a.Balance:F2} USD."
-                            }).ToList();
-                            dgvAccounts.DataSource = accountsList;
-                        }
+                        Номер = a.AccountID,
+                        IBAN = a.IBAN,
+                        Баланс = $"{a.Balance:F2} {a.Currency}"
+                    }).ToList();
 
-                    }
+                    dgvAccounts.DataSource = accountsList;
                 }
                 else
                 {
@@ -191,7 +177,7 @@ namespace BankSystem.UI
                 }
                 MessageBox.Show($"Грешка в базата/логиката: {errorMessage}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+            //await RefreshClientData();
         }
         
     }

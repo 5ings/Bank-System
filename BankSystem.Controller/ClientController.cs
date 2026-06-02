@@ -37,6 +37,7 @@ namespace BankSystem.Controller
         public async Task<Client> GetClientByEgn(string egn)
         {
             return await Context.Clients
+                .AsNoTracking()
                 .Include(c => c.Accounts)
                 .FirstOrDefaultAsync(c => c.EGN == egn);
         }
