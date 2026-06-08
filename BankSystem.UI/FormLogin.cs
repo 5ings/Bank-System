@@ -20,6 +20,7 @@ namespace BankSystem.UI
         public FormLogin()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             _userController = new UserController();
             _logController = new SystemLogController();
         }
@@ -47,30 +48,27 @@ namespace BankSystem.UI
                     MessageBox.Show($"Успешен вход! Добре дошли, {loggedUser.Username}.",
                                     "Добре дошли", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    this.Hide();
+                    Form nextForm = null;
 
                     switch (loggedUser.Role)
                     {
                         case UserRole.Admin:
-                            FormAdmin adminForm = new FormAdmin(loggedUser);
-                            adminForm.ShowDialog();
+                            nextForm = new FormAdmin(loggedUser);
                             break;
 
                         case UserRole.Teller:
-                            FormTeller tellerForm = new FormTeller(loggedUser);
-                            tellerForm.ShowDialog();
+                            nextForm = new FormTeller(loggedUser);
                             break;
+
                         case UserRole.Client:
                             if (loggedUser.ClientID != null)
                             {
-                                FormClient clientForm = new FormClient(loggedUser);
-                                clientForm.ShowDialog();
+                                nextForm = new FormClient(loggedUser);
                             }
                             else
                             {
                                 MessageBox.Show("Грешка: Профилът ви не е свързан с реално досие на клиент!",
                                                 "Критична грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                this.Show();
                                 return;
                             }
                             break;
@@ -78,10 +76,17 @@ namespace BankSystem.UI
                         default:
                             MessageBox.Show("Непозната потребителска роля в системата!",
                                             "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            this.Show();
                             return;
                     }
-                    this.Close();
+
+                    if (nextForm != null)
+                    {
+                        this.Hide();
+
+                        nextForm.FormClosed += (s, args) => this.Close();
+
+                        nextForm.Show();
+                    }
                 }
                 else
                 {
@@ -91,8 +96,6 @@ namespace BankSystem.UI
             }
             catch (Exception ex)
             {
-                //MessageBox.Show($"Възникна сериозен проблем при комуникацията с базата данни!\nДетайли: {ex.Message}",
-                //                "Критична грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 MessageBox.Show(ex.Message, "Достъпът отказан", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
@@ -100,7 +103,7 @@ namespace BankSystem.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

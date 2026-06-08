@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ncgo/anubP4=",
+  "dgSpecHash": "HXF+mJzX9RA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\11B_8\\source\\repos\\NewBankSystem\\BankSystem.Tests\\BankSystem.Tests.csproj",
+  "projectFilePath": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\BankSystem.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\11B_8\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\11B_8\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

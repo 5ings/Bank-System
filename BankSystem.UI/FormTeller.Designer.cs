@@ -69,19 +69,11 @@
             tabPage3 = new TabPage();
             button3 = new Button();
             groupBox1 = new GroupBox();
-            CVVTextBox = new TextBox();
-            label19 = new Label();
-            ExpiryDateTextBox = new TextBox();
-            label18 = new Label();
             CardTypeComboBox = new ComboBox();
             label17 = new Label();
-            CardNumberTextBox = new TextBox();
-            label16 = new Label();
             CurrencyComboBox = new ComboBox();
             EgnTextBox = new TextBox();
             label15 = new Label();
-            IbanTextBox = new TextBox();
-            label12 = new Label();
             button1 = new Button();
             BalanceTextBox = new TextBox();
             label13 = new Label();
@@ -528,71 +520,27 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.LightSteelBlue;
-            groupBox1.Controls.Add(CVVTextBox);
-            groupBox1.Controls.Add(label19);
-            groupBox1.Controls.Add(ExpiryDateTextBox);
-            groupBox1.Controls.Add(label18);
             groupBox1.Controls.Add(CardTypeComboBox);
             groupBox1.Controls.Add(label17);
-            groupBox1.Controls.Add(CardNumberTextBox);
-            groupBox1.Controls.Add(label16);
             groupBox1.Controls.Add(CurrencyComboBox);
             groupBox1.Controls.Add(EgnTextBox);
             groupBox1.Controls.Add(label15);
-            groupBox1.Controls.Add(IbanTextBox);
-            groupBox1.Controls.Add(label12);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(BalanceTextBox);
             groupBox1.Controls.Add(label13);
             groupBox1.Controls.Add(label14);
             groupBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(162, 63);
+            groupBox1.Location = new Point(391, 61);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(985, 459);
+            groupBox1.Size = new Size(504, 459);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
-            // 
-            // CVVTextBox
-            // 
-            CVVTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CVVTextBox.Location = new Point(498, 309);
-            CVVTextBox.Name = "CVVTextBox";
-            CVVTextBox.Size = new Size(418, 34);
-            CVVTextBox.TabIndex = 33;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label19.Location = new Point(498, 279);
-            label19.Name = "label19";
-            label19.Size = new Size(48, 28);
-            label19.TabIndex = 32;
-            label19.Text = "CVV";
-            // 
-            // ExpiryDateTextBox
-            // 
-            ExpiryDateTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ExpiryDateTextBox.Location = new Point(501, 237);
-            ExpiryDateTextBox.Name = "ExpiryDateTextBox";
-            ExpiryDateTextBox.Size = new Size(418, 34);
-            ExpiryDateTextBox.TabIndex = 31;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label18.Location = new Point(501, 197);
-            label18.Name = "label18";
-            label18.Size = new Size(170, 28);
-            label18.TabIndex = 30;
-            label18.Text = "Дата на изтичане";
             // 
             // CardTypeComboBox
             // 
             CardTypeComboBox.FormattingEnabled = true;
             CardTypeComboBox.Items.AddRange(new object[] { "DebitVisa", "CreditVisa", "DebitMasterCard", "CreditMasterCard" });
-            CardTypeComboBox.Location = new Point(501, 156);
+            CardTypeComboBox.Location = new Point(39, 160);
             CardTypeComboBox.Margin = new Padding(3, 4, 3, 4);
             CardTypeComboBox.Name = "CardTypeComboBox";
             CardTypeComboBox.Size = new Size(418, 33);
@@ -602,29 +550,11 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label17.Location = new Point(498, 121);
+            label17.Location = new Point(39, 128);
             label17.Name = "label17";
             label17.Size = new Size(101, 28);
             label17.TabIndex = 27;
             label17.Text = "Вид карта";
-            // 
-            // CardNumberTextBox
-            // 
-            CardNumberTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CardNumberTextBox.Location = new Point(498, 80);
-            CardNumberTextBox.Name = "CardNumberTextBox";
-            CardNumberTextBox.Size = new Size(418, 34);
-            CardNumberTextBox.TabIndex = 26;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label16.Location = new Point(498, 49);
-            label16.Name = "label16";
-            label16.Size = new Size(156, 28);
-            label16.TabIndex = 25;
-            label16.Text = "Номер на карта";
             // 
             // CurrencyComboBox
             // 
@@ -654,28 +584,10 @@
             label15.TabIndex = 22;
             label15.Text = "ЕГН на клиент";
             // 
-            // IbanTextBox
-            // 
-            IbanTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            IbanTextBox.Location = new Point(39, 152);
-            IbanTextBox.Name = "IbanTextBox";
-            IbanTextBox.Size = new Size(418, 34);
-            IbanTextBox.TabIndex = 21;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.Location = new Point(39, 121);
-            label12.Name = "label12";
-            label12.Size = new Size(56, 28);
-            label12.TabIndex = 20;
-            label12.Text = "IBAN";
-            // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(293, 380);
+            button1.Location = new Point(39, 380);
             button1.Name = "button1";
             button1.Size = new Size(416, 52);
             button1.TabIndex = 19;
@@ -781,21 +693,13 @@
         private GroupBox groupBox1;
         private TextBox EgnTextBox;
         private Label label15;
-        private TextBox IbanTextBox;
-        private Label label12;
         private Button button1;
         private TextBox BalanceTextBox;
         private Label label13;
         private Label label14;
         private Label label17;
-        private TextBox CardNumberTextBox;
-        private Label label16;
         private ComboBox CurrencyComboBox;
         private ComboBox CardTypeComboBox;
-        private TextBox CVVTextBox;
-        private Label label19;
-        private TextBox ExpiryDateTextBox;
-        private Label label18;
         private Button button2;
         private Button button3;
     }

@@ -24,10 +24,13 @@ namespace BankSystem.UI
         public FormClient()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         public FormClient(User loggedInClient)
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+
             _clientController = new ClientController();
             _transactionController = new TransactionController();
             _logController = new SystemLogController();
@@ -35,6 +38,13 @@ namespace BankSystem.UI
         }
         private async void FormClient_Load(object sender, EventArgs e)
         {
+            if (_currentClientUser == null || _currentClientUser.Client == null)
+            {
+                MessageBox.Show("Грешка при автентикацията! Няма зареден клиентски профил.", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+                return;
+            }
+
             await RefreshClientData();
         }
 
@@ -42,8 +52,10 @@ namespace BankSystem.UI
         {
             if (_clientProfile != null && _clientProfile.Accounts != null)
             {
-                MyAccountsComboBox.DataSource = _clientProfile.Accounts.ToList();
-                MyAccountsComboBox.DisplayMember = "IBAN"; 
+                var accountsForCombo = _clientProfile.Accounts.ToList();
+
+                MyAccountsComboBox.DataSource = accountsForCombo;
+                MyAccountsComboBox.DisplayMember = "IBAN";
                 MyAccountsComboBox.ValueMember = "AccountID";
             }
         }
@@ -61,6 +73,7 @@ namespace BankSystem.UI
                     lblClientName.Text = $"Име: {_clientProfile.FirstName} {_clientProfile.LastName}";
                     lblClientEgn.Text = $"ЕГН: {_clientProfile.EGN}";
                     lblClientPhone.Text = $"Телефон: {_clientProfile.Phone}";
+
                     LoadAccountsToComboBox();
 
                     var accountsList = _clientProfile.Accounts.Select(a => new
@@ -71,6 +84,7 @@ namespace BankSystem.UI
                     }).ToList();
 
                     dgvAccounts.DataSource = accountsList;
+                    dgvAccounts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 }
                 else
                 {
@@ -84,12 +98,17 @@ namespace BankSystem.UI
         }
         private async void btnClientTransfer_Click(object sender, EventArgs e)
         {
-            var sourceAcc = MyAccountsComboBox.SelectedItem as Account;
-            string toIban = RecipientIbanTextBox.Text.Trim();
-
-            if (sourceAcc == null || string.IsNullOrEmpty(toIban))
+            // ЗАЩИТА: Вместо "as Account", взимаме директно SelectedValue благодарение на ValueMember
+            if (MyAccountsComboBox.SelectedValue == null || !(MyAccountsComboBox.SelectedValue is int sourceAccountId))
             {
-                MessageBox.Show("Моля, изберете Ваша сметка и въведете IBAN на получател!", "Празни полета", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Моля, изберете валидна Ваша сметка от падащото меню!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string toIban = RecipientIbanTextBox.Text.Trim();
+            if (string.IsNullOrEmpty(toIban))
+            {
+                MessageBox.Show("Моля, въведете IBAN на получателя!", "Празно поле", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -101,10 +120,12 @@ namespace BankSystem.UI
 
             try
             {
-                await _transactionController.TransferMoney(sourceAcc.AccountID, toIban, amount);
+                string sourceIbanText = MyAccountsComboBox.Text;
+
+                await _transactionController.TransferMoney(sourceAccountId, toIban, amount);
 
                 await _logController.LogAction(_currentClientUser.UserID,
-                    $"Клиентът извърши онлайн превод на стойност {amount:F2} от {sourceAcc.IBAN} към {toIban}.");
+                    $"Клиентът извършил превод на стойност {amount:F2} от сметка с IBAN {sourceIbanText} към {toIban}.");
 
                 MessageBox.Show("Транзакцията беше обработена успешно!", "Успешен превод", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -113,9 +134,22 @@ namespace BankSystem.UI
 
                 await RefreshClientData();
             }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message, "Невалидни данни", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message, "Бизнес правило", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             catch (Exception ex)
             {
-                MessageBox.Show($"Транзакцията пропадна:\n{ex.Message}", "Неуспешен трансфер", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string errorMessage = ex.Message;
+                if (ex.InnerException != null)
+                {
+                    errorMessage += "\nДетайли: " + ex.InnerException.Message;
+                }
+                MessageBox.Show($"Транзакцията пропадна:\n{errorMessage}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -126,58 +160,58 @@ namespace BankSystem.UI
         private void btnLogOut_Click_1(object sender, EventArgs e)
         {
             FormLogin loginForm = new FormLogin();
-            loginForm.ShowDialog();
+            loginForm.Show();
             this.Close();
         }
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            if (_transactionController == null)
-            {
-                MessageBox.Show("Грешка: TransactionController не е инициализиран!");
-                return;
-            }
+            //if (_transactionController == null)
+            //{
+            //    MessageBox.Show("Грешка: TransactionController не е инициализиран!");
+            //    return;
+            //}
 
-            var sourceAcc = MyAccountsComboBox.SelectedItem as Account;
-            if (sourceAcc == null)
-            {
-                MessageBox.Show($"Избраният елемент не е Account. Избрано: {MyAccountsComboBox.SelectedItem?.GetType().Name ?? "null"}");
-                return;
-            }
+            //var sourceAcc = MyAccountsComboBox.SelectedItem as Account;
+            //if (sourceAcc == null)
+            //{
+            //    MessageBox.Show($"Избраният елемент не е Account. Избрано: {MyAccountsComboBox.SelectedItem?.GetType().Name ?? "null"}");
+            //    return;
+            //}
 
-            string toIban = RecipientIbanTextBox.Text?.Trim();
+            //string toIban = RecipientIbanTextBox.Text?.Trim();
 
-            if (string.IsNullOrEmpty(toIban))
-            {
-                MessageBox.Show("Моля, въведете IBAN на получател!");
-                return;
-            }
+            //if (string.IsNullOrEmpty(toIban))
+            //{
+            //    MessageBox.Show("Моля, въведете IBAN на получател!");
+            //    return;
+            //}
 
-            if (!decimal.TryParse(AmountTextBox.Text, out decimal amount) || amount <= 0)
-            {
-                MessageBox.Show("Моля, въведете валидна положителна сума!");
-                return;
-            }
+            //if (!decimal.TryParse(AmountTextBox.Text, out decimal amount) || amount <= 0)
+            //{
+            //    MessageBox.Show("Моля, въведете валидна положителна сума!");
+            //    return;
+            //}
 
-            try
-            {
-                await _transactionController.TransferMoney(sourceAcc.AccountID, toIban, amount);
-                MessageBox.Show("Преводът е успешен!");
+            //try
+            //{
+            //    await _transactionController.TransferMoney(sourceAcc.AccountID, toIban, amount);
+            //    MessageBox.Show("Преводът е успешен!");
 
-                AmountTextBox.Clear();
-                RecipientIbanTextBox.Clear();
-                await RefreshClientData();
-            }
-            catch (Exception ex)
-            {
-                string errorMessage = ex.Message;
-                if (ex.InnerException != null)
-                {
-                    errorMessage += "\n\nДетайли: " + ex.InnerException.Message;
-                }
-                MessageBox.Show($"Грешка в базата/логиката: {errorMessage}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            //await RefreshClientData();
+            //    AmountTextBox.Clear();
+            //    RecipientIbanTextBox.Clear();
+            //    await RefreshClientData();
+            //}
+            //catch (Exception ex)
+            //{
+            //    string errorMessage = ex.Message;
+            //    if (ex.InnerException != null)
+            //    {
+            //        errorMessage += "\n\nДетайли: " + ex.InnerException.Message;
+            //    }
+            //    MessageBox.Show($"Грешка в базата/логиката: {errorMessage}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            ////await RefreshClientData();
         }
         
     }

@@ -26,20 +26,23 @@ namespace BankSystem.UI
         public FormAdmin(User loggedUser)
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             _adminUser = loggedUser;
+
+            _userController = new UserController();
+            _logController = new SystemLogController();
         }
         public FormAdmin()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             _userController = new UserController();
             _logController = new SystemLogController();
-
         }
 
 
         private async void FormAdmin_Load(object sender, EventArgs e)
         {
-            await RefreshDataAndLogs();
             dgvUsers.ReadOnly = false;
 
             if (dgvUsers.Columns["IsActive"] != null)
@@ -87,20 +90,16 @@ namespace BankSystem.UI
                 return;
             }
 
-            if (password.Length < 4)
-            {
-                MessageBox.Show("Паролата за служител трябва да бъде поне 4 символа!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             try
             {
+
                 User newTeller = new User
                 {
                     Username = username,
                     PasswordHash = password,
                     Role = UserRole.Teller,
-                    ClientID = null
+                    IsActive = true,
+                    Client = null
                 };
 
                 await _userController.CreateUser(newTeller);
@@ -112,9 +111,17 @@ namespace BankSystem.UI
 
                 await RefreshDataAndLogs();
             }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message, "Невалидни данни", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message, "Дублиране", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             catch (Exception ex)
             {
-                MessageBox.Show($"Неуспешно създаване! Потребителското име вероятно вече съществува.\nДетайли: {ex.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Неуспешно създаване!\nДетайли: {ex.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -141,7 +148,7 @@ namespace BankSystem.UI
             }
 
             DialogResult result = MessageBox.Show($"Сигурни ли сте, че искате окончателно да изтриете профила на {selectedUser.Username}?",
-                                                  "Потвърждение за изтриване", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                                                   "Потвърждение за изтриване", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
             if (result == DialogResult.OK)
             {
@@ -154,15 +161,17 @@ namespace BankSystem.UI
                 }
                 catch (Exception ex)
                 {
-                    if (ex.InnerException != null && ex.InnerException.Message.Contains("REFERENCE constraint"))
+                    if (ex.InnerException != null && ex.InnerException.Message.Contains("REFERENCE constraint") || ex.Message.Contains("REFERENCE"))
                     {
                         DialogResult deactivateResult = MessageBox.Show(
-                            "Този потребител не може да бъде изтрит физически, тъй като има финансова история, банкови сметки или системни одит логове. Сигурността на банката не позволява изтриването му!\n\nИскате ли да ДЕАКТИВИРАТЕ профила му вместо това?",
+                            "Този потребител не може да бъде изтрит физически, тъй като има обвързана финансова история или системни одит логове.\n\nИскате ли да ДЕАКТИВИРАТЕ профила му вместо това, за да спрете достъпа му?",
                             "Опция за сигурност", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
                         if (deactivateResult == DialogResult.OK)
                         {
-                            await _userController.DeactivateUser(selectedUser.UserID, _adminUser.UserID);
+                            int adminId = _adminUser != null ? _adminUser.UserID : 1;
+
+                            await _userController.DeactivateUser(selectedUser.UserID, adminId);
 
                             MessageBox.Show("Профилът беше успешно деактивиран и достъпът му до системата е спрян!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -180,7 +189,7 @@ namespace BankSystem.UI
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             FormLogin loginForm = new FormLogin();
-            loginForm.ShowDialog();
+            loginForm.Show();
             this.Close();
         }
 

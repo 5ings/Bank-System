@@ -14,27 +14,76 @@ namespace BankSystem.Tests.Services
     public class BankCardControllerTests
     {
         [Test]
-        public async Task CreateBankCard_SuccessfullyAddsCardToDb()
+        public async Task CreateBankCard_SuccessfullyAddsVisaCardToDb_WithGeneratedFields()
+        {
+            var context = TestDbBank.CreateContext();
+            var account = new Account { AccountID = 1, IBAN = "BG98BNKB11111111111111", Balance = 100.0m, Currency = "EUR", ClientID = 1 };
+            context.Accounts.Add(account);
+            await context.SaveChangesAsync();
+
+            BankCardController cardController = new BankCardController(context);
+
+            var newCard = new BankCard
+            {
+                CardType = CardType.DebitVisa,
+                AccountID = 1
+            };
+
+            await cardController.CreateBankCard(newCard);
+
+            var dbCard = await context.BankCards.FirstOrDefaultAsync(bc => bc.AccountID == 1);
+
+            Assert.IsNotNull(dbCard);
+            Assert.IsFalse(string.IsNullOrEmpty(dbCard.CardNumber));
+            Assert.IsTrue(dbCard.CardNumber.StartsWith("4"));
+            Assert.AreEqual(16, dbCard.CardNumber.Length);
+            Assert.IsFalse(string.IsNullOrEmpty(dbCard.CVV));
+            Assert.AreEqual(3, dbCard.CVV.Length);
+            Assert.IsFalse(string.IsNullOrEmpty(dbCard.ExpiryDate));
+            Assert.AreEqual(CardType.DebitVisa, dbCard.CardType);
+            Assert.AreEqual(1, dbCard.AccountID);
+        }
+
+        [Test]
+        public async Task CreateBankCard_SuccessfullyAddsMasterCardToDb_WithGeneratedFields()
+        {
+            var context = TestDbBank.CreateContext();
+            var account = new Account { AccountID = 2, IBAN = "BG98BNKB22222222222222", Balance = 200.0m, Currency = "USD", ClientID = 1 };
+            context.Accounts.Add(account);
+            await context.SaveChangesAsync();
+
+            BankCardController cardController = new BankCardController(context);
+
+            var newCard = new BankCard
+            {
+                CardType = CardType.DebitMasterCard,
+                AccountID = 2
+            };
+
+            await cardController.CreateBankCard(newCard);
+
+            var dbCard = await context.BankCards.FirstOrDefaultAsync(bc => bc.AccountID == 2);
+
+            Assert.IsNotNull(dbCard);
+            Assert.IsTrue(dbCard.CardNumber.StartsWith("5"));
+            Assert.AreEqual(16, dbCard.CardNumber.Length);
+            Assert.AreEqual(CardType.DebitMasterCard, dbCard.CardType);
+        }
+
+        [Test]
+        public void CreateBankCard_ThrowsException_WhenAccountDoesNotExist()
         {
             var context = TestDbBank.CreateContext();
             BankCardController cardController = new BankCardController(context);
 
             var newCard = new BankCard
             {
-                CardNumber = "1234567890123456",
                 CardType = CardType.DebitVisa,
-                ExpiryDate = "12/28",
-                CVV = "123",
-                AccountID = 1
+                AccountID = 999
             };
 
-            await cardController.CreateBankCard(newCard);
-
-            var dbCard = await context.BankCards.FirstOrDefaultAsync(bc => bc.CardNumber == "1234567890123456");
-            Assert.IsNotNull(dbCard);
-            Assert.AreEqual(CardType.DebitVisa, dbCard.CardType);
-            Assert.AreEqual("123", dbCard.CVV);
-            Assert.AreEqual(1, dbCard.AccountID);
+            var ex = Assert.ThrowsAsync<Exception>(async () => await cardController.CreateBankCard(newCard));
+            Assert.AreEqual("Не може да се издаде карта на несъществуваща банкова сметка.", ex?.Message);
         }
 
         [Test]
@@ -42,9 +91,9 @@ namespace BankSystem.Tests.Services
         {
             var context = TestDbBank.CreateContext();
 
-            context.BankCards.Add(new BankCard { CardNumber = "1111", CardType = CardType.DebitVisa, ExpiryDate = "12/27", CVV = "111", AccountID = 5 });
-            context.BankCards.Add(new BankCard { CardNumber = "2222", CardType = CardType.CreditMasterCard, ExpiryDate = "05/26", CVV = "222", AccountID = 5 });
-            context.BankCards.Add(new BankCard { CardNumber = "3333", CardType = CardType.DebitMasterCard, ExpiryDate = "01/29", CVV = "333", AccountID = 9 });
+            context.BankCards.Add(new BankCard { CardNumber = "4111111111111111", CardType = CardType.DebitVisa, ExpiryDate = "12/27", CVV = "111", AccountID = 5 });
+            context.BankCards.Add(new BankCard { CardNumber = "5222222222222222", CardType = CardType.CreditMasterCard, ExpiryDate = "05/26", CVV = "222", AccountID = 5 });
+            context.BankCards.Add(new BankCard { CardNumber = "5333333333333333", CardType = CardType.DebitMasterCard, ExpiryDate = "01/29", CVV = "333", AccountID = 9 });
             await context.SaveChangesAsync();
 
             BankCardController cardController = new BankCardController(context);
@@ -63,7 +112,7 @@ namespace BankSystem.Tests.Services
 
             var cardToDelete = new BankCard
             {
-                CardNumber = "9999999999999999",
+                CardNumber = "4999999999999999",
                 CardType = CardType.CreditVisa,
                 ExpiryDate = "09/27",
                 CVV = "999",

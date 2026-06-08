@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Transactions;
 
@@ -24,20 +25,41 @@ namespace BankSystem.Controller
             Context = context;
         }
 
+        //IBAN (Формат: BGxx AAAA cccc cccc cccc cc)
+        private void ValidateIbanFormat(string iban)
+        {
+            if (string.IsNullOrWhiteSpace(iban))
+            {
+                throw new ArgumentException("IBAN не може да бъде празен!");
+            }
+
+            //български IBAN (общо 22 символа: BG, 2 цифри, 4 букви за код на банка, 14 символа за сметка)
+            var ibanRegex = new Regex(@"^BG[0-9]{2}[A-Z]{4}[0-9]{14}$", RegexOptions.IgnoreCase);
+
+            string cleanIban = iban.Replace(" ", "").Trim();
+
+            if (!ibanRegex.IsMatch(cleanIban))
+            {
+                throw new ArgumentException("Невалиден формат на IBAN! Българският IBAN трябва да започва с BG и да съдържа общо 22 символа.");
+            }
+        }
+
         public async Task TransferMoney(int sourceAccountId, string targetIban, decimal amount)
         {
-            if (amount <= 0) throw new ArgumentException("Сумата трябва да е положителна!");
-            if (string.IsNullOrWhiteSpace(targetIban)) throw new ArgumentException("IBAN не може да е празен!");
+            if (amount <= 0) throw new ArgumentException("Сумата за превод трябва да е по-голяма от 0!");
+
+            ValidateIbanFormat(targetIban);
+            string cleanTargetIban = targetIban.Replace(" ", "").Trim();
 
             using (var dbTransaction = await Context.Database.BeginTransactionAsync())
             {
                 var sourceAcc = await Context.Accounts.FirstOrDefaultAsync(a => a.AccountID == sourceAccountId);
-                var targetAcc = await Context.Accounts.FirstOrDefaultAsync(a => a.IBAN == targetIban.Trim());
+                var targetAcc = await Context.Accounts.FirstOrDefaultAsync(a => a.IBAN == cleanTargetIban);
 
-                if (sourceAcc == null) throw new Exception("Подателят не е намерен!");
-                if (targetAcc == null) throw new Exception("Сметка с такъв IBAN не съществува!");
-                if (sourceAcc.AccountID == targetAcc.AccountID) throw new InvalidOperationException("Не може превод към същата сметка!");
-                if (sourceAcc.Balance < amount) throw new Exception("Недостатъчна наличност!");
+                if (sourceAcc == null) throw new Exception("Сметката на подателя не е намерена!");
+                if (targetAcc == null) throw new Exception("Сметка с такъв IBAN не съществува в системата!");
+                if (sourceAcc.AccountID == targetAcc.AccountID) throw new InvalidOperationException("Не може да извършите превод към същата сметка!");
+                if (sourceAcc.Balance < amount) throw new Exception($"Недостатъчна наличност! Текущ баланс: {sourceAcc.Balance:F2} {sourceAcc.Currency}");
 
                 decimal amountToCredit = amount;
                 if (sourceAcc.Currency != targetAcc.Currency)
@@ -57,7 +79,7 @@ namespace BankSystem.Controller
                     TransactionDate = DateTime.Now
                 };
 
-                Context.Transactions.Add(tx);
+                await Context.Transactions.AddAsync(tx);
                 await Context.SaveChangesAsync();
                 await dbTransaction.CommitAsync();
             }
@@ -74,6 +96,11 @@ namespace BankSystem.Controller
 
         public async Task DepositMoney(int accountId, decimal amount)
         {
+            if (amount <= 0)
+            {
+                throw new ArgumentException("Сумата за депозит трябва да бъде по-голяма от 0!");
+            }
+
             var account = await Context.Accounts.FindAsync(accountId);
             if (account == null) throw new Exception("Сметката не е намерена!");
 
@@ -87,12 +114,18 @@ namespace BankSystem.Controller
                 TransactionDate = DateTime.Now
             };
 
-            Context.Transactions.Add(tx);
+            await Context.Transactions.AddAsync(tx);
             await Context.SaveChangesAsync();
         }
 
         public async Task<List<BankSystem.Data.Entities.Transaction>> GetHistoryByAccount(int accountId)
         {
+            var accountExists = await Context.Accounts.AnyAsync(a => a.AccountID == accountId);
+            if (!accountExists)
+            {
+                throw new Exception("Търсената сметка не съществува.");
+            }
+
             return await Context.Transactions
                 .Where(t => t.FromAccountID == accountId || t.ToAccountID == accountId)
                 .OrderByDescending(t => t.TransactionDate)
@@ -101,12 +134,10 @@ namespace BankSystem.Controller
 
         public async Task<Account> GetAccountByIban(string iban)
         {
-            if (string.IsNullOrWhiteSpace(iban))
-            {
-                throw new ArgumentException("IBAN-ът не може да бъде празен!");
-            }
+            ValidateIbanFormat(iban);
+            string cleanIban = iban.Replace(" ", "").Trim();
 
-            var account = await Context.Accounts.FirstOrDefaultAsync(a => a.IBAN == iban.Trim());
+            var account = await Context.Accounts.FirstOrDefaultAsync(a => a.IBAN == cleanIban);
             if (account == null)
             {
                 throw new Exception($"Не съществува банкова сметка с IBAN: {iban}");
@@ -118,14 +149,14 @@ namespace BankSystem.Controller
         public async Task WithdrawMoney(int accountId, decimal amount)
         {
             if (amount <= 0)
-                throw new ArgumentException("Сумата за теглене трябва да бъде положително число!");
+                throw new ArgumentException("Сумата за теглене трябва да бъде по-голяма от 0!");
 
             var account = await Context.Accounts.FindAsync(accountId);
             if (account == null)
                 throw new Exception("Сметката не е намерена!");
 
             if (account.Balance < amount)
-                throw new Exception($"Недостатъчна наличност! Текущ баланс: {account.Balance:F2} лв.");
+                throw new Exception($"Недостатъчна наличност! Текущ баланс: {account.Balance:F2} {account.Currency}.");
 
             account.Balance -= amount;
 

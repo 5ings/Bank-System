@@ -17,24 +17,32 @@ namespace BankSystem.UI
 {
     public partial class FormTeller : Form
     {
-        private User _tellerUser;
         private readonly ClientController _clientController;
         private readonly UserController _userController;
         private readonly TransactionController _transactionController;
         private readonly SystemLogController _logController;
+        private readonly AccountController _accountController;
+        private readonly BankCardController _cardController;
         private readonly User _currentTeller;
         public FormTeller()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         public FormTeller(User loggedInTeller)
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+
             _clientController = new ClientController();
             _userController = new UserController();
             _transactionController = new TransactionController();
             _logController = new SystemLogController();
+
+            _accountController = new AccountController();
+            _cardController = new BankCardController();
+
             _currentTeller = loggedInTeller;
         }
         private void FormTeller_Load(object sender, EventArgs e)
@@ -45,8 +53,8 @@ namespace BankSystem.UI
         private async void btnRegisterClient_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtFirstName.Text) || string.IsNullOrWhiteSpace(txtLastName.Text) ||
-                string.IsNullOrWhiteSpace(txtEGN.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) ||
-                string.IsNullOrWhiteSpace(txtClientUsername.Text) || string.IsNullOrWhiteSpace(txtClientPassword.Text))
+            string.IsNullOrWhiteSpace(txtEGN.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) ||
+            string.IsNullOrWhiteSpace(txtClientUsername.Text) || string.IsNullOrWhiteSpace(txtClientPassword.Text))
             {
                 MessageBox.Show("Всички полета са задължителни за регистрация на клиент!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -85,7 +93,6 @@ namespace BankSystem.UI
                     Email = email
                 };
 
-
                 await _clientController.CreateClient(newClient);
 
                 User newClientUser = new User
@@ -93,21 +100,22 @@ namespace BankSystem.UI
                     Username = txtClientUsername.Text.Trim(),
                     PasswordHash = password,
                     Role = UserRole.Client,
-                    ClientID = newClient.ClientID
+                    ClientID = newClient.ClientID,
+                    IsActive = true
                 };
 
                 await _userController.CreateUser(newClientUser);
 
-                MessageBox.Show($"Клиентът {newClient.FirstName} {newClient.LastName} и неговият профил за онлайн банкиране бяха създадени успешно!",
+                await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} регистрира нов клиент: {newClient.FirstName} {newClient.LastName}.");
+
+                MessageBox.Show($"Клиентът {newClient.FirstName} {newClient.LastName} и профилът му бяха създадени успешно!",
                                 "Успешна регистрация", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 ClearRegistrationFields();
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Регистрацията пропадна! Възможно е ЕГН-то, Имейлът или Потребителското име вече да съществуват в базата данни.\nДетайли: {ex.Message}",
-                                "Системна дупликация", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Регистрацията пропадна! Детайли: {ex.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -130,30 +138,19 @@ namespace BankSystem.UI
             try
             {
                 var account = await _transactionController.GetAccountByIban(sourceIban);
-                
                 if (account == null) return;
 
                 await _transactionController.DepositMoney(account.AccountID, amount);
 
-                if (account.Currency == "EUR")
-                {
-                    await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} внесе {amount:F2} EUR. по IBAN {sourceIban}.");
-                    MessageBox.Show($"Успешно внесени {amount:F2} EUR.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (account.Currency == "USD")
-                {
-                    await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} внесе {amount:F2} USD. по IBAN {sourceIban}.");
-                    MessageBox.Show($"Успешно внесени {amount:F2} USD.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} внесе {amount:F2} {account.Currency} по IBAN {sourceIban}.");
+                MessageBox.Show($"Успешно внесени {amount:F2} {account.Currency}!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    txtAmount.Clear();
+                txtAmount.Clear();
+                txtSourceIban.Clear();
             }
             catch (Exception ex)
             {
-                string msg = ex.Message;
-                if (ex.InnerException != null) msg += "\n\nДетайли: " + ex.InnerException.Message;
-
-                MessageBox.Show($"Грешка: {msg}", "Системна грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Грешка при депозит: {ex.Message}", "Системна грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -170,29 +167,19 @@ namespace BankSystem.UI
             try
             {
                 var account = await _transactionController.GetAccountByIban(sourceIban);
+                if (account == null) return;
 
                 await _transactionController.WithdrawMoney(account.AccountID, amount);
 
-                if (account.Currency == "EUR")
-                {
-                    await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} изтегли {amount:F2} EUR. от IBAN {sourceIban}.");
-                    MessageBox.Show($"Успешно изтеглени {amount:F2} EUR.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (account.Currency == "USD")
-                {
-                    await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} изтегли {amount:F2} USD. от IBAN {sourceIban}.");
-                    MessageBox.Show($"Успешно изтеглени {amount:F2} USD.!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} изтегли {amount:F2} {account.Currency} от IBAN {sourceIban}.");
+                MessageBox.Show($"Успешно изтеглени {amount:F2} {account.Currency}!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 txtAmount.Clear();
                 txtSourceIban.Clear();
             }
             catch (Exception ex)
             {
-                string errorMessage = ex.Message;
-                if (ex.InnerException != null) errorMessage += "\n\nДетайли: " + ex.InnerException.Message;
-
-                MessageBox.Show($"Грешка: {errorMessage}", "Системна грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Грешка при теглене: {ex.Message}", "Системна грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -210,31 +197,19 @@ namespace BankSystem.UI
             try
             {
                 var sourceAccount = await _transactionController.GetAccountByIban(sourceIban);
-                var targetAccount = await _transactionController.GetAccountByIban(targetIban);
 
                 await _transactionController.TransferMoney(sourceAccount.AccountID, targetIban, amount);
 
-                if (sourceAccount.Currency == "EUR")
-                {
-                    await _logController.LogAction(_currentTeller.UserID, $"Превод на {amount:F2} EUR. от IBAN {sourceIban} към IBAN {targetIban}.");
-                }
-                else if (sourceAccount.Currency == "USD")
-                {
-                    await _logController.LogAction(_currentTeller.UserID, $"Превод на {amount:F2} USD. от IBAN {sourceIban} към IBAN {targetIban}.");
-                }
-
-
-                    MessageBox.Show("Преводът беше изпълнен успешно!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                await _logController.LogAction(_currentTeller.UserID, $"Касиерски превод на {amount:F2} {sourceAccount.Currency} от IBAN {sourceIban} към IBAN {targetIban}.");
+                MessageBox.Show("Преводът беше изпълнен успешно!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 txtAmount.Clear();
+                txtSourceIban.Clear();
                 txtTargetIban.Clear();
             }
             catch (Exception ex)
             {
-                string errorMessage = ex.Message;
-                if (ex.InnerException != null) errorMessage += "\n\nДетайли: " + ex.InnerException.Message;
-
-                MessageBox.Show($"Грешка при превода: {errorMessage}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Грешка при превода: {ex.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -246,76 +221,82 @@ namespace BankSystem.UI
         }
         private async void button1_Click(object sender, EventArgs e)
         {
+            string egn = EgnTextBox.Text.Trim();
+            string selectedCurrency = CurrencyComboBox.Text;
+            string selectedCardType = CardTypeComboBox.Text;
+
+            if (string.IsNullOrEmpty(egn) || string.IsNullOrEmpty(selectedCurrency) || string.IsNullOrEmpty(selectedCardType))
+            {
+                MessageBox.Show("Моля, въведете ЕГН на клиента, изберете Валута и Тип карта!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!decimal.TryParse(BalanceTextBox.Text, out decimal initialBalance) || initialBalance < 0)
+            {
+                MessageBox.Show("Моля, въведете валиден начален баланс (равен или по-голям от 0)!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             try
             {
-                using (var context = new BankDbContext())
+                var client = await _clientController.GetClientByEgn(egn);
+                if (client == null)
                 {
-                    string egn = EgnTextBox.Text.Trim();
-                    var client = context.Clients.FirstOrDefault(c => c.EGN == egn);
-
-                    if (client == null)
-                    {
-                        MessageBox.Show("Грешка: Не е намерен клиент с такова ЕГН!");
-                        return;
-                    }
-
-                    var newAccount = new Account
-                    {
-                        ClientID = client.ClientID,
-                        IBAN = IbanTextBox.Text.Trim(),
-                        Balance = decimal.Parse(BalanceTextBox.Text),
-                        Currency = CurrencyComboBox.Text
-                    };
-                    context.Accounts.Add(newAccount);
-                    await context.SaveChangesAsync();
-
-                    CardType selectedType = (CardType)Enum.Parse(typeof(CardType), CardTypeComboBox.Text);
-
-                    var newCard = new BankCard
-                    {
-                        AccountID = newAccount.AccountID,
-                        CardNumber = CardNumberTextBox.Text.Trim(),
-                        CardType = selectedType,
-                        ExpiryDate = ExpiryDateTextBox.Text.Trim(),
-                        CVV = CVVTextBox.Text.Trim()
-                    };
-                    context.BankCards.Add(newCard);
-                    await context.SaveChangesAsync();
-
-                    MessageBox.Show($"Успешно създадена сметка и карта за {client.FirstName}!");
-                    ClearFields();
+                    MessageBox.Show("Няма регистриран клиент с такова ЕГН в системата!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
+
+                Account newAccount = new Account
+                {
+                    ClientID = client.ClientID,
+                    Balance = initialBalance,
+                    Currency = selectedCurrency
+!
+                };
+                await _accountController.CreateAccount(newAccount);
+
+                CardType cardType = (CardType)Enum.Parse(typeof(CardType), selectedCardType);
+
+                BankCard newCard = new BankCard
+                {
+                    AccountID = newAccount.AccountID,
+                    CardType = cardType
+                };
+                await _cardController.CreateBankCard(newCard);
+
+                await _logController.LogAction(_currentTeller.UserID,
+                    $"Създадена нова сметка ({newAccount.IBAN}) и {cardType} карта за клиент {client.FirstName} {client.LastName}.");
+
+                MessageBox.Show($"Успешно генериран IBAN: {newAccount.IBAN}\nУспешно издадена дебитна карта!\n\nЗаписано в профила на {client.FirstName} {client.LastName}.",
+                                "Успешна операция", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                ClearFields();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Грешка при запис: " + ex.Message);
+                MessageBox.Show($"Проблем при автоматичното генериране: {ex.Message}", "Грешка при запис", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void ClearFields()
         {
             EgnTextBox.Clear();
-            IbanTextBox.Clear();
             BalanceTextBox.Clear();
-            CardNumberTextBox.Clear();
-            ExpiryDateTextBox.Clear();
-            CVVTextBox.Clear();
-
             CurrencyComboBox.SelectedIndex = -1;
             CardTypeComboBox.SelectedIndex = -1;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormLogin loginForm = new FormLogin();
-            loginForm.ShowDialog();
+            //FormLogin loginForm = new FormLogin();
+            //loginForm.ShowDialog();
             this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormLogin loginForm = new FormLogin();
-            loginForm.ShowDialog();
+            //FormLogin loginForm = new FormLogin();
+            //loginForm.ShowDialog();
             this.Close();
         }
     }

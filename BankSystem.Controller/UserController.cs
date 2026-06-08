@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace BankSystem.Controller
@@ -14,7 +15,6 @@ namespace BankSystem.Controller
     {
         private readonly BankDbContext _context;
         private readonly SystemLogController _logController;
-
 
         public UserController()
         {
@@ -27,16 +27,18 @@ namespace BankSystem.Controller
             _context = context;
             _logController = new SystemLogController(context);
         }
+
         public UserController(BankDbContext context, SystemLogController logController)
         {
             _context = context;
             _logController = logController;
         }
+
         public async Task<User> LoginUser(string username, string password)
         {
             var user = await _context.Users
-                    .Include(u => u.Client)
-                    .FirstOrDefaultAsync(u => u.Username == username);
+                        .Include(u => u.Client)
+                        .FirstOrDefaultAsync(u => u.Username == username);
 
             if (user == null) return null;
 
@@ -55,6 +57,48 @@ namespace BankSystem.Controller
 
         public async Task CreateUser(User user)
         {
+            if (string.IsNullOrWhiteSpace(user.Username) || user.Username.Length < 3)
+            {
+                throw new ArgumentException("Потребителското име трябва да бъде поне 3 символа.");
+            }
+
+            if (string.IsNullOrWhiteSpace(user.PasswordHash) || user.PasswordHash.Length < 6)
+            {
+                throw new ArgumentException("Паролата трябва да бъде поне 6 символа.");
+            }
+
+            var userExists = await _context.Users.AnyAsync(u => u.Username == user.Username);
+            if (userExists)
+            {
+                throw new InvalidOperationException("Потребителското име вече е заето.");
+            }
+
+            if (user.Client != null)
+            {
+                var nameRegex = new Regex(@"^[a-zA-Zа-яА-ЯабвгдежзийклмнопрстуфхцчшщъьюяАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯ\s-]+$");
+
+                if (string.IsNullOrWhiteSpace(user.Client.FirstName) || !nameRegex.IsMatch(user.Client.FirstName))
+                {
+                    throw new ArgumentException("Първото име не може да бъде празно и не трябва да съдържа цифри или специални символи.");
+                }
+
+                if (string.IsNullOrWhiteSpace(user.Client.LastName) || !nameRegex.IsMatch(user.Client.LastName))
+                {
+                    throw new ArgumentException("Фамилното име не може да бъде празно и не трябва да съдържа цифри или специални символи.");
+                }
+
+                var phoneRegex = new Regex(@"^\+?[0-9]{9,14}$");
+
+                if (string.IsNullOrWhiteSpace(user.Client.Phone) || !phoneRegex.IsMatch(user.Client.Phone))
+                {
+                    throw new ArgumentException("Телефонният номер е невалиден. Трябва да съдържа между 9 и 14 цифри (може да започва с +).");
+                }
+            }
+            else
+            {
+                throw new ArgumentException("Потребителят трябва да има асоциирана клиентска информация.");
+            }
+
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
         }
@@ -69,6 +113,11 @@ namespace BankSystem.Controller
             var existing = await _context.Users.FirstOrDefaultAsync(u => u.UserID == updatedUser.UserID);
             if (existing != null)
             {
+                if (string.IsNullOrWhiteSpace(updatedUser.PasswordHash) || updatedUser.PasswordHash.Length < 6)
+                {
+                    throw new ArgumentException("Новата парола трябва да бъде поне 6 символа.");
+                }
+
                 existing.PasswordHash = updatedUser.PasswordHash;
                 existing.Role = updatedUser.Role;
                 await _context.SaveChangesAsync();
