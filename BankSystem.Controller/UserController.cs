@@ -1,5 +1,6 @@
 ﻿using BankSystem.Data;
 using BankSystem.Data.Entities;
+using BankSystem.Data.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Logging;
 using System;
@@ -57,46 +58,20 @@ namespace BankSystem.Controller
 
         public async Task CreateUser(User user)
         {
-            if (string.IsNullOrWhiteSpace(user.Username) || user.Username.Length < 3)
+            if (user == null) throw new ArgumentNullException(nameof(user));
+
+            if (user.Role == UserRole.Client)
             {
-                throw new ArgumentException("Потребителското име трябва да бъде поне 3 символа.");
+                if (user.ClientID == null || user.ClientID == 0)
+                {
+                    throw new InvalidOperationException("Потребителят с роля 'Клиент' трябва да има асоциирана клиентска информация.");
+                }
             }
 
-            if (string.IsNullOrWhiteSpace(user.PasswordHash) || user.PasswordHash.Length < 6)
-            {
-                throw new ArgumentException("Паролата трябва да бъде поне 6 символа.");
-            }
-
-            var userExists = await _context.Users.AnyAsync(u => u.Username == user.Username);
-            if (userExists)
+            var usernameExists = await _context.Users.AnyAsync(u => u.Username == user.Username);
+            if (usernameExists)
             {
                 throw new InvalidOperationException("Потребителското име вече е заето.");
-            }
-
-            if (user.Client != null)
-            {
-                var nameRegex = new Regex(@"^[a-zA-Zа-яА-ЯабвгдежзийклмнопрстуфхцчшщъьюяАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯ\s-]+$");
-
-                if (string.IsNullOrWhiteSpace(user.Client.FirstName) || !nameRegex.IsMatch(user.Client.FirstName))
-                {
-                    throw new ArgumentException("Първото име не може да бъде празно и не трябва да съдържа цифри или специални символи.");
-                }
-
-                if (string.IsNullOrWhiteSpace(user.Client.LastName) || !nameRegex.IsMatch(user.Client.LastName))
-                {
-                    throw new ArgumentException("Фамилното име не може да бъде празно и не трябва да съдържа цифри или специални символи.");
-                }
-
-                var phoneRegex = new Regex(@"^\+?[0-9]{9,14}$");
-
-                if (string.IsNullOrWhiteSpace(user.Client.Phone) || !phoneRegex.IsMatch(user.Client.Phone))
-                {
-                    throw new ArgumentException("Телефонният номер е невалиден. Трябва да съдържа между 9 и 14 цифри (може да започва с +).");
-                }
-            }
-            else
-            {
-                throw new ArgumentException("Потребителят трябва да има асоциирана клиентска информация.");
             }
 
             await _context.Users.AddAsync(user);

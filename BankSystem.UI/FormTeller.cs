@@ -35,7 +35,9 @@ namespace BankSystem.UI
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            _clientController = new ClientController();
+            BankDbContext dbContext = new BankDbContext();
+
+            _clientController = new ClientController(dbContext);
             _userController = new UserController();
             _transactionController = new TransactionController();
             _logController = new SystemLogController();
@@ -53,8 +55,8 @@ namespace BankSystem.UI
         private async void btnRegisterClient_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtFirstName.Text) || string.IsNullOrWhiteSpace(txtLastName.Text) ||
-            string.IsNullOrWhiteSpace(txtEGN.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) ||
-            string.IsNullOrWhiteSpace(txtClientUsername.Text) || string.IsNullOrWhiteSpace(txtClientPassword.Text))
+        string.IsNullOrWhiteSpace(txtEGN.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) ||
+        string.IsNullOrWhiteSpace(txtClientUsername.Text) || string.IsNullOrWhiteSpace(txtClientPassword.Text))
             {
                 MessageBox.Show("Всички полета са задължителни за регистрация на клиент!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -106,7 +108,10 @@ namespace BankSystem.UI
 
                 await _userController.CreateUser(newClientUser);
 
-                await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} регистрира нов клиент: {newClient.FirstName} {newClient.LastName}.");
+                if (_currentTeller != null)
+                {
+                    await _logController.LogAction(_currentTeller.UserID, $"Касиер {_currentTeller.Username} регистрира нов клиент: {newClient.FirstName} {newClient.LastName}.");
+                }
 
                 MessageBox.Show($"Клиентът {newClient.FirstName} {newClient.LastName} и профилът му бяха създадени успешно!",
                                 "Успешна регистрация", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -115,7 +120,13 @@ namespace BankSystem.UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Регистрацията пропадна! Детайли: {ex.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Exception realError = ex;
+                while (realError.InnerException != null)
+                {
+                    realError = realError.InnerException;
+                }
+
+                MessageBox.Show($"Регистрацията пропадна!\n\nДетайли: {realError.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -288,15 +299,15 @@ namespace BankSystem.UI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //FormLogin loginForm = new FormLogin();
-            //loginForm.ShowDialog();
+            FormLogin loginForm = new FormLogin();
+            loginForm.ShowDialog();
             this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //FormLogin loginForm = new FormLogin();
-            //loginForm.ShowDialog();
+            FormLogin loginForm = new FormLogin();
+            loginForm.ShowDialog();
             this.Close();
         }
     }

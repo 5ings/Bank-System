@@ -92,13 +92,13 @@ namespace BankSystem.UI
 
             try
             {
-
                 User newTeller = new User
                 {
                     Username = username,
                     PasswordHash = password,
                     Role = UserRole.Teller,
                     IsActive = true,
+                    ClientID = null, 
                     Client = null
                 };
 
@@ -117,11 +117,11 @@ namespace BankSystem.UI
             }
             catch (InvalidOperationException ex)
             {
-                MessageBox.Show(ex.Message, "Дублиране", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Дублиране/Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Неуспешно създаване!\nДетайли: {ex.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Неуспешно創建ване!\nДетайли: {ex.Message}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -189,6 +189,7 @@ namespace BankSystem.UI
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             FormLogin loginForm = new FormLogin();
+            loginForm.ShowDialog();
             loginForm.Show();
             this.Close();
         }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.57625" branch-rate="0.511695906432749" lines-covered="1383" lines-valid="2400" branches-covered="175" branches-valid="342" complexity="541" version="0" timestamp="1780918137">
+<coverage line-rate="0.57625" branch-rate="0.511695906432749" lines-covered="1383" lines-valid="2400" branches-covered="175" branches-valid="342" complexity="541" version="0" timestamp="1780918359">
   <sources />
   <packages>
     <package name="BankSystem.Controller" line-rate="0.879120879120879" branch-rate="0.792207792207792" complexity="185">

@@ -3,6 +3,46 @@
   "WorkspaceRootPath": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formteller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formteller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.controller\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formwelcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6BB9410-C646-E913-FA32-B7EF9722C587}|..\\BankSystem.Tests\\BankSystem.Tests.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.tests\\services\\clientcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F6BB9410-C646-E913-FA32-B7EF9722C587}|..\\BankSystem.Tests\\BankSystem.Tests.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.tests\\services\\systemlogcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -12,16 +52,10 @@
       "AbsoluteMoniker": "D:0:0:{F6BB9410-C646-E913-FA32-B7EF9722C587}|..\\BankSystem.Tests\\BankSystem.Tests.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.tests\\services\\transactioncontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6BB9410-C646-E913-FA32-B7EF9722C587}|..\\BankSystem.Tests\\BankSystem.Tests.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.tests\\services\\clientcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F6BB9410-C646-E913-FA32-B7EF9722C587}|..\\BankSystem.Tests\\BankSystem.Tests.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.tests\\services\\bankcardcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6BB9410-C646-E913-FA32-B7EF9722C587}|..\\BankSystem.Tests\\BankSystem.Tests.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.tests\\services\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.controller\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -30,40 +64,10 @@
       "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.controller\\systemlogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.controller\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.controller\\bankcardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7248DD9-41E9-4C84-A2A7-6325B0E8AC31}|..\\BankSystem.Controller\\BankSystem.Controller.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.controller\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formwelcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formteller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formteller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5017BD92-52F3-46FA-8DE2-ECE47E796CC2}|..\\BankSystem.UI\\BankSystem.UI.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem.ui\\formwelcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -93,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|c:\\users\\11b_8\\source\\repos\\banksystem0608\\banksystem\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A370A1BC-37D7-43BF-8458-76782914F374}|BankSystem.Data.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\11B_8\\source\\repos\\NewBankSystem\\BankSystem\\Migrations\\20260601062219_CreateDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -185,63 +185,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BankCardControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\BankCardControllerTests.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.Tests\\Services\\BankCardControllerTests.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\BankCardControllerTests.cs",
-              "RelativeToolTip": "..\\BankSystem.Tests\\Services\\BankCardControllerTests.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwIMAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "FormTeller.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormTeller.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormTeller.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormTeller.cs [Design]",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormTeller.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T08:20:53.76Z",
+              "WhenOpened": "2026-06-08T08:06:49.861Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormTeller.cs",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormTeller.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormTeller.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormTeller.cs",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormTeller.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAuwGgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T08:06:53.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormAdmin.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormAdmin.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormAdmin.cs [Design]",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T07:57:00.798Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "FormAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormAdmin.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormAdmin.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormAdmin.cs",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormAdmin.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAuwGQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T07:57:03.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormLogin.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormLogin.cs [Design]",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T07:34:42.811Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormClient.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormClient.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormClient.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormClient.cs [Design]",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormClient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T08:00:32.487Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormClient.cs",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormClient.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormClient.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormClient.cs",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormClient.cs",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAewM8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T08:00:34.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\UserController.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\UserController.cs",
+              "RelativeToolTip": "..\\BankSystem.Controller\\UserController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwE0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T07:34:17.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\ClientController.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\ClientController.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\ClientController.cs",
+              "RelativeToolTip": "..\\BankSystem.Controller\\ClientController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwIcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T07:43:05.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormLogin.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormLogin.cs",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormLogin.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAuwG4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T07:34:54.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T06:59:35.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormWelcome.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormWelcome.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormWelcome.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormWelcome.cs [Design]",
+              "RelativeToolTip": "..\\BankSystem.UI\\FormWelcome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T07:55:29.498Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ClientControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\ClientControllerTests.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Tests\\Services\\ClientControllerTests.cs",
               "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\ClientControllerTests.cs",
               "RelativeToolTip": "..\\BankSystem.Tests\\Services\\ClientControllerTests.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAcwBkBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAABkBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T08:21:27.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 13,
               "Title": "SystemLogControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\SystemLogControllerTests.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Tests\\Services\\SystemLogControllerTests.cs",
               "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\SystemLogControllerTests.cs",
               "RelativeToolTip": "..\\BankSystem.Tests\\Services\\SystemLogControllerTests.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAowEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T08:22:47.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TransactionControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\TransactionControllerTests.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.Tests\\Services\\TransactionControllerTests.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\TransactionControllerTests.cs",
-              "RelativeToolTip": "..\\BankSystem.Tests\\Services\\TransactionControllerTests.cs",
-              "ViewState": "AgIAAAQBAAAAAAAAAAAAAA8BAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T08:23:40.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "UserControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\UserControllerTests.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Tests\\Services\\UserControllerTests.cs",
@@ -254,7 +379,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
+              "Title": "TransactionControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\TransactionControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Tests\\Services\\TransactionControllerTests.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\TransactionControllerTests.cs",
+              "RelativeToolTip": "..\\BankSystem.Tests\\Services\\TransactionControllerTests.cs",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAAAA8BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T08:23:40.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BankCardControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\BankCardControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\BankSystem.Tests\\Services\\BankCardControllerTests.cs",
+              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\BankCardControllerTests.cs",
+              "RelativeToolTip": "..\\BankSystem.Tests\\Services\\BankCardControllerTests.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwIMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T08:20:53.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "AccountControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Tests\\Services\\AccountControllerTests.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Tests\\Services\\AccountControllerTests.cs",
@@ -267,20 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\UserController.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\UserController.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\UserController.cs",
-              "RelativeToolTip": "..\\BankSystem.Controller\\UserController.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAADwvxAAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T07:34:17.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "TransactionController.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\TransactionController.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Controller\\TransactionController.cs",
@@ -293,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
               "Title": "SystemLogController.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\SystemLogController.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Controller\\SystemLogController.cs",
@@ -306,20 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\ClientController.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.Controller\\ClientController.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\ClientController.cs",
-              "RelativeToolTip": "..\\BankSystem.Controller\\ClientController.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAiwA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T07:43:05.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "BankCardController.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\BankCardController.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Controller\\BankCardController.cs",
@@ -332,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.Controller\\AccountController.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.Controller\\AccountController.cs",
@@ -345,94 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FormTeller.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormTeller.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormTeller.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormTeller.cs [Design]",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormTeller.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T08:06:49.861Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FormTeller.cs",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormTeller.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormTeller.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormTeller.cs",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormTeller.cs",
-              "ViewState": "AgIAABQBAAAAAAAAAAAowCcBAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T08:06:53.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FormClient.cs",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormClient.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormClient.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormClient.cs",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormClient.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAKcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T08:00:34.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FormClient.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormClient.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormClient.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormClient.cs [Design]",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormClient.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T08:00:32.487Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FormAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormAdmin.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormAdmin.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormAdmin.cs",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormAdmin.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAAuwL0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T07:57:03.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FormWelcome.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormWelcome.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormWelcome.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormWelcome.cs [Design]",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormWelcome.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T07:55:29.498Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FormAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormAdmin.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormAdmin.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormAdmin.cs [Design]",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T07:57:00.798Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "FormWelcome.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormWelcome.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormWelcome.cs",
@@ -445,32 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FormLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormLogin.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormLogin.cs [Design]",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T07:34:42.811Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FormLogin.cs",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormLogin.cs",
-              "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormLogin.cs",
-              "RelativeToolTip": "..\\BankSystem.UI\\FormLogin.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAowHAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T07:34:54.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem\\Entities\\Account.cs",
               "RelativeDocumentMoniker": "Entities\\Account.cs",
@@ -483,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "BankCard.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem\\Entities\\BankCard.cs",
               "RelativeDocumentMoniker": "Entities\\BankCard.cs",
@@ -496,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem\\Entities\\Client.cs",
               "RelativeDocumentMoniker": "Entities\\Client.cs",
@@ -509,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "FormLogin.Designer.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem.UI\\FormLogin.Designer.cs",
               "RelativeDocumentMoniker": "..\\BankSystem.UI\\FormLogin.Designer.cs",
@@ -522,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "FormClient.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\NewBankSystem\\BankSystem.UI\\FormClient.cs",
               "RelativeDocumentMoniker": "..\\..\\NewBankSystem\\BankSystem.UI\\FormClient.cs",
@@ -569,7 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "BankDbContext.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem\\BankDbContext.cs",
               "RelativeDocumentMoniker": "BankDbContext.cs",
@@ -759,7 +772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem\\Enums\\UserRole.cs",
               "RelativeDocumentMoniker": "Enums\\UserRole.cs",
@@ -768,18 +781,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T06:56:53.561Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Entities\\User.cs",
-              "ToolTip": "C:\\Users\\11B_8\\source\\repos\\BankSystem0608\\BankSystem\\Entities\\User.cs",
-              "RelativeToolTip": "Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T06:59:35.874Z"
             },
             {
               "$type": "Document",

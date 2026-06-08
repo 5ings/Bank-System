@@ -83,9 +83,9 @@ namespace BankSystem.UI
                     {
                         this.Hide();
 
-                        nextForm.FormClosed += (s, args) => this.Close();
+                        nextForm.ShowDialog();
 
-                        nextForm.Show();
+                        this.Close();
                     }
                 }
                 else

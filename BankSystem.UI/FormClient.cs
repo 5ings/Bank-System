@@ -31,7 +31,9 @@ namespace BankSystem.UI
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            _clientController = new ClientController();
+            BankDbContext dbContext = new BankDbContext();
+
+            _clientController = new ClientController(dbContext);
             _transactionController = new TransactionController();
             _logController = new SystemLogController();
             _currentClientUser = loggedInClient;
@@ -160,59 +162,59 @@ namespace BankSystem.UI
         private void btnLogOut_Click_1(object sender, EventArgs e)
         {
             FormLogin loginForm = new FormLogin();
-            loginForm.Show();
+            loginForm.ShowDialog();
             this.Close();
         }
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            //if (_transactionController == null)
-            //{
-            //    MessageBox.Show("Грешка: TransactionController не е инициализиран!");
-            //    return;
-            //}
+            if (_transactionController == null)
+            {
+                MessageBox.Show("Грешка: TransactionController не е инициализиран!");
+                return;
+            }
 
-            //var sourceAcc = MyAccountsComboBox.SelectedItem as Account;
-            //if (sourceAcc == null)
-            //{
-            //    MessageBox.Show($"Избраният елемент не е Account. Избрано: {MyAccountsComboBox.SelectedItem?.GetType().Name ?? "null"}");
-            //    return;
-            //}
+            var sourceAcc = MyAccountsComboBox.SelectedItem as Account;
+            if (sourceAcc == null)
+            {
+                MessageBox.Show($"Избраният елемент не е Account. Избрано: {MyAccountsComboBox.SelectedItem?.GetType().Name ?? "null"}");
+                return;
+            }
 
-            //string toIban = RecipientIbanTextBox.Text?.Trim();
+            string toIban = RecipientIbanTextBox.Text?.Trim();
 
-            //if (string.IsNullOrEmpty(toIban))
-            //{
-            //    MessageBox.Show("Моля, въведете IBAN на получател!");
-            //    return;
-            //}
+            if (string.IsNullOrEmpty(toIban))
+            {
+                MessageBox.Show("Моля, въведете IBAN на получател!");
+                return;
+            }
 
-            //if (!decimal.TryParse(AmountTextBox.Text, out decimal amount) || amount <= 0)
-            //{
-            //    MessageBox.Show("Моля, въведете валидна положителна сума!");
-            //    return;
-            //}
+            if (!decimal.TryParse(AmountTextBox.Text, out decimal amount) || amount <= 0)
+            {
+                MessageBox.Show("Моля, въведете валидна положителна сума!");
+                return;
+            }
 
-            //try
-            //{
-            //    await _transactionController.TransferMoney(sourceAcc.AccountID, toIban, amount);
-            //    MessageBox.Show("Преводът е успешен!");
+            try
+            {
+                await _transactionController.TransferMoney(sourceAcc.AccountID, toIban, amount);
+                MessageBox.Show("Преводът е успешен!");
 
-            //    AmountTextBox.Clear();
-            //    RecipientIbanTextBox.Clear();
-            //    await RefreshClientData();
-            //}
-            //catch (Exception ex)
-            //{
-            //    string errorMessage = ex.Message;
-            //    if (ex.InnerException != null)
-            //    {
-            //        errorMessage += "\n\nДетайли: " + ex.InnerException.Message;
-            //    }
-            //    MessageBox.Show($"Грешка в базата/логиката: {errorMessage}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-            ////await RefreshClientData();
+                AmountTextBox.Clear();
+                RecipientIbanTextBox.Clear();
+                await RefreshClientData();
+            }
+            catch (Exception ex)
+            {
+                string errorMessage = ex.Message;
+                if (ex.InnerException != null)
+                {
+                    errorMessage += "\n\nДетайли: " + ex.InnerException.Message;
+                }
+                MessageBox.Show($"Грешка в базата/логиката: {errorMessage}", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            //await RefreshClientData();
         }
-        
+
     }
 }
